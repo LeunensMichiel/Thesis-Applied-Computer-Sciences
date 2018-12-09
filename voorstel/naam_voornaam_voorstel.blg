@@ -1,0 +1,17 @@
+[0] Config.pm:302> INFO - This is Biber 2.11
+[0] Config.pm:305> INFO - Logfile is 'naam_voornaam_voorstel.blg'
+[36] biber-darwin:313> INFO - === Sun Dec  9, 2018, 23:08:04
+[57] Biber.pm:371> INFO - Reading 'naam_voornaam_voorstel.bcf'
+[155] Biber.pm:857> INFO - Found 1 citekeys in bib section 0
+[169] Biber.pm:3976> INFO - Processing section 0
+[179] Biber.pm:4136> INFO - Looking for bibtex format file 'voorstel.bib' for section 0
+[181] bibtex.pm:1500> INFO - LaTeX decoding ...
+[195] bibtex.pm:1316> INFO - Found BibTeX data source 'voorstel.bib'
+[206] Utils.pm:193> WARN - I didn't find a database entry for crossref 'DBLP:journals/corr/abs-1802-00976' in entry 'Runtime2017' - ignoring (section 0)
+[216] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[216] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[216] Biber.pm:3804> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'nl-NL'
+[216] Biber.pm:3810> INFO - No sort tailoring available for locale 'nl-NL'
+[222] bbl.pm:617> INFO - Writing 'naam_voornaam_voorstel.bbl' with encoding 'UTF-8'
+[224] bbl.pm:720> INFO - Output to naam_voornaam_voorstel.bbl
+[225] Biber.pm:110> INFO - WARNINGS: 1
