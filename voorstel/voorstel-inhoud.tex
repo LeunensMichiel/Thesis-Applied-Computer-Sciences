@@ -1,22 +1,17 @@
+% !TeX spellcheck = de_DE
 %---------- Inleiding ---------------------------------------------------------
 
 \section{Introductie} % The \section*{} command stops section numbering
 \label{sec:introductie}
 
-Hier introduceer je werk. Je hoeft hier nog niet te technisch te gaan. BLADIELV
-
-Je beschrijft zeker:
-
-\begin{itemize}
-  \item de probleemstelling en context
-  \item de motivatie en relevantie voor het onderzoek
-  \item de doelstelling en onderzoeksvraag/-vragen
-\end{itemize}
+NodeJS is een Javascript framework wiens populariteit in de afgelopen jaar hard is toegenomen. Ontwikkelaars genieten van verschillende voordelen. Het werkt asynchroon, het is makkelijk schaalbaar en het is zeer portabel. Doordat het Javascript is, kan elk besturingssysteem gebruik maken van de krachtige backendfuncties van NodeJS. Dit maakt het een uitstekend framework voor webapplicaties te ontwikkelen.  NodeJS is echter niet makkelijk om te monitoren doordat het asynchroon is opgebouwd. Het toepassen van de juiste technieken om te monitoren kan de slaagkansen van een project echter goed verhogen, net als de levenscyclus van de applicatie. Op welke manieren kunnen we het monitoren van zulke applicaties aanpakken? Welke software en tools worden hiervoor gebruikt? Welke technieken worden het best toegepast? En kan er ook intern in het proces van NodeJS gekeken worden en deze informatie toegepast worden? En zijn al deze technieken drastisch veranderd sinds het framework werd uitgebracht in maart 2009? 
 
 %---------- Stand van zaken ---------------------------------------------------
 
 \section{State-of-the-art}
 \label{sec:state-of-the-art}
+
+
 
 Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein. Dit kan bijvoorbeeld een literatuurstudie zijn. Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek? Wat is de relevantie met jouw onderzoek?
 
@@ -29,23 +24,35 @@ Verwijs bij elke introductie van een term of bewering over het domein naar de va
 %   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
 %   ...'')
 
-Je mag gerust gebruik maken van subsecties in dit onderdeel.
 
 %---------- Methodologie ------------------------------------------------------
 \section{Methodologie}
 \label{sec:methodologie}
 
-Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor experimenten, vragenlijsten, simulaties? Je beschrijft ook al welke tools je denkt hiervoor te gebruiken of te ontwikkelen.
+Onderzoek doen naar de verschillende mogelijkheden van software en tools. Een steekproef maken van een aantal node-developers en via een enquete vragen met welke tools zij hun NodeJS applicatie monitoren, uitgebracht tussen 2009 en 2019. We kunnen erna kijken welke tools beter performeren dan anderen dankzij het gebruik van de servers van Kayzr. We kunnen dit uitgebreider onderzoeken door:
+
+\begin{itemize}
+	\item Monitoren van api calls volgens het aantal keren opgeroepen
+	\item Monitoren van api calls volens duratie tot een response gestuurd wordt
+	\item Het gemak om errors op te slaan en later te debuggen/analyseren
+	\item Monitoren van deze node process en hun taxatie op de server waar ze draaien (CPU, RAM, netwerk, …)
+\end{itemize}
+
+Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor experimenten, vragenlijsten, simulaties? Je beschrijft ook al welke tools je denkt hiervoor te gebruiken of te ontwikkelen. 
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwachte resultaten}
 \label{sec:verwachte_resultaten}
+
+Er zal waarschijnlijk wel een tool uitspringen die op alle vlakken gemiddeld goed performeert. Dit zal wel de tool zijn die het meest populair is idk
 
 Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de stukken van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet hoe je je data gaat moeten structureren.
 
 %---------- Verwachte conclusies ----------------------------------------------
 \section{Verwachte conclusies}
 \label{sec:verwachte_conclusies}
+
+De wereld van Javascript is nog in volle groei, maar is toch al een pak matuurder dan vroeger. We zien dat de tools beter zijn geworden. De concurrentie is enorm groot aangezien NodeJS een enorm populair platform is. Daardoor zal het noodzakelijk zijn om een gepaste monitoringtechniek toe te passen adhv software die we reeds kennen en vertrouwen. 
 
 Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
 
