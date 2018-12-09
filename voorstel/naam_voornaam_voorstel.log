@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.26)  9 DEC 2018 23:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.26)  9 DEC 2018 23:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1037,7 +1037,7 @@ Package babel Info: Redefining dutch shorthand "~
 
 
 AED: lastpage setting LastPage
-<FBO-NL.jpg, id=49, 481.8pt x 328.8285pt>
+<FBO-NL.jpg, id=55, 481.8pt x 328.8285pt>
 File: FBO-NL.jpg Graphic file (type jpg)
 <use FBO-NL.jpg>
 Package pdftex.def Info: FBO-NL.jpg  used on input line 86.
@@ -1066,31 +1066,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
  (./naam_voornaam_voorstel.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
+Package rerunfilecheck Info: File `naam_voornaam_voorstel.out' has not changed.
 
-
-Package rerunfilecheck Warning: File `naam_voornaam_voorstel.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `naam_voornaam_voorstel.out':
-(rerunfilecheck)             Before: D3D4A775DBFA79F743744AB281DD86C0;254
-(rerunfilecheck)             After:  548138F6530B578FE3568F67514076FC;301.
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
+(rerunfilecheck)             Checksum: 548138F6530B578FE3568F67514076FC;301.
 Package logreq Info: Writing requests to 'naam_voornaam_voorstel.run.xml'.
 \openout1 = `naam_voornaam_voorstel.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18823 strings out of 492649
- 310821 string characters out of 6129622
- 873053 words of memory out of 5000000
- 22250 multiletter control sequences out of 15000+600000
+ 18830 strings out of 492649
+ 310911 string characters out of 6129622
+ 873116 words of memory out of 5000000
+ 22257 multiletter control sequences out of 15000+600000
  59729 words of font info for 218 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,15n,54p,2055b,3825s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1100,10 +1087,10 @@ xlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2
 018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2018/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on naam_voornaam_voorstel.pdf (2 pages, 624944 bytes).
+Output written on naam_voornaam_voorstel.pdf (2 pages, 625175 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 86 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  10 named destinations out of 1000 (max. 500000)
- 49198 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 49206 words of extra memory for PDF output out of 51595 (max. 10000000)
 
