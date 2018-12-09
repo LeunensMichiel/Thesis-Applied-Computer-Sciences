@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.26)  9 DEC 2018 12:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.26)  9 DEC 2018 20:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1019,27 +1019,25 @@ Package babel Info: Redefining dutch shorthand "~
 
 
 ]
-
-LaTeX Warning: Citation 'Doll1954' on page 2 undefined on input line 21.
-
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 26.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 32.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 38.
+(babel)             in language  on input line 26.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 32.
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 43.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 43.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 51.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 51.
 )
 
 LaTeX Warning: Empty bibliography on input line 84.
@@ -1093,23 +1091,22 @@ Package logreq Info: Writing requests to 'naam_voornaam_voorstel.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  18790 strings out of 492649
- 310158 string characters out of 6129622
- 870993 words of memory out of 5000000
+ 310152 string characters out of 6129622
+ 871022 words of memory out of 5000000
  22231 multiletter control sequences out of 15000+600000
- 60184 words of font info for 211 fonts, out of 8000000 for 9000
+ 58938 words of font info for 211 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,15n,53p,2000b,3825s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,15n,53p,2005b,3825s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2
 018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2018/tex
 mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fo
-nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
-urw/times/utmri8a.pfb>
-Output written on naam_voornaam_voorstel.pdf (2 pages, 625004 bytes).
+nts/type1/urw/times/utmr8a.pfb>
+Output written on naam_voornaam_voorstel.pdf (2 pages, 617971 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 76 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  9 named destinations out of 1000 (max. 500000)
- 49198 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 47150 words of extra memory for PDF output out of 51595 (max. 10000000)
 

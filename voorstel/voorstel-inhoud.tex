@@ -4,21 +4,15 @@
 \section{Introductie} % The \section*{} command stops section numbering
 \label{sec:introductie}
 
-NodeJS is een Javascript framework wiens populariteit in de afgelopen jaar hard is toegenomen. Ontwikkelaars genieten van verschillende voordelen. Het werkt asynchroon, het is makkelijk schaalbaar en het is zeer portabel. Doordat het Javascript is, kan elk besturingssysteem gebruik maken van de krachtige backendfuncties van NodeJS. Dit maakt het een uitstekend framework voor webapplicaties te ontwikkelen.  NodeJS is echter niet makkelijk om te monitoren doordat het asynchroon is opgebouwd. Het toepassen van de juiste technieken om te monitoren kan de slaagkansen van een project echter goed verhogen, net als de levenscyclus van de applicatie. Op welke manieren kunnen we het monitoren van zulke applicaties aanpakken? Welke software en tools worden hiervoor gebruikt? Welke technieken worden het best toegepast? En kan er ook intern in het proces van NodeJS gekeken worden en deze informatie toegepast worden? En zijn al deze technieken drastisch veranderd sinds het framework werd uitgebracht in maart 2009? 
+NodeJS is een Javascript framework wiens populariteit in de afgelopen jaren hard is toegenomen. Ontwikkelaars genieten van verschillende voordelen. Het werkt asynchroon, het is makkelijk schaalbaar en het is zeer portabel. Doordat het Javascript is, kan elk besturingssysteem gebruik maken van de krachtige backendfuncties van NodeJS. Dit maakt het een uitstekend framework voor webapplicaties te ontwikkelen.  NodeJS is echter niet makkelijk om te debuggen doordat het asynchroon is opgebouwd. Het toepassen van de juiste monitortechnieken kan de slaagkansen van een project echter goed verhogen, net als de levenscyclus van de applicatie. Op welke manieren kunnen we het monitoren van zulke applicaties aanpakken? Welke software en tools worden hiervoor gebruikt? Welke technieken worden het best toegepast? En kan er ook intern in het proces van NodeJS gekeken worden en deze informatie toegepast worden? En zijn al deze technieken drastisch veranderd sinds het framework werd uitgebracht in maart 2009? 
 
 %---------- Stand van zaken ---------------------------------------------------
 
 \section{State-of-the-art}
 \label{sec:state-of-the-art}
 
-Javascript is reeds een mature taal. Er is echter meer variatie in de frameworks die er uit ontstaan. NodeJS is een backend framework die zeer populair is door de goede ondersteuning en features dat deze biedt. Zoals gezegd wordt in ~\autocite{Runtime2017}: Node.js is sterk afhankelijk van asynchrone en continue programmeerstijl. I/O-bewerkingen worden uitgevoerd door middel van oproepen naar asynchrone functies waarbij een callback moet worden doorgegeven om aan te geven hoe de berekening wordt voortgezet zodra de genoemde I/O-bewerking asynchroon is voltooid. Inderdaad, het Node.js executiemodel bestaat uit een hoofdgebeurtenislus die wordt uitgevoerd op een single-threaded proces.
-Het is daarom niet makkelijk om deze soort frameworks te debuggen, en wordt een uitdagende taak. Gelukkig zijn hiervoor dan ook weer resources gevonden om dit te vereenvoudigen. Zoals hierboven vermeld in ~\autocite{Runtime2017}, kan asynchrone code subtiele bugs opleveren die niet meteen te zien zijn. Hier is nog niet echt onderzoek over gedaan. Waarin er honderden vergelijkende studies bestaan over de frameworks zelf en of NodeJS een goede optie is, zijn er geen of amper studies over de beste manier om dit te monitoren. ~\autocite{Runtime2017} vertelt ons meer over  het identificeren van schaalbaarheidsproblemen en het aanrijken van mogelijke oplossingen. Ze maken gebruik van parametrische spooruitdrukkingen voor runtime monitoring van Node.js toepassingen, maar ze geven toe dat dit nog maar de eerste stap is en dat hier nog meer onderzoek kan naar gedaan worden. 
-
-
-
-Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein. Dit kan bijvoorbeeld een literatuurstudie zijn. Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek? Wat is de relevantie met jouw onderzoek?
-
-Verwijs bij elke introductie van een term of bewering over het domein naar de vakliteratuur, bijvoorbeeld~\autocite{Doll1954}! Denk zeker goed na welke werken je refereert en waarom.
+Javascript is reeds een mature taal. Er is echter meer variatie in de frameworks die er uit ontstaan. NodeJS is een backend framework die zeer populair is door de goede ondersteuning en features dat deze biedt. Zoals gezegd wordt in ~\autocite{Runtime2017}: Node.js is sterk afhankelijk van asynchrone en continue programmeerstijl. I/O-bewerkingen worden uitgevoerd door middel van oproepen naar asynchrone functies waarbij een callback moet worden doorgegeven om aan te geven hoe de berekening wordt voortgezet zodra de genoemde I/O-bewerking asynchroon is voltooid. Het Node.js executiemodel bestaat uit een hoofdgebeurtenislus die wordt uitgevoerd op een single-threaded proces.
+Het is daarom niet makkelijk om deze soort frameworks te debuggen, en wordt uiteindelijk een uitdagende taak. Gelukkig zijn hiervoor dan ook weer hulpmiddelen en tools uitgebracht om dit te vereenvoudigen. Zoals hierboven vermeld in ~\autocite{Runtime2017}, kan asynchrone code subtiele bugs opleveren die niet meteen te zien zijn.  Hier is nog niet echt onderzoek over gedaan. Waarin er honderden vergelijkende studies bestaan over de frameworks zelf en of NodeJS een goede optie is, zijn er geen of amper studies over de beste manier om dit te monitoren. ~\autocite{Runtime2017} vertelt ons meer over  het identificeren van schaalbaarheidsproblemen en het aanrijken van mogelijke oplossingen. Ze maken gebruik van parametrische uitdrukkingen voor runtime monitoring van Node.js toepassingen, maar ze geven toe dat dit nog maar de eerste stap is en dat hier nog meer onderzoek naar kan gedaan worden. Doordat hier nog niet veel over staat neergepend, leek me dit een zeer interessant onderwerp dat hand in hand werkt met mijn stageopdracht. Kayzr zoekt namelijk zelf goede manieren om hun NodeJS applicaties goed te kunnen debuggen, en deze studie zou zeker een goede bijdrage zijn aan deze soort doelgroep. Mijn onderzoek zal zich onderscheiden door een goed overzicht te behouden in die ongedocumenteerde zee van beschikbare frameworks, tools en software, waardoor deze studie kan gebruikt worden als een guideline voor best-practices. 
 
 % Voor literatuurverwijzingen zijn er twee belangrijke commando's:
 % \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
@@ -32,30 +26,29 @@ Verwijs bij elke introductie van een term of bewering over het domein naar de va
 \section{Methodologie}
 \label{sec:methodologie}
 
-Onderzoek doen naar de verschillende mogelijkheden van software en tools. Een steekproef maken van een aantal node-developers en via een enquete vragen met welke tools zij hun NodeJS applicatie monitoren, uitgebracht tussen 2009 en 2019. We kunnen erna kijken welke tools beter performeren dan anderen dankzij het gebruik van de servers van Kayzr. We kunnen dit uitgebreider onderzoeken door:
+Onderzoek doen naar de verschillende mogelijkheden van software en tools. Een steekproef maken van een aantal node-developers door hen te contacteren en via een enquete vragen welke tools zij gebruiken om hun NodeJS applicaties te monitoren, uitgebracht tussen 2009 en 2019. We kunnen erna kijken welke tools beter performeren dan anderen dankzij het gebruik van de servers van Kayzr. We kunnen er uitgebreider onderzoeken door:
 
 \begin{itemize}
 	\item Monitoren van api calls volgens het aantal keren opgeroepen
-	\item Monitoren van api calls volens duratie tot een response gestuurd wordt
+	\item Monitoren van api calls volgens duratie tot een response gestuurd wordt
 	\item Het gemak om errors op te slaan en later te debuggen/analyseren
-	\item Monitoren van deze node process en hun taxatie op de server waar ze draaien (CPU, RAM, netwerk, …)
+	\item Monitoren van deze node process en hun taxatie op de server waar ze op draaien (CPU, RAM, netwerk…)
 \end{itemize}
 
-Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor experimenten, vragenlijsten, simulaties? Je beschrijft ook al welke tools je denkt hiervoor te gebruiken of te ontwikkelen. 
+De tools voor de bovenstaande metingen te testen gaan uiteraard de te onderzoeken tools, en hulpprogramma's als taakbeheer. We maken daarna gebruik van R Studio om deze metingen en enquetes om te zetten tot mooie data waaruit we natuurlijk een conclusie kunnen trekken. 
+
+Ook kunnen we literatuuronderzoek doen naar Javascript van ES1 naar ES6, NodeJS en zijn asynchrone processen, monitoring en het monitoren van async processen. 
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwachte resultaten}
 \label{sec:verwachte_resultaten}
 
-Er zal waarschijnlijk wel een tool uitspringen die op alle vlakken gemiddeld goed performeert. Dit zal wel de tool zijn die het meest populair is idk
+Ik vermoed dat de resultaten uiteen zullen lopen, en dat verschillende developers zich liever vasthouden aan hun eigen methodes. Ook zal er duidelijk een breuk zijn in ontwikkelaars die liever blijven met hun vertrouwde tools die al een aantal jaar meegaan, en developers die liever het nieuwste van het nieuwste wensen te gebruiken. Dit zal het overzichtelijkst zijn in een bar chart met op de x-as de tool en op de y-as het aantal developers.
 
-Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de stukken van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet hoe je je data gaat moeten structureren.
+Qua effectieve data van de tools om onze eigen beslissingen te maken, zal elk waarschijnlijk zijn voor en nadelen hebben. Toch vermoed ik dat we een effectieve winnaar er uit kunnen halen die over het algemeen goed scoort. Dit zullen we dan toetsen aan de literatuurstudie om zo best practices te bekomen.
 
 %---------- Verwachte conclusies ----------------------------------------------
 \section{Verwachte conclusies}
 \label{sec:verwachte_conclusies}
 
-De wereld van Javascript is nog in volle groei, maar is toch al een pak matuurder dan vroeger. We zien dat de tools beter zijn geworden. De concurrentie is enorm groot aangezien NodeJS een enorm populair platform is. Daardoor zal het noodzakelijk zijn om een gepaste monitoringtechniek toe te passen adhv software die we reeds kennen en vertrouwen. 
-
-Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
-
+De wereld van Javascript is nog in volle groei, maar is toch al een pak matuurder dan vroeger. We zien dat de tools beter zijn geworden. De concurrentie is enorm groot aangezien NodeJS een enorm populair platform is. Tool X zal over het algemeen de beste tool zijn om te gebruiken. De manier van aanpak gaat variëren, maar uit de steekproef kunnen we dat toch kunnen veralgemenen. 
