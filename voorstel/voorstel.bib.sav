@@ -1,6 +1,6 @@
 % Encoding: windows-1252
 
-@InProceedings{DBLP:journals/corr/abs-1802-01790,
+@InProceedings{N,
   author    = {Davide Ancona and Luca Franceschini and Giorgio Delzanno and Maurizio Leotta and Marina Ribaudo and Filippo Ricca},
   title     = {Towards Runtime Monitoring of Node.js and Its Application to the Internet of Things},
   booktitle = {Proceedings First Workshop on Architectures, Languages and Paradigms for IoT, ALP4IoT@iFM 2017, Turin, Italy, September 18, 2017.},
