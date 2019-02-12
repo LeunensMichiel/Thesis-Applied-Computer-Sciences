@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.26)  9 DEC 2018 23:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.26)  13 FEB 2019 00:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1022,13 +1022,13 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 41.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 41.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 51.
+(babel)             in language  on input line 49.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 51.
+(babel)             in language  on input line 49.
 )
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 84.
@@ -1074,20 +1074,20 @@ Package logreq Info: Writing requests to 'naam_voornaam_voorstel.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18830 strings out of 492649
- 310911 string characters out of 6129622
- 873116 words of memory out of 5000000
+ 18827 strings out of 492649
+ 310890 string characters out of 6129622
+ 873097 words of memory out of 5000000
  22257 multiletter control sequences out of 15000+600000
- 59729 words of font info for 218 fonts, out of 8000000 for 9000
+ 59598 words of font info for 216 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,15n,54p,2055b,3825s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,15n,54p,2036b,3825s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2
 018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2018/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on naam_voornaam_voorstel.pdf (2 pages, 625175 bytes).
+Output written on naam_voornaam_voorstel.pdf (2 pages, 625019 bytes).
 PDF statistics:
  86 PDF objects out of 1000 (max. 8388607)
  69 compressed objects within 1 object stream
