@@ -2125,12 +2125,11 @@
     <bcf:datasource type="file" datatype="bibtex">../voorstel/voorstel.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Pollefliet2011</bcf:citekey>
-    <bcf:citekey order="2">Knuth1998</bcf:citekey>
-    <bcf:citekey order="3">Creeger2009</bcf:citekey>
+    <bcf:citekey order="1">Javascript2019</bcf:citekey>
+    <bcf:citekey order="2">Rangpariya2019</bcf:citekey>
+    <bcf:citekey order="3">Runtime2017</bcf:citekey>
     <bcf:citekey order="4">Runtime2017</bcf:citekey>
     <bcf:citekey order="5">Runtime2017</bcf:citekey>
-    <bcf:citekey order="6">Runtime2017</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">
