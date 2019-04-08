@@ -37,29 +37,43 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Waarom Node.js?}{19}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Asynchroon}{19}{section*.12}
+\contentsline {subsubsection}{nieuw}{19}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Performant}{21}{section*.13}
+\contentsline {subsubsection}{Asynchroon}{20}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{NPM}{21}{section*.14}
+\contentsline {subsubsection}{Performant}{21}{section*.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{npm}{21}{section*.15}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Express}{21}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Methodologie}{23}{chapter.3}
+\contentsline {subsection}{\numberline {2.3.1}Waarom Express?}{21}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Conclusie}{25}{chapter.4}
+\contentsline {subsubsection}{Request Handlers}{21}{section*.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{27}{appendix.A}
+\contentsline {subsubsection}{Views}{22}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Introductie}{27}{section.A.1}
+\contentsline {subsubsection}{Modulair}{22}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}State-of-the-art}{27}{section.A.2}
+\contentsline {subsubsection}{Middleware}{22}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Methodologie}{28}{section.A.3}
+\contentsline {section}{\numberline {2.4}Testen en Monitoring}{23}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Verwachte resultaten}{29}{section.A.4}
+\contentsline {chapter}{\numberline {3}Methodologie}{25}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Verwachte conclusies}{29}{section.A.5}
+\contentsline {chapter}{\numberline {4}Conclusie}{27}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografie}{31}{appendix*.15}
+\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{29}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Introductie}{29}{section.A.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}State-of-the-art}{29}{section.A.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}Methodologie}{30}{section.A.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.4}Verwachte resultaten}{31}{section.A.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.5}Verwachte conclusies}{31}{section.A.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografie}{33}{appendix*.20}
 \contentsfinish 

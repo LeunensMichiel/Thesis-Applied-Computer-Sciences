@@ -172,11 +172,17 @@
   url          = {https://www.similartech.com/compare/nodejs-vs-php},
 }
 
-@Misc{,
+@Misc{Mehmet2016,
   author = {Mehmet BAT},
   title  = {Infographic on Node.js},
   year   = {2016},
   url    = {https://coderwall.com/p/_ukoeg/infographic-on-node-js},
+}
+
+@Manual{,
+  title        = {Express/Node introduction},
+  organization = {Mozilla},
+  url          = {https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

@@ -205,6 +205,22 @@
       \verb https://doi.org/10.1007/s00607-014-0394-9
       \endverb
     \endentry
+    \entry{ExpressMozilla}{manual}{}
+      \list{organization}{1}{%
+        {Mozilla}%
+      }
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{title}{Express/Node introduction}
+      \verb{urlraw}
+      \verb https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction
+      \endverb
+      \verb{url}
+      \verb https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction
+      \endverb
+    \endentry
     \entry{Kantor2017}{online}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=5921cc97f07da91d5ea48cbf66955405}{%

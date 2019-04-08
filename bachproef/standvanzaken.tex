@@ -27,7 +27,7 @@ Javascript is een programmeertaal gemaakt voor het web, waarmee u statische webp
 
 Javascript heeft echter een hele evolutie achter de rug. Ontstaan in mei 1995, wordt de taal na vele updates nog steeds dagdagelijks gebruikt en kan het wereldwijde web niet meer ingebeeld worden zonder. Brendan Eich, de auteur van de taal, werkte in 1995 samen met Netscape Communications, de makers van de eerste grote webbrowser genaamd Netscape Navigator, om een taal te implementeren in hun browser waar webontwikkelaars gebruik van zouden kunnen maken. Java, een zeer zware programmeertaal met tal van functionaliteiten was de eerste keuze van Netscape, maar Eich schreef uiteindelijk zijn eigen idee uit van een scripttaal in nog geen 10 dagen en overtuigde Netscape om de lichte, schaalbare en Java-complementerende-taal te adopteren \autocite{Rangpariya2019}. Javascript, toen onder de naam Mocha en vervolgens LiveScript, was geboren en zette de wereld van webontwikkelaars op zijn kop.
 
-Netscape bracht nieuwere versies van JavaScript uit, maar Microsoft dreigde die te onttronen. Niet zoveel later, bracht Microsoft Internet Explorer 3 uit met een eigen variant op Javascript, namelijk JScript. Dit was een zware slag voor Netscape, aangezien Microsoft hen hierdoor zou voorbijsteken, maar was wel een grote stap in de evolutie van JavaScript zoals wij het nu kennen. Dit bracht echter problemen met zich mee, want bedrijven zouden telkens eigen versies van JavaScript uitbrengen wat voor veel compatibiliteitproblemen zou zorgen. Uiteindelijk, in 1997, werd JavaScript 1.1 gestandaardiseerd dankzij het European Computer Manufacturers Association en werd omgedoopt tot ECMAScript. \autocite{Wiley2016} Deze standaard, namelijk ES1 (versie 1), zou dan vertakkingen verhelpen. Implementaties van ECMAScript, waaronder JScript, ActionScript, maar dus ook JavaScript zelf, zouden dan telkens ECMAScript implementeren waardoor de core van de varianten telkens hetzelfde blijft. Nu, in 2019; is JavaScript nog steeds enorm populair en implementeert ondertussen al de 9e versie van ECMAScript: ES2018. Sinds es5 is ECMASCRIPT overgeschakeld naar jaarlijkse releases, startend vanaf ES2015.
+Netscape bracht nieuwere versies van JavaScript uit, maar Microsoft dreigde die te onttronen. Niet zoveel later, bracht Microsoft Internet Explorer 3 uit met een eigen variant op Javascript, namelijk JScript. Dit was een zware slag voor Netscape, aangezien Microsoft hen hierdoor zou voorbijsteken, maar was wel een grote stap in de evolutie van JavaScript zoals wij het nu kennen. Dit bracht echter problemen met zich mee, want bedrijven zouden telkens eigen versies van JavaScript uitbrengen wat voor veel compatibiliteitproblemen zou zorgen. Uiteindelijk, in 1997, werd JavaScript 1.1 gestandaardiseerd dankzij het European Computer Manufacturers Association en werd omgedoopt tot ECMAScript. \autocite{Wiley2016} Deze standaard, namelijk ES1 (versie 1), zou dan vertakkingen verhelpen. Implementaties van ECMAScript, waaronder JScript, ActionScript, maar dus ook JavaScript zelf, zouden dan telkens ECMAScript implementeren waardoor de core van de varianten telkens hetzelfde blijft. Nu, in 2019; is JavaScript nog steeds enorm populair en implementeert ondertussen al de 9e versie van ECMAScript: ES2018. Na ES5 is ECMASCRIPT overgeschakeld naar jaarlijkse releases, startend vanaf ES2015.
 
 \subsection{Waarom JavaScript?}
 \label{sec:jsWhy}
@@ -83,7 +83,7 @@ JavaScript wordt sinds ES5 ondersteund door alle moderne browsers! Of er nu in C
 \section{Node.js}
 \label{sec:nodeJs}
 
-Node.js is een JavaScript runtime omgeving dat wordt gebruikt voor Server-side toepassingen. Node.js maakt het mogelijk, (of eerder \textit{makkelijker}), om JavaScript nu ook te gebruiken buiten websites maken. Aangezien JavaScript zo'n krachtige taal is, hadden de ontwikkelaars van Node.js een ding in gedachten: JavaScript niet enkel in de browsers, maar ook als alleenstaande applicatie. JavaScript sindsdien evenaren aan andere scripttalen, zoals Python. \textcite{Patel2018}
+Node.js is een open-source JavaScript runtime omgeving dat wordt gebruikt voor Server-side toepassingen. Node.js maakt het mogelijk, (of eerder \textit{makkelijker}), om JavaScript nu ook te gebruiken buiten websites maken. Aangezien JavaScript zo'n krachtige taal is, hadden de ontwikkelaars van Node.js een ding in gedachten: JavaScript niet enkel in de browsers, maar ook als alleenstaande applicatie. JavaScript sindsdien evenaren aan andere scripttalen, zoals Python. \textcite{Patel2018}
 
 \subsection{Tijdlijn van Node.js}
 \label{sec:nodeTimeline}
@@ -111,6 +111,11 @@ Node.js is reeds een volwassen server-side framework. Youtube, Yahoo, Google, Am
 
 Illustrator \textcite{Mehmet2016} toont op een illustratieve wijze de voordelen van Node.js aan. LinkedIn kon hun 15 servers reduceren naar slechts 4 en terwijl de verkeerscapaciteit nog eens verdubbelen. Walmart kon al hun Client-side JavaScript processing naar hun servers verplaatsen, en Ebay kon hun verkeerscapaciteit enorm doen verhogen en hun verbruik enorm doen dalen. De voordelen en functionaliteiten worden hieronder nog eens opgesomd zoals aangegeven door \textcite{Chandrayan2017}.
 
+\subsubsection{nieuw}
+\label{sec:new}
+
+JavaScript is relatief gezien een nieuwe taal dat voortdurend geüpdatet wordt. In tegenstelling tot traditionele server-talen zoals Python, PHP, enzovoort. Vele dialecten van JavaScript (zoals TypeScript, CoffeeScript, ClojureScript,...) compileren dan gewoonweg in JavaScript waardoor overschakelen zeer simpel wordt. Doordat Node ook in JavaScript geschreven is, maakt dit het makkelijker om de client-server-side-brug over te steken als frontend ontwikkelaar of vice versa. \autocite{ExpressMozilla}
+
 \subsubsection{Asynchroon}
 \label{sec:async}
 
@@ -121,17 +126,77 @@ Het is daarom niet altijd makkelijk om deze soort frameworks te debuggen, en het
 \subsubsection{Performant}
 \label{sec:fast}
 
-Google Chrome's JavaScript engine, V8, is bijzonder snel. Dahl heeft dit verder ontwikkeld voor Node.js en dit maakt de framework enorm performant en efficiënt in het uitvoeren van code. Veel sneller dan Python, Ruby of Perl.
+Google Chrome's JavaScript engine, V8, is bijzonder snel. Dahl heeft dit verder ontwikkeld voor Node.js en dit maakt de framework enorm performant en efficiënt in het compileren en uitvoeren van code. Veel sneller dan Python, Ruby of Perl.
 
-\subsubsection{NPM}
+\subsubsection{npm}
 \label{sec:npm}
 
 Node.js kent een enorm bloeiende community. Deel van Node is zijn Node Package Manager, ofwel npm, en komt meegeleverd bij de installatie. Via npm kan men uit honderdduizenden pakketjes kiezen voor een JavaScript/Node project makkelijk uit te breiden met extra functionaliteiten in één oogwenk. Dagelijks worden er nieuwe pakketjes toegevoegd aan de packet manager, en is makkelijk één van de redenen waarom Node.js zo populair is, aangezien het ontwikkelen van een webapplicatie enorm vereenvoudigd wordt.   
 
-
-
 \section{Express}
 \label{sec:express}
+
+\subsection{Waarom Express?}
+\label{sec:whyExpress}
+
+\textcite{ExpressMozilla} vertelt ons dat echter niet alles rechtstreeks door Node.js wordt ondersteund. Als men bijvoorbeeld routing aan een webapplicatie wenst toe te voegen, zoals HTTP \textsl{GET, POST, PUT, DELETE,} enzovoort... of URL-paden met specifieke requests, statische bestanden weergeven... moet men die code zelf schrijven. Herinner echter het npm-systeem van Node.js. Eén van die honderdduizenden pakketjes is namelijk Express, en is makkelijk \textit{het} populairste Node framework en is zelfs de grondlegger van duizenden andere pakketjes. Express wordt om deze reden door bedrijven dan ook vaak in combinatie gebruikt met Node.js, waaronder Kayzr. 
+
+\subsubsection{Request Handlers}
+\label{sec:reqHandlers}
+
+Dankzij Express wordt het zeer gemakkelijk om routering in je applicatie toe te voegen. Indien een GET request gemaakt wordt in de frontent naar een bepaalde URL, is dit zeer gemakkelijk om op te vangen m.b.v. Express. Voor elke soort request en URL kan Express logica uitvoeren en code makkelijk verder delegeren.
+
+\subsubsection{Views}
+\label{sec:expressViews}
+
+Express kan statische bestanden zoals HTML, CSS en afbeeldingen laten weergeven in de browser dankzij render engines. Makkelijk om bijvoorbeeld foutpagina's te weergeven.
+
+\subsubsection{Modulair}
+\label{sec:expressModularity}
+
+Modulariteit is een kerneigenschap van Express. Express is \textit{unopinionated}, wat wil zeggen dat er niet echt een gouden regel is om een doel in Express te bereiken. Doelen kunnen op meerdere manieren bereikt worden, waardoor het makkelijker is voor ontwikkelaars om een bepaalde taak uit te voeren. Dankzij modulariteit kan de framework ook volledig ingesteld worden naar wens, van poorten en routers, het instellen van een databank tot het toevoegen van Express middleware. 
+
+\subsubsection{Middleware}
+\label{sec:expressMiddleware}
+
+Wellicht de krachtigste functie van Express is de eigenschap tot het gebruik maken van middleware. Middleware wordt voortdurend gebruikt in Express. Wanneer een request binnenkomt, wordt deze doorgestuurd door nul, één of meerdere middleware die elk iets doen met de request, tot deze uiteindelijk wordt afgehandeld. De volgorde waarin een request de middleware doorloopt, is volledig afhankelijk van de programmeur. Net zoals Node.js, kent Express ook een enorm grote bibliotheek aan middleware die men kan gebruiken in een applicatie en is alsook helemaal verkrijgbaar via npm. Hierdoor kunnen ontwikkelaars zelf hun middleware schrijven, bestaande middleware downloaden en deze inpluggen in hun applicatie. Middleware kan gaan van Http-request loggers tot cookie-parsers en veel meer. De mogelijkheden zijn praktisch oneindig. Foutmeldingen zijn een goed voorbeeld van Express Middleware. Wanneer ergens iets fout gaat, roept Express de Error-Handler op, die dan zelf de request afwerkt. Monitoringstoepassingen in Node.js maken vaak gebruik van middleware. Hierover volgt meer info in het volgende hoofdstuk.
+
+	\begin{lstlisting}[language=JavaScript, breaklines=true,
+						numbers=left, frame=single,
+						caption={Express code flow voorbeeld.},
+						label=code:expressexample]
+	var express = require('express');
+	var app = express();
+	
+	// An example middleware function
+	var a_middleware_function = function(req, res, next) {
+	// ... perform some operations
+	// Call next() so Express will call the next middleware function in the chain.
+	next();
+	}
+	
+	// Function added with use() for all routes and verbs
+	app.use(a_middleware_function);
+	
+	// Function added with use() for a specific route
+	app.use('/someroute', a_middleware_function);
+	
+	// A middleware function added for a specific HTTP verb and route
+	app.get('/', a_middleware_function);
+	
+	app.listen(3000);
+	\end{lstlisting}
+	
+	
+
+
+
+\section{Testen en Monitoring}
+\label{sec:testAndMonitoring}
+
+
+
+
 
 
 
