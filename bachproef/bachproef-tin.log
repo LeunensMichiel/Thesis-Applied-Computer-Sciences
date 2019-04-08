@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.2)  8 APR 2019 15:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.2)  8 APR 2019 16:54
 entering extended mode
 **./bachproef-tin.tex
 (bachproef-tin.tex
@@ -2195,7 +2195,7 @@ LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/pag/b/n' tried instead on input line 37.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 37.
-<img/dom.jpg, id=182, 491.8375pt x 349.305pt>
+<img/dom.jpg, id=191, 491.8375pt x 349.305pt>
 File: img/dom.jpg Graphic file (type jpg)
 <use img/dom.jpg>
 Package pdftex.def Info: img/dom.jpg  used on input line 45.
@@ -2298,7 +2298,7 @@ Package babel Info: Redefining dutch shorthand "|
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 93.
  [18]
-<img/trend.png, id=217, 867.24pt x 517.935pt>
+<img/trend.png, id=226, 867.24pt x 517.935pt>
 File: img/trend.png Graphic file (type png)
 <use img/trend.png>
 Package pdftex.def Info: img/trend.png  used on input line 103.
@@ -2396,6 +2396,42 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 216.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 216.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 220.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 220.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 220.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 220.
+ [24]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 221.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 221.
+
+Overfull \hbox (10.99245pt too wide) in paragraph at lines 226--227
+[]\T1/ptm/m/n/12 (-20) Dankzij mo-ni-to-ring kan een ap-pli-ca-tie draai-ende g
+e-hou-den wor-den, of kan een IT-medewerker
+ []
+
+
+Overfull \hbox (23.56493pt too wide) in paragraph at lines 228--229
+[]\T1/cmtt/m/n/12 vb: Stuur telkens een bericht naar de Administrator wanneer e
+en IP-adres
+ []
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 230.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 230.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 235.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 235.
 ) (methodologie.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2407,7 +2443,7 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 5.
- [24]
+ [25]
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining dutch shorthand "~
@@ -2417,18 +2453,7 @@ Package babel Info: Redefining dutch shorthand "|
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 5.
 
-[25]
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 5.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 5.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 5.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 5.
- [26
-
-]
+[26]
 Hoofdstuk 3.
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 5.
@@ -2443,7 +2468,9 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 5.
- [27]
+ [27
+
+]
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining dutch shorthand "~
@@ -2595,11 +2622,11 @@ Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
  ) 
 Here is how much of TeX's memory you used:
- 40131 strings out of 493305
- 734168 string characters out of 3138875
- 1295991 words of memory out of 3000000
- 42733 multiletter control sequences out of 15000+200000
- 614592 words of font info for 246 fonts, out of 3000000 for 9000
+ 40163 strings out of 493305
+ 734634 string characters out of 3138875
+ 1296495 words of memory out of 3000000
+ 42751 multiletter control sequences out of 15000+200000
+ 614817 words of font info for 248 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,12n,65p,1937b,3825s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\michi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
@@ -2611,9 +2638,9 @@ iKTeX 2.9/fonts/type1/urw/avantgar/uagd8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/avantgar/uagk8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ti
 mes/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on bachproef-tin.pdf (38 pages, 333321 bytes).
+Output written on bachproef-tin.pdf (38 pages, 345111 bytes).
 PDF statistics:
- 577 PDF objects out of 1000 (max. 8388607)
- 123 named destinations out of 1000 (max. 500000)
- 49908 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 626 PDF objects out of 1000 (max. 8388607)
+ 134 named destinations out of 1000 (max. 500000)
+ 49932 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -213,13 +213,48 @@ Wat men ook in de afgelopen tien jaar meer en meer terugziet is de problematiek 
 
 Er bestaan natuurlijk verschillende manieren om te testen, maar het wordt grotendeels opgesplitst in drie categorieën, namelijk unit testing, integratie testing en systeem testing, maar er zijn er nog anderen. Sanity testing, smoke testing, interface testing, regression testing, end to end testing, performantie testing,... zijn allerlei soorten opgesomd door \textcite{Pittet}. Dit zijn slechts de functionele testen. Men heeft ook niet-functionele testen, die dan betrokken zijn tot andere aspecten van het project, zoals beveiliging en lokalisatie (taal),... Dan wordt er nog eens gekozen of men deze soorten testen wenst te automatiseren of niet. Daarin kruipt meer tijd, maar goed geschreven geautomatiseerde testen zijn een sleutelcomponent tot continue integratie en releases. Hier wordt echter niet verder in detail op ingegaan aangezien dit niet tot de scope van het onderzoek behoort.
 
-\subsection{Monitoring}
+\section{Monitoring}
 \label{sec:monitoring}
 
+Monitoring is een proces om info en metriek te analyseren van een lopend proces. Zo kan monitoringssoftware er op letten dat alles verloopt volgens de afspraken, en indien dit niet het geval is, actie ondernemen ~\autocite{Rouse2018}. 
 
+\subsection{Hoe werkt monitoring?}
+\label{sec:howMonitoringWorks}
 
+Real-time monitoring is een monitoringstechniek die dagelijks gebruikt wordt in de IT-wereld. Zo'n proces kan data verzamelen door voortdurend checks te doen op de lopende software, zoals het opvragen van CPU-verbruik, geheugen-verbruik, foutmeldingen controleren,... Monitoringsoftware kan gebruik van \textit{agenten}, die dan specifiek geprogrammeerd kunnen worden om op een intelligente manier zaken te onderzoeken en desnoods af te handelen.
 
+Dankzij monitoring kan een applicatie draaiende gehouden worden, of kan een IT-medewerker tijdig opgeroepen worden om fouten op te sporen. Monitoring kent ook andere voordelen, zoals het verzamelen van data die dan gebruikt kan worden voor andere doeleinden, bijvoorbeeld voor marketing - of managementafdeling. 
 
+\texttt{vb: Stuur telkens een bericht naar de Administrator wanneer een IP-adres uit Amerika onze site bezoekt, en visualiseer deze op een kaart.}
+
+\subsection{Monitoring, Node.js en Express}
+\label{sec:monitoringNodeExpress}
+
+In de vorige hoofdstukken werd de kracht aangehaald van Node's npm package manager en Express's middleware. Monitoringssoftware kan effectief worden geïnjecteerd in Express als middleware, wat ons zeer veel mogelijkheden schenkt. Zo kan van elke API Call enorm veel info worden opgevraagd, zoals foutboodschappen, geolocatie, cpu-verbruik en zoveel meer, wat opnieuw bewijst dat middleware van Express en het asynchrone gedrag van Node.js zeer krachtige functionaliteiten zijn. Er bestaan al enkele monitoringsmiddleware voor Express, maar geen software dat aan de vereisten voldoet van Kayzr. Hiervoor wordt in het volgend hoofdstuk nog wat onderzoek naar gedaan, maar we sommen alvast enkele populaire packages op.
+
+\subsection{Tools}
+\label{sec:tools}
+
+\subsubsection{Morgan}
+\label{sec:morgan}
+
+\subsubsection{Express-Status-Monitor}
+\label{sec:statusMonitor}
+
+\subsubsection{New Relic}
+\label{sec:newRelic}
+
+\subsubsection{Prometheus}
+\label{sec:prometheus}
+
+\subsubsection{Stackify Retrace}
+\label{sec:retrace}
+
+\subsubsection{Dynatrace}
+\label{sec:dynatrace}
+
+\subsubsection{PM2}
+\label{sec:pm2}
 
 
 

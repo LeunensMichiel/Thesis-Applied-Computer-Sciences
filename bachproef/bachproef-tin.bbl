@@ -483,6 +483,38 @@
       \verb https://medium.com/swlh/evolution-of-javascript-revolution-of-web-development-5df234a617e6
       \endverb
     \endentry
+    \entry{Rouse2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=d6ebb0634de22e70618460d3fc936297}{%
+           family={Rouse},
+           familyi={R\bibinitperiod},
+           given={Margaret},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d6ebb0634de22e70618460d3fc936297}
+      \strng{fullhash}{d6ebb0634de22e70618460d3fc936297}
+      \strng{bibnamehash}{d6ebb0634de22e70618460d3fc936297}
+      \strng{authorbibnamehash}{d6ebb0634de22e70618460d3fc936297}
+      \strng{authornamehash}{d6ebb0634de22e70618460d3fc936297}
+      \strng{authorfullhash}{d6ebb0634de22e70618460d3fc936297}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{How to achieve application performance in ops}
+      \field{title}{IT monitoring}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://searchitoperations.techtarget.com/definition/IT-monitoring
+      \endverb
+      \verb{url}
+      \verb https://searchitoperations.techtarget.com/definition/IT-monitoring
+      \endverb
+    \endentry
     \entry{SimilarTech}{online}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=9af49531380254750e102b218b19a42f}{%
