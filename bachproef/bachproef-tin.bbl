@@ -86,21 +86,52 @@
       \verb https://doi.org/10.4204/EPTCS.264.4
       \endverb
     \endentry
-    \entry{Creeger2009}{article}{}
+    \entry{Mehmet2016}{misc}{}
       \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=e888aba3556efbb8063540e3e2ae69b4}{%
-           family={Creeger},
-           familyi={C\bibinitperiod},
-           given={Mache},
+        {{uniquename=0,uniquepart=base,hash=7839fff1fe5cdc66a44f2e9af0a73153}{%
+           family={BAT},
+           familyi={B\bibinitperiod},
+           given={Mehmet},
            giveni={M\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{e888aba3556efbb8063540e3e2ae69b4}
-      \strng{fullhash}{e888aba3556efbb8063540e3e2ae69b4}
-      \strng{bibnamehash}{e888aba3556efbb8063540e3e2ae69b4}
-      \strng{authorbibnamehash}{e888aba3556efbb8063540e3e2ae69b4}
-      \strng{authornamehash}{e888aba3556efbb8063540e3e2ae69b4}
-      \strng{authorfullhash}{e888aba3556efbb8063540e3e2ae69b4}
+      \strng{namehash}{7839fff1fe5cdc66a44f2e9af0a73153}
+      \strng{fullhash}{7839fff1fe5cdc66a44f2e9af0a73153}
+      \strng{bibnamehash}{7839fff1fe5cdc66a44f2e9af0a73153}
+      \strng{authorbibnamehash}{7839fff1fe5cdc66a44f2e9af0a73153}
+      \strng{authornamehash}{7839fff1fe5cdc66a44f2e9af0a73153}
+      \strng{authorfullhash}{7839fff1fe5cdc66a44f2e9af0a73153}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Infographic on Node.js}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://coderwall.com/p/_ukoeg/infographic-on-node-js
+      \endverb
+      \verb{url}
+      \verb https://coderwall.com/p/_ukoeg/infographic-on-node-js
+      \endverb
+    \endentry
+    \entry{Chandrayan2017}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=69aea17b2c5ed784a2b2171b651b3398}{%
+           family={Chandrayan},
+           familyi={C\bibinitperiod},
+           given={Pramod},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{69aea17b2c5ed784a2b2171b651b3398}
+      \strng{fullhash}{69aea17b2c5ed784a2b2171b651b3398}
+      \strng{bibnamehash}{69aea17b2c5ed784a2b2171b651b3398}
+      \strng{authorbibnamehash}{69aea17b2c5ed784a2b2171b651b3398}
+      \strng{authornamehash}{69aea17b2c5ed784a2b2171b651b3398}
+      \strng{authorfullhash}{69aea17b2c5ed784a2b2171b651b3398}
       \field{sortinit}{C}
       \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
       \field{extradatescope}{labelyear}
@@ -108,35 +139,90 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Communications of the ACM}
-      \field{number}{8}
-      \field{title}{{CTO Roundtable: Cloud Computing}}
-      \field{volume}{52}
-      \field{year}{2009}
-      \field{pages}{50\bibrangedash 56}
-      \range{pages}{7}
+      \field{title}{All About Node.js you wanted to know}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://codeburst.io/all-about-node-js-you-wanted-to-know-25f3374e0be7
+      \endverb
+      \verb{url}
+      \verb https://codeburst.io/all-about-node-js-you-wanted-to-know-25f3374e0be7
+      \endverb
     \endentry
-    \entry{Knuth1998}{book}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{%
-           family={Knuth},
+    \entry{Chaniotis2015}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=d3e7a630c235b8bc585151742383f087}{%
+           family={Chaniotis},
+           familyi={C\bibinitperiod},
+           given={Ioannis\bibnamedelima K.},
+           giveni={I\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=21f4cbc19a2032e4cdb4502c39fc8745}{%
+           family={Kyriakou},
            familyi={K\bibinitperiod},
-           given={Donald\bibnamedelima E.},
-           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
+           given={Kyriakos-Ioannis\bibnamedelima D.},
+           giveni={K\bibinithyphendelim I\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=956521b1afc76d8a9cc2133ff9ca8bb7}{%
+           family={Tselikas},
+           familyi={T\bibinitperiod},
+           given={Nikolaos\bibnamedelima D.},
+           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
            givenun=0}}%
       }
-      \list{location}{1}{%
-        {Redwood City, CA, USA}%
+      \strng{namehash}{bb6adc428724e38f8a2d6d2b910f4c20}
+      \strng{fullhash}{c99ea83857763bcd72d62bb0aeeb25d0}
+      \strng{bibnamehash}{c99ea83857763bcd72d62bb0aeeb25d0}
+      \strng{authorbibnamehash}{c99ea83857763bcd72d62bb0aeeb25d0}
+      \strng{authornamehash}{bb6adc428724e38f8a2d6d2b910f4c20}
+      \strng{authorfullhash}{c99ea83857763bcd72d62bb0aeeb25d0}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We examine the implications of end-to-end web application development, in the social web era. The paper describes a distributed architecture, suitable for modern web application development, as well as the interactivity components associated with it. Furthermore, we conducted a series of stress tests, on popular server side technologies. The PHP/Apache stack was found inefficient to address the increasing demand in network traffic. Nginx was found more than 2.5 times faster in input/output (I/O) operations than Apache, whereas Node.js outperformed both. Node.js, although excellent in I/O operations and resource utilization, was found lacking in serving static files using its built in HTTP server, while Nginx performed great at this task. So, in order to address efficiency, an Nginx server could be placed in-front and proxy static file requests, allowing the Node.js processes to only handle dynamic content. Such a configuration can offer a better infrastructure in terms of efficiency and scalability, replacing the aged PHP/Apache stack. Furthermore we have found that building cross platform applications based on web technologies, is both feasible and highly productive, especially when addressing stationary and mobile devices, as well as the fragmentation among them. Our study concludes that Node.js offers client-server development integration, aiding code reusability in web applications, and is the perfect tool for developing fast, scalable network applications.}
+      \field{issn}{1436-5057}
+      \field{journaltitle}{Computing}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{Is Node.js a viable option for building modern web applications? A performance evaluation study}
+      \field{volume}{97}
+      \field{year}{2015}
+      \field{pages}{1023\bibrangedash 1044}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1007/s00607-014-0394-9
+      \endverb
+      \verb{file}
+      \verb :D\:/michi/Documents/Schooljaar 2018-2019/Bachelorproef/bachelorproefTI-2019/papers/chaniotis2014.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00607-014-0394-9
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00607-014-0394-9
+      \endverb
+    \endentry
+    \entry{Kantor2017}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=5921cc97f07da91d5ea48cbf66955405}{%
+           family={Kantor},
+           familyi={K\bibinitperiod},
+           given={Ilya},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
       }
-      \list{publisher}{1}{%
-        {Addison Wesley Longman Publishing Co., Inc.}%
+      \list{organization}{1}{%
+        {javascript.info}%
       }
-      \strng{namehash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
-      \strng{fullhash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
-      \strng{bibnamehash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
-      \strng{authorbibnamehash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
-      \strng{authornamehash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
-      \strng{authorfullhash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \strng{namehash}{5921cc97f07da91d5ea48cbf66955405}
+      \strng{fullhash}{5921cc97f07da91d5ea48cbf66955405}
+      \strng{bibnamehash}{5921cc97f07da91d5ea48cbf66955405}
+      \strng{authorbibnamehash}{5921cc97f07da91d5ea48cbf66955405}
+      \strng{authornamehash}{5921cc97f07da91d5ea48cbf66955405}
+      \strng{authorfullhash}{5921cc97f07da91d5ea48cbf66955405}
       \field{sortinit}{K}
       \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
       \field{extradatescope}{labelyear}
@@ -144,30 +230,30 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{The art of computer programming, volume 3: (2nd ed.) sorting and searching}
-      \field{year}{1998}
+      \field{title}{Dom tree}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://javascript.info/dom-nodes
+      \endverb
+      \verb{url}
+      \verb https://javascript.info/dom-nodes
+      \endverb
     \endentry
-    \entry{Pollefliet2011}{book}{}
+    \entry{Patel2018}{online}{}
       \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=7ca343ebcc6de1727ac22a1a847c21e5}{%
-           family={Pollefliet},
+        {{uniquename=0,uniquepart=base,hash=29ae67f6145524fafaec2accc96dbe39}{%
+           family={Patel},
            familyi={P\bibinitperiod},
-           given={Leen},
-           giveni={L\bibinitperiod},
+           given={Priyesh},
+           giveni={P\bibinitperiod},
            givenun=0}}%
       }
-      \list{location}{1}{%
-        {Gent}%
-      }
-      \list{publisher}{1}{%
-        {Academia Press}%
-      }
-      \strng{namehash}{7ca343ebcc6de1727ac22a1a847c21e5}
-      \strng{fullhash}{7ca343ebcc6de1727ac22a1a847c21e5}
-      \strng{bibnamehash}{7ca343ebcc6de1727ac22a1a847c21e5}
-      \strng{authorbibnamehash}{7ca343ebcc6de1727ac22a1a847c21e5}
-      \strng{authornamehash}{7ca343ebcc6de1727ac22a1a847c21e5}
-      \strng{authorfullhash}{7ca343ebcc6de1727ac22a1a847c21e5}
+      \strng{namehash}{29ae67f6145524fafaec2accc96dbe39}
+      \strng{fullhash}{29ae67f6145524fafaec2accc96dbe39}
+      \strng{bibnamehash}{29ae67f6145524fafaec2accc96dbe39}
+      \strng{authorbibnamehash}{29ae67f6145524fafaec2accc96dbe39}
+      \strng{authornamehash}{29ae67f6145524fafaec2accc96dbe39}
+      \strng{authorfullhash}{29ae67f6145524fafaec2accc96dbe39}
       \field{sortinit}{P}
       \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
       \field{extradatescope}{labelyear}
@@ -175,8 +261,123 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Schrijven van verslag tot eindwerk: do's en don'ts}
-      \field{year}{2011}
+      \field{title}{What exactly is Node.js?}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://medium.freecodecamp.org/what-exactly-is-node-js-ae36e97449f5
+      \endverb
+      \verb{url}
+      \verb https://medium.freecodecamp.org/what-exactly-is-node-js-ae36e97449f5
+      \endverb
+    \endentry
+    \entry{Rangpariya2019}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=cdcacf6a7c0b0e4755a3715de921ea1b}{%
+           family={Rangpariya},
+           familyi={R\bibinitperiod},
+           given={Nikhil},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cdcacf6a7c0b0e4755a3715de921ea1b}
+      \strng{fullhash}{cdcacf6a7c0b0e4755a3715de921ea1b}
+      \strng{bibnamehash}{cdcacf6a7c0b0e4755a3715de921ea1b}
+      \strng{authorbibnamehash}{cdcacf6a7c0b0e4755a3715de921ea1b}
+      \strng{authornamehash}{cdcacf6a7c0b0e4755a3715de921ea1b}
+      \strng{authorfullhash}{cdcacf6a7c0b0e4755a3715de921ea1b}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Evolution of JavaScript: Revolution of Web Development}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://medium.com/swlh/evolution-of-javascript-revolution-of-web-development-5df234a617e6
+      \endverb
+      \verb{url}
+      \verb https://medium.com/swlh/evolution-of-javascript-revolution-of-web-development-5df234a617e6
+      \endverb
+    \endentry
+    \entry{SimilarTech}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=9af49531380254750e102b218b19a42f}{%
+           family={SimilarTech},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {SimilarTech}%
+      }
+      \strng{namehash}{9af49531380254750e102b218b19a42f}
+      \strng{fullhash}{9af49531380254750e102b218b19a42f}
+      \strng{bibnamehash}{9af49531380254750e102b218b19a42f}
+      \strng{authorbibnamehash}{9af49531380254750e102b218b19a42f}
+      \strng{authornamehash}{9af49531380254750e102b218b19a42f}
+      \strng{authorfullhash}{9af49531380254750e102b218b19a42f}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{NodeJs Vs PHP}
+      \verb{urlraw}
+      \verb https://www.similartech.com/compare/nodejs-vs-php
+      \endverb
+      \verb{url}
+      \verb https://www.similartech.com/compare/nodejs-vs-php
+      \endverb
+    \endentry
+    \entry{Javascript2019}{manual}{}
+      \list{organization}{1}{%
+        {Mozilla}%
+      }
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labeltitlesource}{title}
+      \field{title}{What is JavaScript?}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction#What_is_JavaScript
+      \endverb
+      \verb{url}
+      \verb https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction#What_is_JavaScript
+      \endverb
+    \endentry
+    \entry{Wiley2016}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=b509b361f8d7741155032e8ddc8e6caf}{%
+           family={Wiley},
+           familyi={W\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{b509b361f8d7741155032e8ddc8e6caf}
+      \strng{fullhash}{b509b361f8d7741155032e8ddc8e6caf}
+      \strng{bibnamehash}{b509b361f8d7741155032e8ddc8e6caf}
+      \strng{authorbibnamehash}{b509b361f8d7741155032e8ddc8e6caf}
+      \strng{authornamehash}{b509b361f8d7741155032e8ddc8e6caf}
+      \strng{authorfullhash}{b509b361f8d7741155032e8ddc8e6caf}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{What is JavaScript?}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb http://media.wiley.com/product_data/excerpt/88/07645790/0764579088.pdf
+      \endverb
+      \verb{url}
+      \verb http://media.wiley.com/product_data/excerpt/88/07645790/0764579088.pdf
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

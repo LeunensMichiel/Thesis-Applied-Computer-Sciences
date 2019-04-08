@@ -1,28 +1,17 @@
 % Encoding: UTF-8
-@book{Knuth1998,
- author = {Knuth, Donald E.},
- title = {The art of computer programming,  volume 3: (2nd ed.) sorting and searching},
- year = {1998},
- publisher = {Addison Wesley Longman Publishing Co., Inc.},
- address = {Redwood City, CA, USA}
-}
 
-@book{Pollefliet2011,
-  author = {Pollefliet, Leen},
-  title = {Schrijven van verslag tot eindwerk: do's en don'ts},
-  year = {2011},
-  publisher = {Academia Press},
-  address = {Gent}
-}
-
-@article{Creeger2009,
-  author = {Creeger, Mache},
-  journal = {Communications of the ACM},
-  number = {8},
-  pages = {50--56},
-  title = {{CTO Roundtable: Cloud Computing}},
-  volume = {52},
-  year = {2009}
+@InProceedings{Runtime2017,
+  author    = {Davide Ancona and Luca Franceschini and Giorgio Delzanno and Maurizio Leotta and Marina Ribaudo and Filippo Ricca},
+  title     = {Towards Runtime Monitoring of Node.js and Its Application to the Internet of Things},
+  booktitle = {Proceedings First Workshop on Architectures, Languages and Paradigms for IoT, ALP4IoT@iFM 2017, Turin, Italy, September 18, 2017.},
+  year      = {2017},
+  pages     = {27--42},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1802-01790},
+  crossref  = {DBLP:journals/corr/abs-1802-00976},
+  doi       = {10.4204/EPTCS.264.4},
+  timestamp = {Wed, 12 Sep 2018 01:05:14 +0200},
+  url       = {https://doi.org/10.4204/EPTCS.264.4},
 }
 
 @Article{Alhamazani2013,
@@ -136,7 +125,7 @@
   title        = {What is JavaScript?},
   organization = {Mozilla},
   year         = {2019},
-  url          = {https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript},
+  url          = {https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction#What_is_JavaScript},
 }
 
 @Electronic{Rangpariya2019,
@@ -144,6 +133,50 @@
   year   = {2019},
   title  = {Evolution of JavaScript: Revolution of Web Development},
   url    = {https://medium.com/swlh/evolution-of-javascript-revolution-of-web-development-5df234a617e6},
+}
+
+@Electronic{Wiley2016,
+  author       = {Wiley},
+  year         = {2016},
+  title        = {What is JavaScript?},
+  organization = {Wiley},
+  url          = {http://media.wiley.com/product_data/excerpt/88/07645790/0764579088.pdf},
+}
+
+@Electronic{Kantor2017,
+  author       = {Ilya Kantor},
+  year         = {2017},
+  title        = {Dom tree},
+  organization = {javascript.info},
+  url          = {https://javascript.info/dom-nodes},
+}
+
+@Electronic{Patel2018,
+  author = {Priyesh Patel},
+  year   = {2018},
+  title  = {What exactly is Node.js?},
+  url    = {https://medium.freecodecamp.org/what-exactly-is-node-js-ae36e97449f5},
+}
+
+@Electronic{Chandrayan2017,
+  author = {Pramod Chandrayan},
+  year   = {2017},
+  title  = {All About Node.js you wanted to know},
+  url    = {https://codeburst.io/all-about-node-js-you-wanted-to-know-25f3374e0be7},
+}
+
+@Electronic{SimilarTech,
+  author       = {SimilarTech},
+  title        = {NodeJs Vs PHP},
+  organization = {SimilarTech},
+  url          = {https://www.similartech.com/compare/nodejs-vs-php},
+}
+
+@Misc{,
+  author = {Mehmet BAT},
+  title  = {Infographic on Node.js},
+  year   = {2016},
+  url    = {https://coderwall.com/p/_ukoeg/infographic-on-node-js},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
