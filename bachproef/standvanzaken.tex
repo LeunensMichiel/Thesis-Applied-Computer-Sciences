@@ -230,34 +230,136 @@ Dankzij monitoring kan een applicatie draaiende gehouden worden, of kan een IT-m
 \subsection{Monitoring, Node.js en Express}
 \label{sec:monitoringNodeExpress}
 
-In de vorige hoofdstukken werd de kracht aangehaald van Node's npm package manager en Express's middleware. Monitoringssoftware kan effectief worden geïnjecteerd in Express als middleware, wat ons zeer veel mogelijkheden schenkt. Zo kan van elke API Call enorm veel info worden opgevraagd, zoals foutboodschappen, geolocatie, cpu-verbruik en zoveel meer, wat opnieuw bewijst dat middleware van Express en het asynchrone gedrag van Node.js zeer krachtige functionaliteiten zijn. Er bestaan al enkele monitoringsmiddleware voor Express, maar geen software dat aan de vereisten voldoet van Kayzr. Hiervoor wordt in het volgend hoofdstuk nog wat onderzoek naar gedaan, maar we sommen alvast enkele populaire packages op.
+In de vorige hoofdstukken werd de kracht aangehaald van Node's npm package manager en Express's middleware. Monitoringssoftware kan effectief worden geïnjecteerd in Express als middleware, wat ons zeer veel mogelijkheden schenkt. Zo kan van elke API Call enorm veel info worden opgevraagd, zoals foutboodschappen, geolocatie, cpu-verbruik en zoveel meer, wat opnieuw bewijst dat middleware van Express en het asynchrone gedrag van Node.js zeer krachtige functionaliteiten zijn. Er bestaan al enkele monitoringsmiddleware voor Express, maar geen software dat aan de vereisten voldoet van Kayzr. Hiervoor wordt in het volgend hoofdstuk nog wat onderzoek naar gedaan, maar we sommen alvast enkele populaire packages en standalone software op.
 
 \subsection{Tools}
 \label{sec:tools}
 
+Hier worden enkele middleware tools beschreven. Alle info hieronder beschreven is terug te vinden op npm of op de respectievelijke website van de tool. Tools die we hebben weggelaten zijn tools die onrelevant zijn voor Kayzr, niet meer ondersteund worden in de voorbije twee jaar of niet populair genoeg zijn om een goede ondersteuning aan te bieden. 
+
 \subsubsection{Morgan}
 \label{sec:morgan}
+
+Morgan is een http request logger middleware voor Express en Node.js, en wordt gebruikt om details van een request object te loggen. Morgan komt standaard gratis meegeleverd met Express, en is daarom één van de populairdere tools. Het is niet krachtig, maar eenvoudig en efficiënt om snel enkele kleine zaken te weergeven aan de administrator.
+
+Enkele voorbeelden van logbare zaken zijn.
+
+\begin{itemize}
+	\item Remote Address
+	\item Remote User
+	\item HTTP Method (GET, POST,...)
+	\item URL
+	\item Statuscode
+	\item Request header
+	\item Result header
+	\item Response-time
+	\item ...
+\end{itemize}
 
 \subsubsection{Express-Status-Monitor}
 \label{sec:statusMonitor}
 
-\subsubsection{New Relic}
-\label{sec:newRelic}
+Een eenvoudige monitor om simpele metingen van een Node Server gemaakt met Express te weergeven. Deze tool analyseert onderstaande data en kan deze in mooie lijngrafieken visualiseren. Deze tool is gratis te downloaden via npm.
+
+\begin{itemize}
+	\item CPU-verbruik
+	\item Geheugen-verbruik
+	\item Response-time
+	\item Requests per seconde
+	\item Load average
+	\item Status codes
+\end{itemize}
 
 \subsubsection{Prometheus}
 \label{sec:prometheus}
 
-\subsubsection{Stackify Retrace}
+Prometheus is een open-source, gratis monitor voor Node.js dat uitblinkt in data-compressie en het snel opvragen van tijd-series data. Deze tool is zeer handig voor statistische analyse van een Node.js server en diens metingen. Ook is deze tool in staat om ontwikkelaars te verwittigen bij het bereiken van een bepaalde ingestelde limiet (zoals bijvoorbeeld het oververhitten van een processorkern na een bepaalde tijdsperiode). Het is een krachtigere versie van Express-Status-Monitor, maar wordt voor andere doeleinden gebruikt. Indien statistische analyses gemaakt willen worden, is dit één van de go-to tools, al zit er een grote leercurve achter.
+
+Bedrijven die gebruik maken van Prometheus zijn onder andere DigitalOcean, Docker, Soundcloud, Argus en veel meer.
+
+\subsubsection{New Relic}
+\label{sec:newRelic}
+
+New Relic is een betalende monitoringssoftware gemaakt door New Relinc, Inc. Het ondersteunt Node.js servers maar kan ook gebruikt worden voor Ruby, Java, PHP, .NET, Python en Go. Ook is de ondersteuning met andere frameworks zeer uitgebreid, aangezien het databanken en platformen zoals mongoDB, Redis, MySQL, Express, Http, KrakenJs en nog veel meer ondersteunt. 
+
+New Relic ondersteunt de basisfunctionaliteiten van Express-Status-Monitor en morgan, breidt deze wat meer uit en ondersteunt volgende zaken bovenop:
+
+\begin{itemize}
+	\item Service Maps geeft een mooi dashboard-overzicht van de server
+	\item Fouten opsporen tot op de exacte lijn van ontstaan en hulpmiddelen om deze fouten te vinden
+	\item Database-monitoring en meer
+	\item Applicatie-monitoring en meer
+	\item DevOps Team Collaboratie
+	\item ...
+\end{itemize}
+
+We gaan niet te diep in op de functionaliteiten van New Relic, aangezien dit niet binnen de behoeften ligt van Kayzr. New Relic kent enorm veel functionaliteiten, maar daar hangt dan ook een zeer hoog prijskaartje aan. Op het moment van schrijven betaalt men per server maandelijks tussen de \textbf{\euro17.00} en \textbf{\euro600.00.} Aangezien Kayzr ongeveer 50 verschillende servers hebben, is dit onbetaalbaar. Ook bevat dit veel functionaliteiten dat ze niet nodig hebben, wat het de investering niet waard maakt.
+
+Bedrijven die New Relic gebruiken zijn Mlbam, Ryanair, Hearst, REI, Condé Nast...
+
+\subsubsection{Retrace}
 \label{sec:retrace}
+
+Retrace, een monitoringsoplossing van Stackify, probeert zich te onderscheiden van de andere oplossingen door meer features aan te bieden in één strakke applicatie dat een heel stuk goedkoper is dan de concurrentie. Naast Node.js ondersteunen ze ook .NET, PHP, Ruby en Java. Hun top-features zijn als volgt:
+
+\begin{itemize}
+	\item App Performance Monitoring, een krachtige tool dat trage hindernissen van een applicatie kan opsporen, zoals sql queries, dependencies, requests,...
+	\item Centralized Logging: Alle logs van verschillende frameworks zijn beschikbaar op één plek.
+	\item Geavanceerde Error Tracking zorgt ervoor dat fouten opsporen eenvoudiger wordt, dankzij gerelateerde logs, exception rates, identificatietools en meer.
+	\item Dankzij Code Profiling kan op een lichte manier gekeken worden naar wat een applicatie aan het doen is op elk moment. Dit is waar Retrace in uitblinkt, vanwaar de naam ook vandaan kom, aangezien alles op te zoeken valt van code dat wordt uitgevoerd.
+	\item Ondersteuning voor Server Metingen, waardoor alle servers en applicaties tegelijkertijd in de oog gehouden kunnen worden. Ook ondersteunt het notificaties voor wanneer er fouten of waarschuwingen zouden voorkomen.
+\end{itemize}
+
+Retrace kan ook geïntegreerd worden met vele bestaande tools waaronder Jira en Slack, waar Kayzr enorm gebruik van maakt. Op het eerste zicht lijkt Retrace een goede oplossing, maar daar komen we later nog op terug. Retrace kent een prijskaartje van \textbf{\euro50} per maand, al kan dit voor smalle en preproductie servers verlaagd worden naar \textbf{\euro10-\euro25}. Dit komt een pak goedkoper uit dan New Relic, maar kan afhankelijk van het aantal servers nog steeds prijzig uitkomen voor een start-up. Retrace is echter relatief nieuw, sinds 2017, en wordt nog niet gebruikt bij zeer grote bedrijven.
 
 \subsubsection{Dynatrace}
 \label{sec:dynatrace}
 
+Dynatrace van Dynatrace LLC is opnieuw een enorm grote tool met een uitgebreid pakket van hulpmiddelen voor een server. Dynatrace blinkt uit in het ondersteunen van wel liefst meer dan 130 technologieën en 63 integraties, en wordt regelmatig uitgebreid. Ze ondersteunen technologieën van databases en cloud infrastructuren tot webtechnologieën en veel meer. Enkele functies:
+
+\begin{itemize}
+	\item Een enorm sterke User Interface met een zeer mooi en krachtig dashboard.
+	\item \textit{Alle} soorten performantiemetingen bekijken in real-time en meer. Zelfs de Node.js event loops.
+	\item Node.js details bekijken zoals Heap Memory, Garbage collectoin time, web requests, response-time, crashes, throughput en veel meer.
+	\item Dynatrace is in staat om problemen op te sporen tot code level, rekening houdend met gemonitorde heap en geheugen metingen en tal van andere middelen. Het kan zelfs fouten opsporen dat niet afkomstig is van Node.js
+	\item Handige visualisatiemiddelen om dependencies en applicaties overzichtelijk te houden
+	\item Database Queries monitoring
+	\item Enorm veel meer functies voor de gehele IT-infrastructuur
+\end{itemize}
+
+Deze software wordt gebruikt door Adobe, Samsung, Ebay, Experian en meer, wat meteen grote klanten zijn. Een van de grootste spelers, maar opnieuw met een veel te groot prijskaartje van \euro216 per server per maand.
+
 \subsubsection{PM2}
 \label{sec:pm2}
 
+PM2 is één van de populairste tools in Node.js dat gratis gebruikt kan worden om de server te monitoren en meer. Beschikbaar via npm, is dit binnen de minuut geïnstalleerd. In tegenstelling tot de vorige betalende software, is PM2 speciaal ontwikkelt door de Node Community voor Node.js. PM2 kent de volgende features:
 
+\begin{itemize}
+	\item Watch and Reload
+	\item Log management
+	\item Max memory reload
+	\item Startup Scripts
+	\item \textbf{monitoring}
+	\item Cluster Mode
+	\item Hot reload
+	\item Keymetrics monitoring
+	\item Procesbeheer
+	\item ...
+\end{itemize}
 
+PM2 kent vele functies, maar kent ook een betalende PM2 Plus versie. Deze versie kost \euro\textbf{79} per server per maand, wat ook al meteen buiten de prijsklasse valt van Kayzr, maar is echter speciaal gemaakt voor monitoring. Het enige nadeel aan de gratis versie van PM2, is dat deze voor Kayzr net niet genoeg functies bevat. Realtime logs, exception tracking en histogrammen van de data maakt het meteen een enorm duur opstapje.
+
+\section{Kayzr's Probleem}
+\label{sec:kayzrProblem}
+
+Kayzr's probleem geldt als volgt: Kayzr's data staat op verschillende servers verspreid, en wenst deze data te centraliseren. Zo hoeven ze niet voor sommige zaken naar Google App Engine te gaan, andere naar Google Cloud Service, andere zaken in Morgan, of simpelweg de Node Console, enzovoort. Dit zou het best kunnen opgelost worden via een Express middleware dat alle data verzamelt, van geolocatie tot foutmeldingen, en omzet in .json formaat. Deze .json zou dan kunnen uitgelezen worden om zo een mooie visualisatie van de opgevangen data te hebben. Men zou het kunnen aanzien als een enorm versimpelde versie van alle voorgaande betalende monitoring tools. 
+
+Monitoringssoftware is te duur en veel te uitgebreid voor hen, maar de gratis bestaande tools op npm zijn te primitief, dus hebben ze de opdracht gegeven om iets te ontwikkelen dat het debugproces aanzienlijk zou kunnen verhogen. 
+
+\subsection{Effectieve requirements}
+\label{sec:requirements}
+
+Hier komen de requirements van Kayzr. 
 
 
 

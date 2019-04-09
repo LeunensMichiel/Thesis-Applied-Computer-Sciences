@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.2)  8 APR 2019 16:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.2)  9 APR 2019 03:27
 entering extended mode
 **./bachproef-tin.tex
 (bachproef-tin.tex
@@ -2195,7 +2195,7 @@ LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/pag/b/n' tried instead on input line 37.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 37.
-<img/dom.jpg, id=191, 491.8375pt x 349.305pt>
+<img/dom.jpg, id=197, 491.8375pt x 349.305pt>
 File: img/dom.jpg Graphic file (type jpg)
 <use img/dom.jpg>
 Package pdftex.def Info: img/dom.jpg  used on input line 45.
@@ -2298,7 +2298,7 @@ Package babel Info: Redefining dutch shorthand "|
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 93.
  [18]
-<img/trend.png, id=226, 867.24pt x 517.935pt>
+<img/trend.png, id=232, 867.24pt x 517.935pt>
 File: img/trend.png Graphic file (type png)
 <use img/trend.png>
 Package pdftex.def Info: img/trend.png  used on input line 103.
@@ -2432,28 +2432,91 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 235.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 235.
-) (methodologie.tex
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 5.
+(babel)             in language  on input line 244.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 5.
+(babel)             in language  on input line 244.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 5.
+(babel)             in language  on input line 244.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 5.
+(babel)             in language  on input line 244.
  [25]
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 5.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 5.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 5.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 5.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 248.
 
-[26]
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 248.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 284.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 284.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 284.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 284.
+ [26]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 296.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 311.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 311.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 311.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 311.
+
+[27]
+Underfull \vbox (badness 1990) has occurred while \output is active []
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 343.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 343.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 343.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 343.
+ [28]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 352.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 352.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 359.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 359.
+)
+(methodologie.tex
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 5.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 5.
+ [29]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 5.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 5.
+ [30
+
+]
 Hoofdstuk 3.
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 5.
@@ -2468,9 +2531,7 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 5.
- [27
-
-]
+ [31]
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining dutch shorthand "~
@@ -2479,7 +2540,7 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 5.
- [28
+ [32
 
 ]
 Hoofdstuk 4.
@@ -2496,7 +2557,7 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 137.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 137.
- [29]
+ [33]
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 137.
 Package babel Info: Redefining dutch shorthand "~
@@ -2505,7 +2566,7 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 137.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 137.
- [30
+ [34
 
 ]
 B"ylage A.
@@ -2536,17 +2597,11 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 16.
-[31]
+[35]
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 26.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 32.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 41.
 Package babel Info: Redefining dutch shorthand "~
@@ -2562,7 +2617,7 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 45.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 45.
- [32]
+ [36]
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 49.
 Package babel Info: Redefining dutch shorthand "~
@@ -2577,7 +2632,7 @@ Package babel Info: Redefining dutch shorthand "|
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 150.
 
-[33]
+[37]
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 150.
 Package babel Info: Redefining dutch shorthand "~
@@ -2586,7 +2641,7 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 150.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 150.
- [34
+ [38
 
 ]
 Package babel Info: Redefining dutch shorthand "|
@@ -2601,7 +2656,7 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 150.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 150.
- [35]
+ [39]
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 153.
 Package babel Info: Redefining dutch shorthand "~
@@ -2610,7 +2665,7 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 153.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 153.
- [36]
+ [40]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
  (bachproef-tin.aux)
@@ -2622,25 +2677,27 @@ Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
  ) 
 Here is how much of TeX's memory you used:
- 40163 strings out of 493305
- 734634 string characters out of 3138875
- 1296495 words of memory out of 3000000
- 42751 multiletter control sequences out of 15000+200000
- 614817 words of font info for 248 fonts, out of 3000000 for 9000
+ 40187 strings out of 493305
+ 734900 string characters out of 3138875
+ 1296587 words of memory out of 3000000
+ 42760 multiletter control sequences out of 15000+200000
+ 618092 words of font info for 255 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,12n,65p,1937b,3825s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\michi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ectt0800.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\michi\App
+Data\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt0800.pk> <C:\Users
 \michi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/eurosym/feymr10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/urw/avantgar/uagd8a.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/urw/avantgar/uagk8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ti
-mes/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on bachproef-tin.pdf (38 pages, 345111 bytes).
+ram Files/MiKTeX 2.9/fonts/type1/public/eurosym/feybr10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/eurosym/feymr10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/urw/avantgar/uagd8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
+/avantgar/uagk8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/urw/times/utmri8a.pfb>
+Output written on bachproef-tin.pdf (42 pages, 369256 bytes).
 PDF statistics:
- 626 PDF objects out of 1000 (max. 8388607)
- 134 named destinations out of 1000 (max. 500000)
- 49932 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 663 PDF objects out of 1000 (max. 8388607)
+ 140 named destinations out of 1000 (max. 500000)
+ 50460 words of extra memory for PDF output out of 51595 (max. 10000000)
 
