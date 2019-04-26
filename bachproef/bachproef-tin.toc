@@ -19,7 +19,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.2}Waarom JavaScript?}{16}{subsection.2.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Dynamisch}{16}{section*.6}
+\contentsline {subsubsection}{Dynamisch en weakly-typed}{16}{section*.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{DOM-manipulatie}{17}{section*.7}
 \defcounter {refsection}{0}\relax 
@@ -37,7 +37,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Waarom Node.js?}{19}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{nieuw}{19}{section*.12}
+\contentsline {subsubsection}{nieuw}{20}{section*.12}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Asynchroon}{20}{section*.13}
 \defcounter {refsection}{0}\relax 
@@ -69,7 +69,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.5.2}Monitoring, Node.js en Express}{25}{subsection.2.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.3}Tools}{25}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.3}Tools}{26}{subsection.2.5.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Morgan}{26}{section*.20}
 \defcounter {refsection}{0}\relax 
@@ -83,7 +83,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Dynatrace}{28}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{PM2}{28}{section*.26}
+\contentsline {subsubsection}{PM2}{29}{section*.26}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.6}Kayzr's Probleem}{29}{section.2.6}
 \defcounter {refsection}{0}\relax 

@@ -1,0 +1,48 @@
+% Encoding: windows-1252
+
+@InProceedings{Runtime2017,
+  author    = {Davide Ancona and Luca Franceschini and Giorgio Delzanno and Maurizio Leotta and Marina Ribaudo and Filippo Ricca},
+  title     = {Towards Runtime Monitoring of Node.js and Its Application to the Internet of Things},
+  booktitle = {Proceedings First Workshop on Architectures, Languages and Paradigms for IoT, ALP4IoT@iFM 2017, Turin, Italy, September 18, 2017.},
+  year      = {2017},
+  pages     = {27--42},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1802-01790},
+  crossref  = {DBLP:journals/corr/abs-1802-00976},
+  doi       = {10.4204/EPTCS.264.4},
+  timestamp = {Wed, 12 Sep 2018 01:05:14 +0200},
+  url       = {https://doi.org/10.4204/EPTCS.264.4},
+}
+
+@ARTICLE{Doll1954,
+  author = {Doll, Richard and Hill, A Bradford},
+  title = {The mortality of doctors in relation to their smoking habits: a preliminary
+	report},
+  journal = {British Medical Journal},
+  year = {1954},
+  volume = {328},
+  pages = {1529-1533},
+  number = {7455},
+  owner = {jbuy519},
+  timestamp = {2014.03.28}
+}
+
+@BOOK{Moore2002,
+  title = {Introduction to the Practice of Statistics},
+  publisher = {W. H. Freeman},
+  year = {2002},
+  author = {Moore, David and McCabe, George},
+  owner = {jbuy519},
+  timestamp = {2014.01.28}
+}
+
+@BOOK{Smits2011,
+  title = {Onderzoek met SPSS en Excel},
+  publisher = {Pearson Education},
+  year = {2011},
+  author = {Smits, Johan and Edens, Ronald},
+  owner = {jbuy519},
+  timestamp = {2014.01.23}
+}
+
+@Comment{jabref-meta: databaseType:biblatex;}

@@ -215,4 +215,12 @@
   url          = {https://cs.anu.edu.au/courses/comp3120/public_docs/Borland_Whitepaper_v7_AgileTesting.pdf},
 }
 
+@Article{Rouse2018,
+  author  = {Margaret Rouse},
+  title   = {IT monitoring},
+  journal = {How to achieve application performance in ops},
+  year    = {2018},
+  url     = {https://searchitoperations.techtarget.com/definition/IT-monitoring},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

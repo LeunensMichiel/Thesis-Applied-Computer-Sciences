@@ -1,22 +1,22 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [0] Config.pm:305> INFO - Logfile is 'bachproef-tin.blg'
-[20] biber-MSWIN64:313> INFO - === 
-[41] Biber.pm:371> INFO - Reading 'bachproef-tin.bcf'
-[107] Biber.pm:857> INFO - Found 16 citekeys in bib section 0
-[117] Biber.pm:3976> INFO - Processing section 0
-[126] Biber.pm:4136> INFO - Looking for bibtex format file 'bachproef-tin.bib' for section 0
-[132] bibtex.pm:1500> INFO - LaTeX decoding ...
-[159] bibtex.pm:1316> INFO - Found BibTeX data source 'bachproef-tin.bib'
-[174] Utils.pm:193> WARN - month field 'Oct' in entry 'Chaniotis2015' is not an integer - this will probably not sort properly.
-[196] Utils.pm:193> WARN - month field 'Sep.' in entry 'Maentylae2013' is not an integer - this will probably not sort properly.
-[207] bibtex.pm:1500> INFO - LaTeX decoding ...
-[213] bibtex.pm:1316> INFO - Found BibTeX data source '../voorstel/voorstel.bib'
-[213] Utils.pm:193> WARN - Duplicate entry key: 'Runtime2017' in file '../voorstel/voorstel.bib', skipping ...
-[215] Utils.pm:193> WARN - I didn't find a database entry for crossref 'DBLP:journals/corr/abs-1802-00976' in entry 'Runtime2017' - ignoring (section 0)
-[234] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
-[234] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[234] Biber.pm:3804> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'nl-NL'
-[234] Biber.pm:3810> INFO - No sort tailoring available for locale 'nl-NL'
-[248] bbl.pm:617> INFO - Writing 'bachproef-tin.bbl' with encoding 'UTF-8'
-[256] bbl.pm:720> INFO - Output to bachproef-tin.bbl
-[259] Biber.pm:110> INFO - WARNINGS: 4
+[36] biber-darwin:313> INFO - === Fri Apr 26, 2019, 17:56:15
+[59] Biber.pm:371> INFO - Reading 'bachproef-tin.bcf'
+[155] Biber.pm:857> INFO - Found 17 citekeys in bib section 0
+[168] Biber.pm:3976> INFO - Processing section 0
+[180] Biber.pm:4136> INFO - Looking for bibtex format file 'bachproef-tin.bib' for section 0
+[182] bibtex.pm:1500> INFO - LaTeX decoding ...
+[219] bibtex.pm:1316> INFO - Found BibTeX data source 'bachproef-tin.bib'
+[240] Utils.pm:193> WARN - month field 'Oct' in entry 'Chaniotis2015' is not an integer - this will probably not sort properly.
+[273] Utils.pm:193> WARN - month field 'Sep.' in entry 'Maentylae2013' is not an integer - this will probably not sort properly.
+[283] bibtex.pm:1500> INFO - LaTeX decoding ...
+[291] bibtex.pm:1316> INFO - Found BibTeX data source '../voorstel/voorstel.bib'
+[292] Utils.pm:193> WARN - Duplicate entry key: 'Runtime2017' in file '../voorstel/voorstel.bib', skipping ...
+[292] Utils.pm:193> WARN - I didn't find a database entry for crossref 'DBLP:journals/corr/abs-1802-00976' in entry 'Runtime2017' - ignoring (section 0)
+[320] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[320] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[320] Biber.pm:3804> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'nl-NL'
+[321] Biber.pm:3810> INFO - No sort tailoring available for locale 'nl-NL'
+[340] bbl.pm:617> INFO - Writing 'bachproef-tin.bbl' with encoding 'UTF-8'
+[351] bbl.pm:720> INFO - Output to bachproef-tin.bbl
+[351] Biber.pm:110> INFO - WARNINGS: 4

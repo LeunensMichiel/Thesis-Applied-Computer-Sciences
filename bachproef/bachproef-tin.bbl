@@ -135,6 +135,31 @@
       \verb https://coderwall.com/p/_ukoeg/infographic-on-node-js
       \endverb
     \endentry
+    \entry{middleware}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=c925beebe3af2409954457d75214afb9}{%
+           family={Brandt},
+           familyi={B\bibinitperiod},
+           given={Lee},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c925beebe3af2409954457d75214afb9}
+      \strng{fullhash}{c925beebe3af2409954457d75214afb9}
+      \strng{bibnamehash}{c925beebe3af2409954457d75214afb9}
+      \strng{authorbibnamehash}{c925beebe3af2409954457d75214afb9}
+      \strng{authornamehash}{c925beebe3af2409954457d75214afb9}
+      \strng{authorfullhash}{c925beebe3af2409954457d75214afb9}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Working of middleware}
+      \field{year}{2018}
+    \endentry
     \entry{CHAKRAVORTY2014536}{article}{}
       \name{author}{3}{}{%
         {{uniquename=0,uniquepart=base,hash=a996bbfe467418d3a8167af83225b772}{%

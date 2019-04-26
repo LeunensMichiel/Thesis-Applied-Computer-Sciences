@@ -22,20 +22,21 @@
 
 %Uit je probleemstelling moet duidelijk zijn dat je onderzoek een meerwaarde heeft voor een concrete doelgroep. De doelgroep moet goed gedefinieerd en afgelijnd zijn. Doelgroepen als ``bedrijven,'' ``KMO's,'' systeembeheerders, enz.~zijn nog te vaag. Als je een lijstje kan maken van de personen/organisaties die een meerwaarde zullen vinden in deze bachelorproef (dit is eigenlijk je steekproefkader), dan is dat een indicatie dat de doelgroep goed gedefinieerd is. Dit kan een enkel bedrijf zijn of zelfs één persoon (je co-promotor/opdrachtgever).
 
-Het zoeken naar fouten in je software kan een frustrerend, hectisch en vermoeiend proces zijn. Daarom zijn, als ontwikkelaar zijnde, toepassingen die dat proces voor jou kunnen automatiseren of beter analyseren altijd welkom. Kayzr, een Belgische start-up die zich bezighoudt met het mainstream maken van E-Sports in de Benelux en het organiseren van toernooien ervan, wenst zulke software zodat hun productieproces versneld kan worden. Het concreet probleem gaat als volgt: Kayzr's processen werden op verschillende plekken gemonitord. De tools zijn incompleet, en daardoor heeft men een gefragmenteerde collectie aan logs, foutmeldingen, informatie, enz...  Per API call moet men foutmeldingen controleren in de terminal, IP-adressen in het Google Cloud platform, andere nuttige informatie staat dan weer eens ergens anders opgeslagen. Hierdoor duurt het lang om fouten te analyseren en te komen tot een mogelijke oplossing. Een dergelijke tool zoals PM2, een monitoringstoepassing met veel meer functionaliteiten, meer dan dat ze nodig hadden, is meteen een kost dat ze zich niet kunnen permitteren. Aan \euro 50 per server per maand, kost hen dit met een vijftigtal servers al te veel. Deze kost zou schalen zeer moeizaam of zelfs onmogelijk maken.
+Het zoeken naar fouten in je software kan een frustrerend, hectisch en vermoeiend proces zijn. Daarom zijn, als ontwikkelaar zijnde, toepassingen die dat proces voor jou kunnen automatiseren of beter analyseren altijd welkom. Kayzr, een Belgische start-up die zich bezighoudt met het mainstream maken van E-Sports in de Benelux en het organiseren van toernooien ervan, wenst zulke software zodat hun productieproces versneld kan worden. Het concreet probleem gaat als volgt: Kayzr's processen werden op verschillende plekken gemonitord. De tools zijn incompleet, en daardoor heeft men een gefragmenteerde collectie aan logs, foutmeldingen, informatie, enz...  Per API call moet men foutmeldingen controleren in de terminal, IP-adressen opzoeken in Google Cloud platform en andere nuttige informatie staat dan weer eens ergens anders opgeslagen. Hierdoor duurt het lang om fouten te analyseren en te komen tot een mogelijke oplossing. Een degelijke tool zoals PM2, een monitoringstoepassing met veel meer functionaliteiten, meer dan dat Kayzr nodig heeft, is meteen een kost dat ze zich niet kunnen permitteren. Aan \euro 50 per server per maand, kost hen dit met een vijftigtal servers al te veel. Deze kost zou schalen zeer moeizaam of zelfs onmogelijk maken.
 
 \section{Onderzoeksvraag}
 \label{sec:onderzoeksvraag}
 
 %Wees zo concreet mogelijk bij het formuleren van je onderzoeksvraag. Een onderzoeksvraag is trouwens iets waar nog niemand op dit moment een antwoord heeft (voor zover je kan nagaan). Het opzoeken van bestaande informatie (bv. ``welke tools bestaan er voor deze toepassing?'') is dus geen onderzoeksvraag. Je kan de onderzoeksvraag verder specifiëren in deelvragen. Bv.~als je onderzoek gaat over performantiemetingen, dan 
-De onderzoeksvraag gaat dus als volgt: bestaat er een mogelijkheid om de monitoringstechnieken van Kayzr, en mogelijks andere bedrijven, op een goedkope manier te stroomlijnen en verbeteren binnen een NodeJS omgeving, zodat hun debugproces geoptimaliseerd kan worden? 
+De onderzoeksvraag gaat dus als volgt: bestaat er een mogelijkheid om de monitoringstechnieken van Kayzr, en mogelijks andere bedrijven, op een goedkope manier te stroomlijnen en te verbeteren binnen een NodeJS omgeving, zodat hun debugproces geoptimaliseerd kan worden? 
 
 
 \section{Onderzoeksdoelstelling}
 \label{sec:onderzoeksdoelstelling}
 
 %Wat is het beoogde resultaat van je bachelorproef? Wat zijn de criteria voor succes? Beschrijf die zo concreet mogelijk.
-Kayzr is tevreden met de toepassing en gaat in hun project hiervan gebruik maken. De gemiddelde tijd om een probleem op te lossen is gedaald en dit proces verloopt efficiënter. De data die per proces is verzameld kan op een goede manier gevisualiseerd worden zodat ze die ook voor andere doeleinden kunnen hanteren. 
+Kayzr is tevreden met de toepassing en gaat in hun project hiervan gebruik maken. De gemiddelde tijd om een probleem op te lossen is gedaald en dit proces verloopt efficiënter. De data die per proces is verzameld kan op een goede manier gevisualiseerd worden zodat deze ook voor andere doeleinden kan gehanteerd worden. Er kan meer data ontleed worden dan ervoor, en de software voldoet aan alle \hyperref[sec:requirements]{opgesomde requirements. }
+
 
 \section{Opzet van deze bachelorproef}
 \label{sec:opzet-bachelorproef}
@@ -44,11 +45,11 @@ Kayzr is tevreden met de toepassing en gaat in hun project hiervan gebruik maken
 % geven van de opbouw van de rest van de tekst. Deze sectie bevat al een aanzet
 % die je kan aanvullen/aanpassen in functie van je eigen tekst.
 
-De rest van deze bachelorproef is als volgt opgebouwd:
+Het vervolg van deze bachelorproef is als volgt opgebouwd:
 
-In Hoofdstuk~\ref{ch:stand-van-zaken} volgt een literatuurstudie dat een groot deel van Javascript en NodeJS, Express en middelware gaat omvatten
+In Hoofdstuk~\ref{ch:stand-van-zaken} volgt een stand van zaken over JavaScript, Node.js, Express en Express middleware. Ook wordt er onderzoek gedaan naar verschillende monitoringssoftware.
 
-In Hoofdstuk~\ref{ch:methodologie} bestuderen we het huidige proces. Hoe verloopt dit? Wat kan er beter? Wat kan er sneller? Welke functies moet de nieuwe toepassing bevatten? Na deze studie schrijven we software naargelang de requirements, en toetsen we die op verschillende factoren aan de oude processen.
+In Hoofdstuk~\ref{ch:methodologie} bestuderen we het huidige debug proces. Hoe verloopt dit? Wat kan er beter? Wat kan er sneller? Welke functies moet de nieuwe toepassing bevatten? Na deze studie schrijven we software naargelang de requirements, en toetsen we die op verschillende factoren aan de oude processen.
 
 % TODO: Vul hier aan voor je eigen hoofstukken, één of twee zinnen per hoofdstuk
 

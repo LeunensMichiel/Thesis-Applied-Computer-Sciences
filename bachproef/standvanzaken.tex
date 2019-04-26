@@ -20,7 +20,7 @@ Dit hoofdstuk bestaat uit een zeer uitgebreide literatuurstudie, waarin de kern 
 
 \section{Javascript}
 \label{sec:javascript}
-Javascript is een programmeertaal gemaakt voor het web, waarmee u statische webpagina's kan omzetten naar dynamische en interactieve websites. Doordat het een enorm krachtige scripttaal is dat speciaal werd ontwikkeld om de functionaliteiten van een doorsnee HTML/CSS-pagina uit te breiden, wordt het bijna onmogelijk om nog iets in te beelden dat niet geïmplementeerd kan worden m.b.v. Javascript. De taal is weakly-typed, functioneel, event-driven en dynamisch. JavaScript bevat een bibliotheek van standaardobjecten samen met specifieke taalelementen zoals operatoren, controlestructuren, enz... Deze kern of 'core' kan makkelijk uitgebreid worden met extra objecten waardoor men JavaScript makkelijk kan specifieren als \textit{Client-side JavaScript} en \textit{Server-side JavaScript}. Client-side JavaScript wordt bijvoorbeeld gebruikt om mooi, visueel, de toeters en bellen van de website mooi te maken, of om te reageren op muiskliks, en nog veel meer. Server-side JavaScript houdt zich eerder bezig met het achterliggende van een site, bijvoorbeeld om een webapplicatie te doen communiceren met een databank. Een zeer bekende en veel gebruikte Server-side JavaScript variant is Node.js, waarover later meer uitleg wordt gegeven. \autocite{Javascript2019}
+Javascript is een programmeertaal gemaakt voor het web, waarmee statische websites kunnen omgezet worden naar dynamische en interactieve websites. Doordat het een enorm krachtige scripttaal is dat speciaal werd ontwikkeld om de functionaliteiten van een doorsnee HTML/CSS-pagina uit te breiden, wordt het bijna onmogelijk om nog iets in te beelden dat niet geïmplementeerd kan worden m.b.v. Javascript. De taal is weakly-typed, functioneel, event-driven en dynamisch. JavaScript bevat een bibliotheek van standaardobjecten samen met specifieke taalelementen zoals operatoren, controlestructuren, enz... Deze kern of 'core' kan makkelijk uitgebreid worden met extra objecten waardoor men JavaScript makkelijk kan specifieren als \textit{Client-side JavaScript} en \textit{Server-side JavaScript}. Client-side JavaScript wordt bijvoorbeeld gebruikt om interactie met de gebruiker te verzorgen zoals muiskliks, keyboard-hits en nog veel meer. Server-side JavaScript houdt zich eerder bezig met het achterliggende van een site, bijvoorbeeld om een webapplicatie te doen communiceren met een databank. Een zeer bekende en veel gebruikte Server-side JavaScript variant is Node.js, waarover later meer uitleg wordt gegeven. \autocite{Javascript2019}
 
 \subsection{Tijdlijn van JavaScript}
 \label{sec:jsTimeline}
@@ -34,10 +34,10 @@ Netscape bracht nieuwere versies van JavaScript uit, maar Microsoft dreigde die 
 
 JavaScript is niets voor niets enorm populair, zelfs nog steeds na al die jaren, dankzij de vele voordelen dat de taal met zich meebrengt. En die lijst van voordelen wordt per iteratie alleen maar groter. Hieronder worden er enkele kernvoordelen opgesomd.
 
-\subsubsection{Dynamisch}
+\subsubsection{Dynamisch en weakly-typed}
 \label{sec:dynamic}
 
-Een dynamisch getypeerde taal slaat neer op het feit dat het type van waarden kunnen veranderen tijdens uitvoertijd. Dit betekent bijvoorbeeld dat een variable string plots kan gebruikt worden om een som te maken met een getal. Dit maakt uitvoertijd en compileertijd aanzienlijk sneller doordat er niet voortdurend controles moeten plaatsvinden. 
+Een dynamisch getypeerde taal slaat neer op het feit dat het type van waarden kan veranderen tijdens uitvoertijd. Dit betekent bijvoorbeeld dat een variabele string plots kan gebruikt worden om een som te maken met een getal. Dit maakt uitvoertijd en compileertijd aanzienlijk sneller doordat er niet voortdurend controles moeten plaatsvinden. Dit zorgt voor hoge performantie, maar slechte nauwkeurigheid.
 
 \subsubsection{DOM-manipulatie}
 \label{sec:DOM}
@@ -83,21 +83,21 @@ JavaScript wordt sinds ES5 ondersteund door alle moderne browsers! Of er nu in C
 \section{Node.js}
 \label{sec:nodeJs}
 
-Node.js is een open-source JavaScript runtime omgeving dat wordt gebruikt voor Server-side toepassingen. Node.js maakt het mogelijk, (of eerder \textit{makkelijker}), om JavaScript nu ook te gebruiken buiten websites maken. Aangezien JavaScript zo'n krachtige taal is, hadden de ontwikkelaars van Node.js een ding in gedachten: JavaScript niet enkel in de browsers, maar ook als alleenstaande applicatie. JavaScript sindsdien evenaren aan andere scripttalen, zoals Python. \textcite{Patel2018}
+Node.js is een open-source JavaScript runtime omgeving dat wordt gebruikt voor Server-side toepassingen. Node.js maakt het mogelijk, (of eerder \textit{makkelijker}), om JavaScript nu ook te gebruiken buiten websites maken. Aangezien JavaScript zo'n krachtige taal is, hadden de ontwikkelaars van Node.js een ding in gedachten: JavaScript niet enkel voor browsers, maar ook voor alleenstaande applicatie. Sindsdien evenaart JavaScript aan andere scripttalen, zoals Python. \textcite{Patel2018}
 
 \subsection{Tijdlijn van Node.js}
 \label{sec:nodeTimeline}
 Node.js' verhaal start in 2009, toen een ontwikkelaar genaamd Ryan Dahl het niet zo goed stelde met Apache Http Servers. 
 
-Zoals beschreven in \autocite{Chaniotis2015}, was (en is in grote mate nog steeds) Apache HTTP, in combinatie met PHP, jarenlang de go-to-taal om webapplicaties te laten communiceren met databases en server-side functionaliteiten toe te voegen aan webapplicaties, zoals authenticatie, file-en-ftpservers, logging en nog veel meer. PHP is echter nooit in het achterhoofd ontwikkelt geweest om hedendaagse, complexe webapplicaties te schrijven. Ten tweede was Apache incapabel om te schalen naar meerdere processorkernen, waardoor de performantie enorm daalde. PHP in combinatie met Apache was gewoonweg niet gemaakt voor de volgende generatie webapplicaties. Andere struikelblokken zijn cross-platform mobiele applicaties en real-time communicatie.
+Zoals beschreven in \autocite{Chaniotis2015}, was (en is in grote mate nog steeds) Apache HTTP, in combinatie met PHP, jarenlang de go-to-taal om webapplicaties te laten communiceren met databases en server-side functionaliteiten toe te voegen aan webapplicaties, zoals authenticatie, file-en-ftpservers, logging en nog veel meer. PHP is echter nooit in het achterhoofd ontwikkeld geweest om hedendaagse, complexe webapplicaties te schrijven. Ten tweede was Apache incapabel om te schalen naar meerdere processorkernen, waardoor de performantie enorm daalde. PHP in combinatie met Apache was gewoonweg niet gemaakt voor de volgende generatie webapplicaties. Andere struikelblokken zijn cross-platform mobiele applicaties en real-time communicatie.
 
-Meer en meer applicaties worden gemaakt met cross-platform compatibiliteit in het achterhoofd, aangezien de toestroming van verschillende nieuwe besturingssystemen en apparaten het meer en meer onmogelijk maken om native apps\footnote{Native Apps zijn applicaties die gemaakt worden met één besturingssysteem in het hoofd. Bv: Android, IOS.} te ontwikkelen. Hierdoor worden bibliotheken en frameworks ontwikkelt zoals React Native, Flutter, Xamarin, Ionic, PhoneGap, enz... die deze nadelen kunnen overbruggen. Deze zijn echter zo krachtig geworden en schenken zoveel nieuwe voordelen, dat server-side talen en frameworks zoals Apache HTTP/PHP eerder een bottleneck vormden. 
+Meer en meer applicaties worden gemaakt met cross-platform compatibiliteit in het achterhoofd, aangezien de toestroming van verschillende nieuwe besturingssystemen en apparaten het meer en meer onmogelijk maken om native apps\footnote{Native Apps zijn applicaties die gemaakt worden met één besturingssysteem in het hoofd. Bv: Android, IOS.} te ontwikkelen. Hierdoor worden bibliotheken en frameworks ontwikkeld zoals React Native, Flutter, Xamarin, Ionic, PhoneGap, enz... die deze nadelen kunnen overbruggen. Deze zijn echter zo krachtig geworden en schenken zoveel nieuwe voordelen, dat server-side talen en frameworks zoals Apache HTTP/PHP eerder een bottleneck vormden. 
 
-Real-time communicatie is nog een factor dat niet ondersteunt wordt door Apache. Apache was niet ontwikkelt om berichten te sturen naar de client-side. In de wereld van vandaag, waarin sociale media nog nooit zo'n grote invloed heeft gehad op ons dagelijks leven, is het haast ondenkbaar dat real-time communicatie niet zou kunnen bestaan. 
+Real-time communicatie is nog een factor dat niet ondersteund wordt door Apache. Apache was niet ontwikkeld om berichten te sturen naar de client-side. In de wereld van vandaag, waarin sociale media nog nooit zo'n grote invloed heeft gehad op ons dagelijks leven, is het haast ondenkbaar dat real-time communicatie niet zou kunnen bestaan. 
 
 Dit alles zorgde voor de ontwikkeling van Node.js. Dahl's project werd met open armen ontvangen. Na enkele struikelblokken, kende Node.js in 2011 voor het eerst het licht en wordt nu zo'n tien jaar later, gebruikt in vele moderne applicaties en is nog steeds één van de meest begeerde vaardigheden van een programmeur. \autocite{Patel2018}
 
-Hoewel Apache en PHP nog steeds overduidelijk op plaats één staan, hebben ze hun populariteit enkel nog te danken aan bedrijven die op verouderde software werken, en hun populariteit bij senior ontwikkelaars. PHP blijft een geliefde taal bij velen, maar we zien dat Node.js populariteit duidelijk die van Apache aan het inhalen is. \autocite{SimilarTech}
+Hoewel Apache en PHP nog steeds overduidelijk op plaats één staan, hebben ze hun populariteit enkel nog te danken aan bedrijven die op verouderde software werken, en hun populariteit bij senior ontwikkelaars. PHP blijft een geliefde taal bij velen, maar in \ref{fig:trend} zien we dat Node.js's populariteit duidelijk die van Apache aan het inhalen is. \autocite{SimilarTech}
 
 \begin{figure}[h]
 	\includegraphics[width=\linewidth]{trend.png}
@@ -114,24 +114,24 @@ Illustrator \textcite{Mehmet2016} toont op een illustratieve wijze de voordelen 
 \subsubsection{nieuw}
 \label{sec:new}
 
-JavaScript is relatief gezien een nieuwe taal dat voortdurend geüpdatet wordt. In tegenstelling tot traditionele server-talen zoals Python, PHP, enzovoort. Vele dialecten van JavaScript (zoals TypeScript, CoffeeScript, ClojureScript,...) compileren dan gewoonweg in JavaScript waardoor overschakelen zeer simpel wordt. Doordat Node ook in JavaScript geschreven is, maakt dit het makkelijker om de client-server-side-brug over te steken als frontend ontwikkelaar of vice versa. \autocite{ExpressMozilla}
+JavaScript is relatief gezien een nieuwe taal dat voortdurend geüpdatet wordt. In tegenstelling tot traditionele server-talen zoals Python, PHP, enzovoort. Vele dialecten van JavaScript (zoals TypeScript, CoffeeScript, ClojureScript,...) compileren dan gewoonweg in JavaScript waardoor overschakelen zeer simpel wordt. Doordat Node.js ook in JavaScript geschreven is, maakt dit het makkelijker om de client-server-side-brug over te steken als frontend ontwikkelaar of vice versa. \autocite{ExpressMozilla}
 
 \subsubsection{Asynchroon}
 \label{sec:async}
 
-Node.js is sterk afhankelijk van asynchrone en continue programmeerstijl. I/O-bewerkingen worden uitgevoerd door middel van oproepen naar asynchrone functies waarbij een callback moet worden doorgegeven om aan te geven hoe de berekening wordt voortgezet zodra de genoemde I/O-bewerking asynchroon is voltooid. Het Node.js executiemodel bestaat uit een hoofdgebeurtenislus die wordt uitgevoerd op een single-threaded proces. dankzij deze \textit{event loop} moet een Node.js server nooit wachten op antwoord, het kan gewoon blijven doordraaien na een oproep van een API Call en kan dankzij een notificatiesysteem op een later moment het antwoord terugsturen. Dit maakt Node.js enorm schaalbaar, in tegenstelling tot Apache dat slechts een gelimiteerd aantal threads kan starten om handelingen uit te voeren.
+Node.js is sterk afhankelijk van asynchrone en continue programmeerstijl. I/O-bewerkingen worden uitgevoerd door middel van oproepen naar asynchrone functies waarbij een callback moet worden doorgegeven om aan te geven hoe de berekening wordt voortgezet zodra de genoemde I/O-bewerking asynchroon is voltooid. Het Node.js executiemodel bestaat uit een hoofdgebeurtenislus die wordt uitgevoerd op een single-threaded proces. Met behulp van deze \textit{event loop} moet een Node.js server nooit wachten op antwoord, het kan gewoon blijven doordraaien na een oproep van een API Call en kan dankzij een notificatiesysteem op een later moment het antwoord terugsturen. Dit maakt Node.js enorm schaalbaar, in tegenstelling tot Apache dat slechts een gelimiteerd aantal threads kan starten om handelingen uit te voeren.
 
-Het is daarom niet altijd makkelijk om deze soort frameworks te debuggen, en het wordt uiteindelijk een uitdagende taak. Gelukkig zijn hiervoor dan ook weer verschillende hulpmiddelen en tools uitgebracht om dit te vereenvoudigen. Zoals hierboven vermeld in ~\autocite{Runtime2017}, kan asynchrone code subtiele bugs opleveren die niet meteen zichtbaar zijn.  Hier is nog niet echt onderzoek over gedaan. Waarin er honderden vergelijkende studies bestaan over de frameworks zelf en of Node.js een goede optie is, zijn er geen of amper studies over de beste manier om dit te debuggen en hoe men dit het best aanpakt. ~\autocite{Runtime2017} vertelt ons meer over het identificeren van schaalbaarheidsproblemen en het aanrijken van mogelijke oplossingen. Ze maken gebruik van parametrische uitdrukkingen voor runtime monitoring van Node.js toepassingen, maar ze geven toe dat dit nog maar de eerste stap is en dat hier nog meer onderzoek naar kan gedaan worden. Hier wordt later in dit onderzoek dieper op ingegaan.
+Het is daarom niet altijd makkelijk om deze soort frameworks te debuggen, en het wordt uiteindelijk een uitdagende taak. Gelukkig zijn hiervoor dan ook weer verschillende hulpmiddelen en tools uitgebracht om dit te vereenvoudigen. Zoals vermeld in ~\autocite{Runtime2017}, kan asynchrone code subtiele bugs opleveren die niet meteen zichtbaar zijn. Hier is nog niet echt onderzoek over gedaan. Waar er honderden vergelijkende studies bestaan over de frameworks zelf en of Node.js een goede optie is, zijn er geen of amper studies over de beste manier om dit te debuggen en hoe men dit het best aanpakt. ~\autocite{Runtime2017} vertelt ons meer over het identificeren van schaalbaarheidsproblemen en het aanrijken van mogelijke oplossingen. Ze maken gebruik van parametrische uitdrukkingen voor runtime monitoring van Node.js toepassingen, maar ze geven toe dat dit nog maar de eerste stap is en dat hier nog meer onderzoek naar kan gedaan worden. Hier wordt later in dit onderzoek dieper op ingegaan.
 
 \subsubsection{Performant}
 \label{sec:fast}
 
-Google Chrome's JavaScript engine, V8, is bijzonder snel. Dahl heeft dit verder ontwikkeld voor Node.js en dit maakt de framework enorm performant en efficiënt in het compileren en uitvoeren van code. Veel sneller dan Python, Ruby of Perl.
+Google Chrome's JavaScript engine, V8, is bijzonder snel. Dahl heeft dit verder ontwikkeld voor Node.js en dit maakt het framework enorm performant en efficiënt in het compileren en uitvoeren van code. Veel sneller dan Python, Ruby of Perl.
 
 \subsubsection{npm}
 \label{sec:npm}
 
-Node.js kent een enorm bloeiende community. Deel van Node is zijn Node Package Manager, ofwel npm, en komt meegeleverd bij de installatie. Via npm kan men uit honderdduizenden pakketjes kiezen voor een JavaScript/Node project makkelijk uit te breiden met extra functionaliteiten in één oogwenk. Dagelijks worden er nieuwe pakketjes toegevoegd aan de packet manager, en is makkelijk één van de redenen waarom Node.js zo populair is, aangezien het ontwikkelen van een webapplicatie enorm vereenvoudigd wordt.   
+Node.js kent een enorm bloeiende community. Deel van Node.js is zijn Node Package Manager, ofwel npm, en komt meegeleverd bij de installatie. Via npm kan men uit honderdduizenden pakketjes kiezen voor een JavaScript/Node project makkelijk uit te breiden met extra functionaliteiten in één oogwenk. Dagelijks worden er nieuwe pakketjes toegevoegd aan de packet manager, en is makkelijk één van de redenen waarom Node.js zo populair is, aangezien het ontwikkelen van een webapplicatie enorm vereenvoudigd wordt.   
 
 \section{Express}
 \label{sec:express}
@@ -144,7 +144,7 @@ Node.js kent een enorm bloeiende community. Deel van Node is zijn Node Package M
 \subsubsection{Request Handlers}
 \label{sec:reqHandlers}
 
-Dankzij Express wordt het zeer gemakkelijk om routering in je applicatie toe te voegen. Indien een GET request gemaakt wordt in de frontent naar een bepaalde URL, is dit zeer gemakkelijk om op te vangen m.b.v. Express. Voor elke soort request en URL kan Express logica uitvoeren en code makkelijk verder delegeren.
+Dankzij Express wordt het zeer gemakkelijk om routering in je applicatie toe te voegen. Indien een GET request gemaakt wordt in de frontend naar een bepaalde URL, is dit zeer gemakkelijk om op te vangen m.b.v. Express. Voor elke soort request en URL kan Express logica uitvoeren en code makkelijk verder delegeren.
 
 \subsubsection{Views}
 \label{sec:expressViews}
@@ -154,7 +154,7 @@ Express kan statische bestanden zoals HTML, CSS en afbeeldingen laten weergeven 
 \subsubsection{Modulair}
 \label{sec:expressModularity}
 
-Modulariteit is een kerneigenschap van Express. Express is \textit{unopinionated}, wat wil zeggen dat er niet echt een gouden regel is om een doel in Express te bereiken. Doelen kunnen op meerdere manieren bereikt worden, waardoor het makkelijker is voor ontwikkelaars om een bepaalde taak uit te voeren. Dankzij modulariteit kan de framework ook volledig ingesteld worden naar wens, van poorten en routers, het instellen van een databank tot het toevoegen van Express middleware. 
+Modulariteit is een kerneigenschap van Express. Express is \textit{unopinionated}, wat wil zeggen dat er niet echt een gouden regel is om een doel in Express te bereiken. Doelen kunnen op meerdere manieren bereikt worden, waardoor het makkelijker is voor ontwikkelaars om een bepaalde taak uit te voeren. Dankzij modulariteit kan het framework ook volledig ingesteld worden naar wens, van poorten en routers, het instellen van een databank tot het toevoegen van Express middleware. 
 
 \subsubsection{Middleware}
 \label{sec:expressMiddleware}
@@ -188,8 +188,13 @@ Wellicht de krachtigste functie van Express is de eigenschap tot het gebruik mak
 	\end{lstlisting}
 	
 	
-Middleware schrijven in op zich niet moeilijk. Men kan een enkele functie schrijven, of een heel takenpakket, die men dan als het ware injecteert in een request afhandeling. In een middleware functie verkrijgt men dan een req object, dat van de router kan komen of van een andere middleware, waar dan iets mee kan gedaan worden. Wanneer alles is uitgevoerd, roept de middleware de next-functie op, die dan het nieuwe res, of result, object doorstuurt naar de volgende middleware. Het kan ook zijn dat de middleware de next-functie niet oproept, wat betekent dat dit de laatste stop was van router. 
+Middleware schrijven is op zich niet moeilijk. Men kan een enkele functie schrijven, of een heel takenpakket, die men dan als het ware injecteert in een request afhandeling. In een middleware functie verkrijgt men dan een req object, dat van de router kan komen of van een andere middleware, waar dan iets mee kan gedaan worden. Wanneer alles is uitgevoerd, roept de middleware de next-functie op, die dan het nieuwe res, of result, object doorstuurt naar de volgende middleware. Het kan ook zijn dat de middleware de next-functie niet oproept, wat betekent dat dit de laatste stop was van router. 
 
+\begin{figure}[h]
+	\includegraphics[width=\linewidth]{middleware.png}
+	\caption{Schema van de werking van middleware, gebruikt van \cite{middleware}}
+	\label{fig:middleware}
+\end{figure}
 
 \section{Testen en Monitoring}
 \label{sec:testAndMonitoring}
@@ -204,7 +209,7 @@ Testen en monitoring zijn twee termen dat dicht bij elkaar horen. Bijna elke pro
 Agile testing is een methodologie, ontstaan rond 1990, waarin software incrementeel en iteratief wordt uitgewerkt en dat op de dag van vandaag in vele bedrijven wordt gehanteerd. Vooraleer er effectieve code wordt geschreven, zullen er eerst testen gemaakt worden, waarop men dan de code gaat schrijven. Zo verkrijgt men code die robuust, aanpasbaar en efficiënt is. Tijdens elke iteratie van het projectproces, zullen er nieuwe testen worden geschreven, oude testen worden aangepast, en zo hoeft men telkens maar kleine gedeeltes code aan te passen of te schrijven. Een goede handhaving van Agile testing doet niet alleen de slaagkansen van het project vergroten, het kan het project ook goedkoper doen uitdraaien en de effectieve loopduur stabiel en klein houden.
 Per sprint, of ontwikkelcyclus, worden er telkens eerst testen geschreven voordat men dan uiteindelijk begint met programmeren. \autocite{CHAKRAVORTY2014536}
 
-Dit kan echter ook problemen met zich meebrengen. Agile vergt voorbereiding. \textcite{CHAKRAVORTY2014536} vertelt ons dat de kost en tijd van het project kunnen uit balans geraken telkens de klant iets wilt veranderen en daardoor komt er veel werk op de programmeurs te liggen. In \autocite{Borland2012} wordt dit ook nog eens samengevat. Veel bedrijven doen aan de Agile methodologie, maar niet aan Agile Testing. Dit komt omdat in Agile de verantwoordelijkheid om beslissingen te nemen naar het team van ontwikkelaars wordt verschoven. Dit breekt met de traditionele manier van de waterval methode waar de belangrijkste keuzes door de leiding en niet door het team worden genomen. Dit breekt ook met de traditionele hiërarische structuur waarin bedrijven werken. De leiding verliest een deel van de controle over de richting van hun projecten. Het is dus veilig om te zeggen dat het implementeren van de Agile methodiek niet alleen het werkproces van het bedrijf aanpast maar ook de mentaliteit van het bedrijf. Veranderingen in een bedrijf gaan log vooruit en zeker als het een gehele mentaliteitsverandering inhoud. Daarom dat er veel bedrijven zijn die er voor opteren om de Agile methodiek gedeeltelijk te implementeren. Zo laten ze een paar minder belangrijke componenten van de Agile methodiek achterwege zoals bijvoorbeeld Agile testing. Dit kan verklaren waarom er niet zo veel bedrijven zijn die Agile testing implementeren. Een andere grote hindernis bij Agile testing is dat er niet veel tools bestaan die geavanceerde testing methodes ondersteunen. Er bestaan heel veel verschillende soorten compilers die enorm uitgebreid zijn in de codetalen die ze ondersteunen en die veel verschillende programmeertechnieken ondersteunen. Dit heb je niet bij unit testing en komt grotendeels door de zware natuur van de testing tools.
+Dit kan echter ook problemen met zich meebrengen. Agile vergt voorbereiding. \textcite{CHAKRAVORTY2014536} vertelt ons dat de kost en tijd van het project kunnen uit balans geraken telkens de klant iets wilt veranderen en daardoor komt er veel werk op de programmeurs te liggen. In \autocite{Borland2012} wordt dit ook nog eens samengevat. Veel bedrijven doen aan de Agile methodologie, maar niet aan Agile Testing. Dit komt omdat in Agile de verantwoordelijkheid om beslissingen te nemen naar het team van ontwikkelaars wordt verschoven. Dit breekt met de traditionele manier van de waterval methode waar de belangrijkste keuzes door de leiding en niet door het team worden genomen. Dit breekt ook met de traditionele hiërarische structuur waarin bedrijven werken. De leiding verliest een deel van de controle over de richting van hun projecten. Het is dus veilig om te zeggen dat het implementeren van de Agile methodiek niet alleen het werkproces van het bedrijf aanpast maar ook de mentaliteit van het bedrijf. Veranderingen in een bedrijf gaan log vooruit en zeker als het een gehele mentaliteitsverandering inhoud. Daarom dat er veel bedrijven zijn die er voor opteren om de Agile methodiek gedeeltelijk te implementeren. Zo laten ze een paar minder belangrijke componenten van de Agile methodiek achterwege zoals bijvoorbeeld Agile testing. Dit kan verklaren waarom er niet zo veel bedrijven zijn die Agile testing implementeren. Een andere grote hindernis bij Agile testing is dat er niet veel tools bestaan die geavanceerde testing methodes ondersteunen.
 
 Wat men ook in de afgelopen tien jaar meer en meer terugziet is de problematiek van het continue releasen van software. Software-reuzen zoals Google, Facebook, Mozilla, enzovoort... kozen om software telkens opnieuw uit te brengen in zeer korte periodes, ook wel \textit{rapid releases} genoemd. Mozilla kende bijvoorbeeld een release-cyclus van maanden, waarin elke grote versie vele nieuwe dingen met zich meebracht. Vanaf Firefox 5.0 zijn ze overgeschakeld naar een rapid release systeem en daardoor brengen ze nieuwe, maar kleinere updates om de 6 weken uit. Dit heeft zijn voordelen, maar kent echter ook zijn nadelen in het test-proces. Aangezien er meer en meer sneller moet uitgebracht worden, moeten testen meer geautomatiseerd worden, wordt er minder getest en is de software minder robuust doordat fouten sneller tevoorschijn komen ~\autocite{Maentylae2013}. Kayzr kampt met dezelfde problemen. Daarom is er meer en meer nood aan monitoringstoepassingen die de duur van het debugproces van zo'n rapid release model aanzienlijk kunnen doen verminderen. Hierover volgt later meer info. 
 
@@ -221,7 +226,7 @@ Monitoring is een proces om info en metriek te analyseren van een lopend proces.
 \subsection{Hoe werkt monitoring?}
 \label{sec:howMonitoringWorks}
 
-Real-time monitoring is een monitoringstechniek die dagelijks gebruikt wordt in de IT-wereld. Zo'n proces kan data verzamelen door voortdurend checks te doen op de lopende software, zoals het opvragen van CPU-verbruik, geheugen-verbruik, foutmeldingen controleren,... Monitoringsoftware kan gebruik van \textit{agenten}, die dan specifiek geprogrammeerd kunnen worden om op een intelligente manier zaken te onderzoeken en desnoods af te handelen.
+Real-time monitoring is een monitoringstechniek die dagelijks gebruikt wordt in de IT-wereld. Zo'n proces kan data verzamelen door voortdurend checks te doen op de lopende software, zoals het opvragen van CPU-verbruik, geheugen-verbruik, foutmeldingen controleren,... Monitoringsoftware kan gebruik maken van \textit{agenten}, die dan specifiek geprogrammeerd kunnen worden om op een intelligente manier zaken te onderzoeken en desnoods af te handelen (bijvoorbeeld: een specifieke fout die opduikt).
 
 Dankzij monitoring kan een applicatie draaiende gehouden worden, of kan een IT-medewerker tijdig opgeroepen worden om fouten op te sporen. Monitoring kent ook andere voordelen, zoals het verzamelen van data die dan gebruikt kan worden voor andere doeleinden, bijvoorbeeld voor marketing - of managementafdeling. 
 
@@ -230,12 +235,12 @@ Dankzij monitoring kan een applicatie draaiende gehouden worden, of kan een IT-m
 \subsection{Monitoring, Node.js en Express}
 \label{sec:monitoringNodeExpress}
 
-In de vorige hoofdstukken werd de kracht aangehaald van Node's npm package manager en Express's middleware. Monitoringssoftware kan effectief worden geïnjecteerd in Express als middleware, wat ons zeer veel mogelijkheden schenkt. Zo kan van elke API Call enorm veel info worden opgevraagd, zoals foutboodschappen, geolocatie, cpu-verbruik en zoveel meer, wat opnieuw bewijst dat middleware van Express en het asynchrone gedrag van Node.js zeer krachtige functionaliteiten zijn. Er bestaan al enkele monitoringsmiddleware voor Express, maar geen software dat aan de vereisten voldoet van Kayzr. Hiervoor wordt in het volgend hoofdstuk nog wat onderzoek naar gedaan, maar we sommen alvast enkele populaire packages en standalone software op.
+In de vorige hoofdstukken werd de kracht aangehaald van Node.js's npm package manager en Express's middleware. Monitoringssoftware kan effectief worden geïnjecteerd in Express als middleware, wat ons zeer veel mogelijkheden schenkt. Zo kan van elke API Call enorm veel info worden opgevraagd, zoals foutboodschappen, geolocatie, cpu-verbruik en zoveel meer, wat opnieuw bewijst dat middleware van Express en het asynchrone gedrag van Node.js zeer krachtige functionaliteiten zijn. Er bestaan al enkele monitoringsmiddleware voor Express, maar geen software dat aan de vereisten voldoet van Kayzr. Hiervoor wordt in het volgend hoofdstuk nog wat onderzoek naar gedaan, maar we sommen alvast enkele populaire packages en standalone software op.
 
 \subsection{Tools}
 \label{sec:tools}
 
-Hier worden enkele middleware tools beschreven. Alle info hieronder beschreven is terug te vinden op npm of op de respectievelijke website van de tool. Tools die we hebben weggelaten zijn tools die onrelevant zijn voor Kayzr, niet meer ondersteund worden in de voorbije twee jaar of niet populair genoeg zijn om een goede ondersteuning aan te bieden. 
+Hier worden enkele middleware en standalone tools beschreven. Alle info hieronder beschreven is terug te vinden op npm of op de respectievelijke website van de tool. Tools die werden weggelaten zijn tools die onrelevant zijn voor Kayzr, niet meer ondersteund worden in de voorbije twee jaar of niet populair genoeg zijn om een goede ondersteuning aan te bieden. 
 
 \subsubsection{Morgan}
 \label{sec:morgan}
@@ -259,7 +264,7 @@ Enkele voorbeelden van logbare zaken zijn.
 \subsubsection{Express-Status-Monitor}
 \label{sec:statusMonitor}
 
-Een eenvoudige monitor om simpele metingen van een Node Server gemaakt met Express te weergeven. Deze tool analyseert onderstaande data en kan deze in mooie lijngrafieken visualiseren. Deze tool is gratis te downloaden via npm.
+Een eenvoudige monitor om simpele metingen van een Node.js server gemaakt met Express weer te geven. Deze tool analyseert onderstaande data en kan deze in mooie lijngrafieken visualiseren. Deze tool is gratis te downloaden via npm.
 
 \begin{itemize}
 	\item CPU-verbruik
@@ -282,7 +287,7 @@ Bedrijven die gebruik maken van Prometheus zijn onder andere DigitalOcean, Docke
 
 New Relic is een betalende monitoringssoftware gemaakt door New Relinc, Inc. Het ondersteunt Node.js servers maar kan ook gebruikt worden voor Ruby, Java, PHP, .NET, Python en Go. Ook is de ondersteuning met andere frameworks zeer uitgebreid, aangezien het databanken en platformen zoals mongoDB, Redis, MySQL, Express, Http, KrakenJs en nog veel meer ondersteunt. 
 
-New Relic ondersteunt de basisfunctionaliteiten van Express-Status-Monitor en morgan, breidt deze wat meer uit en ondersteunt volgende zaken bovenop:
+New Relic ondersteunt de basisfunctionaliteiten van Express-Status-Monitor en Morgan, breidt deze wat meer uit en ondersteunt volgende zaken bovenop:
 
 \begin{itemize}
 	\item Service Maps geeft een mooi dashboard-overzicht van de server
@@ -293,7 +298,7 @@ New Relic ondersteunt de basisfunctionaliteiten van Express-Status-Monitor en mo
 	\item ...
 \end{itemize}
 
-We gaan niet te diep in op de functionaliteiten van New Relic, aangezien dit niet binnen de behoeften ligt van Kayzr. New Relic kent enorm veel functionaliteiten, maar daar hangt dan ook een zeer hoog prijskaartje aan. Op het moment van schrijven betaalt men per server maandelijks tussen de \textbf{\euro17.00} en \textbf{\euro600.00.} Aangezien Kayzr ongeveer 50 verschillende servers hebben, is dit onbetaalbaar. Ook bevat dit veel functionaliteiten dat ze niet nodig hebben, wat het de investering niet waard maakt.
+We gaan niet te diep in op de functionaliteiten van New Relic, aangezien dit niet binnen de behoeften ligt van Kayzr. New Relic kent enorm veel functionaliteiten, maar daar hangt dan ook een zeer hoog prijskaartje aan. Op het moment van schrijven \href{https://newrelic.com/products/browser-monitoring/pricing}{betaalt men per server maandelijks tussen de \textbf{\euro17.00} en \textbf{\euro600.00.}}  Aangezien Kayzr ongeveer 50 verschillende servers heeft, is dit onbetaalbaar. Ook bevat dit veel functionaliteiten dat ze niet nodig hebben, wat het de investering niet waard maakt.
 
 Bedrijven die New Relic gebruiken zijn Mlbam, Ryanair, Hearst, REI, Condé Nast...
 
@@ -310,7 +315,7 @@ Retrace, een monitoringsoplossing van Stackify, probeert zich te onderscheiden v
 	\item Ondersteuning voor Server Metingen, waardoor alle servers en applicaties tegelijkertijd in de oog gehouden kunnen worden. Ook ondersteunt het notificaties voor wanneer er fouten of waarschuwingen zouden voorkomen.
 \end{itemize}
 
-Retrace kan ook geïntegreerd worden met vele bestaande tools waaronder Jira en Slack, waar Kayzr enorm gebruik van maakt. Op het eerste zicht lijkt Retrace een goede oplossing, maar daar komen we later nog op terug. Retrace kent een prijskaartje van \textbf{\euro50} per maand, al kan dit voor smalle en preproductie servers verlaagd worden naar \textbf{\euro10-\euro25}. Dit komt een pak goedkoper uit dan New Relic, maar kan afhankelijk van het aantal servers nog steeds prijzig uitkomen voor een start-up. Retrace is echter relatief nieuw, sinds 2017, en wordt nog niet gebruikt bij zeer grote bedrijven.
+Retrace kan ook geïntegreerd worden met vele bestaande tools waaronder Jira en Slack, waar Kayzr enorm gebruik van maakt. Op het eerste zicht lijkt Retrace een goede oplossing, maar daar wordt later nog op teruggekomen. Retrace kent een prijskaartje van \textbf{\euro50} per maand, al kan dit voor kleine en preproductie servers verlaagd worden naar \textbf{\euro10-\euro25}. Dit komt een pak goedkoper uit dan New Relic, maar kan afhankelijk van het aantal servers nog steeds prijzig uitkomen voor een start-up. Retrace is echter relatief nieuw, sinds 2017, en wordt nog niet gebruikt bij zeer grote bedrijven.
 
 \subsubsection{Dynatrace}
 \label{sec:dynatrace}
@@ -320,8 +325,8 @@ Dynatrace van Dynatrace LLC is opnieuw een enorm grote tool met een uitgebreid p
 \begin{itemize}
 	\item Een enorm sterke User Interface met een zeer mooi en krachtig dashboard.
 	\item \textit{Alle} soorten performantiemetingen bekijken in real-time en meer. Zelfs de Node.js event loops.
-	\item Node.js details bekijken zoals Heap Memory, Garbage collectoin time, web requests, response-time, crashes, throughput en veel meer.
-	\item Dynatrace is in staat om problemen op te sporen tot code level, rekening houdend met gemonitorde heap en geheugen metingen en tal van andere middelen. Het kan zelfs fouten opsporen dat niet afkomstig is van Node.js
+	\item Node.js details bekijken zoals Heap Memory, Garbage collection time, web requests, response-time, crashes, throughput en veel meer.
+	\item Dynatrace is in staat om problemen op te sporen tot code level, rekening houdend met gemonitorde heap en geheugen metingen en tal van andere middelen. Het kan zelfs fouten opsporen dat niet afkomstig zijn van Node.js
 	\item Handige visualisatiemiddelen om dependencies en applicaties overzichtelijk te houden
 	\item Database Queries monitoring
 	\item Enorm veel meer functies voor de gehele IT-infrastructuur
@@ -359,7 +364,24 @@ Monitoringssoftware is te duur en veel te uitgebreid voor hen, maar de gratis be
 \subsection{Effectieve requirements}
 \label{sec:requirements}
 
-Hier komen de requirements van Kayzr. 
+Hieronder worden de effectieve requirements, na overleg met Kayzr, weergeven.
+
+\begin{itemize}
+	\item Hoeveel keer wordt een bepaalde API call uitgevoerd in een specifieke tijdspanne? Kan Kayzr hierdoor bekijken welke API calls tijdens drukke uren te veel worden opgeroepen en de applicatie vertragen?
+	\item In Google Cloud Stack Driver kan men mooi de errors terugvinden die voorkwamen in de backend server. Maar hier staat nergens de URL van de opgeroepen API call bij. Waar is deze fout beginnen optreden? Kan men die URL verkrijgen opdat men niet moet zoeken naar een naald in een hooiberg?
+	\item Kunnen deze fouten ergens opgeslagen worden opdat men later deze fouten makkelijker kan terugvinden?
+	\item Kan men de (gemiddelde) tijd monitoren tussen het versturen van een bepaalde API call en een verkregen antwoord?
+	\item Monitoren van deze Node.js processen hun taxatie op de server waar ze op draaien (CPU, RAM, netwerk,…)
+	\item Middleware als Morgan toont veel te weinig, Google Cloud Stack Driver toont veel maar geeft geen context mee. De voorgaande opgesomde betalende monitoringsoftware bevatten te veel functies die Kayzr niet meteen zou gebruiken, maar wel handig \textit{zou kunnen} zijn. Dit verantwoordt echter het grote bedrag niet, en wenst dus deze som geldt er niet aan te spenderen. Bestaat er geen goede middenweg?
+	\item Afhankelijk zijn van betalende services betekent ook dat Kayzr's data terecht komt bij (dure) third party oplossingen. Is die data veilig? Volgen ze de GDPR regels? Ze hebben liever hun data in eigen handen.
+	\item Men wil niet enkel realtime zaken kunnen bekijken, maar ook data opslaan zodat die op een later moment nog eens bekeken kan worden.
+\end{itemize}
+
+Doel testen: Is de tool een meerwaarde, is er meer data uit te halen, reqs bereikt hierboven
+
+Kayzr wenst dus een middleware oplossing, gratis te downloaden via npm, dat uit binnenkomende verzoeken praktisch alle informatie kan halen. Deze informatie moet vervolgens ergens opgeslagen worden en op een visuele manier ook bekeken kunnen worden. 
+
+Men kan vervolgens controleren of het doel bereikt is door te kijken of de middleware een meerwaarde is voor het ontwikkelingsteam, er meer data is uit te halen dan vóór de verkregen middleware, en aan alle voorgaande requirements is voldaan.
 
 
 
