@@ -223,4 +223,10 @@
   url     = {https://searchitoperations.techtarget.com/definition/IT-monitoring},
 }
 
+@Misc{middleware,
+  author = {Lee Brandt},
+  title  = {Working of middleware},
+  year   = {2018},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

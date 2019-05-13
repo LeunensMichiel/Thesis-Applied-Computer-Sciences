@@ -11,4 +11,77 @@
 %% mogelijke manier toegepast hebt om een antwoord te vinden op de
 %% onderzoeksvraag.
 
+Nu de vereisten van Kayzr gekend zijn, kan het ontwerpen van de middleware toepassing van start gaan. Hiervoor zal er een bepaalde werkwijze worden gehanteerd, waarover zo dadelijk meer uitleg wordt gegeven. Tijdens het ontwerpen van de middleware zal echter niet enkel met Kayzr's requirements rekening gehouden worden. Het is de bedoeling dat dit geen hardcoded stuk software in Kayzr's backend wordt, maar een abstracte, universele middleware dat gedownload en geïnstalleerd kan worden via Node.js package manager.  
+
+\section{Werkwijze}
+\label{sec:werkwijze}
+
+Men is als volgt te werk gegaan: eerst werd een middleware ontwikkeld dat op een mooie manier elke request kon loggen in de console. Erna werd een server aangemaakt op één van de servers van Kayzr, en werd daar Grafana en InfluxDB op geïnstalleerd. Tenslotte werd de middleware geabstraheerd, waarna er getracht werd om connectie te maken met de databank en telkens na een bepaald interval, data naar InfluxDB weg te schrijven. Wanneer de data van de middleware tenslotte Grafana bereikte, werd de middleware geïnstalleerd op Kayzr's backend. Op het einde werden er dan grafieken aangemaakt in Grafana die de requirements van Kayzr zouden volbrengen. 
+
+\subsection{Multilogger}
+\label{sec:multilogger}
+
+De te ontwikkelen middleware werd omgedoopt tot Multilogger (en later officieel express-influx-multilogger). Als eerste werd een basis express applicatie aangemaakt, waarin de eerste stapjes middleware software werden geschreven. Als eerste werd er geprobeerd om per keer dat een API call werd gemaakt, de methode van deze call naar de console te loggen.
+
+In app.js
+\begin{lstlisting}[language=JavaScript, breaklines=true, numbers=left, frame=single, caption={app.js eerste stap},label=code:appjsFirst]
+var app = express();
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(multilogger.multilog); // Custom middleware
+
+app.use('/', indexRouter);
+
+app.listen(3000);
+\end{lstlisting}
+
+In multilogger.js
+\begin{lstlisting}[language=JavaScript, breaklines=true, numbers=left, frame=single, caption={multilogger.js eerste stap},label=code:multilogFirst]
+const multilogger = {
+	multilog: (req, res, next) => {
+	console.log('\n=====- Multilogger v0.1 -=====');
+	console.log('--- Basic ---\n');
+	
+	res.on('finish', () => {
+		console.info(`${req.method} --- ${res.statusCode} ---  ${res.statusMessage}  at ${new Date().toLocaleString()}`);
+		console.info(`Response-time: ${res.getHeader('X-Response-Time')}`);
+		console.info(`URL: ${req.hostname} --- ${req.url}`);
+		console.info(`Client: ${req.ip} --- ${req.header('User-Agent')}`);
+	});
+	
+
+	next();
+	},
+};
+
+module.exports = multilogger; 
+\end{lstlisting}
+
+Dit werd uiteindelijk meer uitgebreid, zodat er een mooi breed overzicht naar de console werd gelogd. Natuurlijk wensen niet alle ontwikkelaars dat er per API all naar de console zou worden gelogd met zeer veel overbodige informatie, aangezien dit kan oplopen van (uiteraard afhankelijk van de software) honderden tot duizenden calls per enkele seconden. Daarom werd er een parameter toegevoegd om deze functionaliteit uit te schakelen, met in het achterhoofd dat de middleware niet enkel zou dienen voor een mooi console-overzicht te geven. Dit was een nice-to-have-functionaliteit voor Kayzr, maar was wel een noodzakelijke eerste stap om op verder te bouwen.
+
+\begin{lstlisting}[language=JavaScript, breaklines=true, numbers=left, frame=single, caption={Parameters toegevoegd},label=code:multilogparams]
+app.use(multilogger.log({ development: false, extended: false }));
+\end{lstlisting}
+
+\subsection{Grafana en InfluxDB}
+\label{sec:grafanaAndInflux}
+
+Vervolgens moest er een systeem gekozen worden om verzamelde data op te slaan en weer te geven. Dit kan natuurlijk gerealiseerd worden met verschillende databanken en frontend frameworks en frontend talen. Origineel werd er geopteerd om gebruik te maken van MySQL samen met een React.js applicatie om de data te visualiseren, maar na verder onderzoek bleek dat hier reeds handigere software voor bestaat, namelijk InfluxDB, en Grafana, dixit \textcite{Hill2015}. InfluxDB is een snelle, open source time series database, gemaakt om op een snelle manier data zoals metrieken en events op te slaan gebonden doorheen een tijdsperiode. Grafana daarentegen, is een open platform om time series data om te zetten in prachtige grafieken. Het spreekt dan ook voor zich dat deze twee hand in hand werken.
+
+Er werd een server van Kayzr toegewezen om dit te testen. Hiervoor werden via Docker twee containers aangemaakt (een soort van virtuele omgeving om deze software op te laten draaien), en werden tenslotte toegewezen aan InfluxDB en Grafana. Tenslotte werd de server opgestart, werd Grafana geïnstalleerd en geïnitialiseerd en werd de (lege) Influx-databank gekoppeld. 
+
+\subsection{Abstraheren en wegschrijven}
+\label{sec:abstraction}
+
+
+
+
+\subsection{Grafana's grafieken}
+\label{sec:graphs}
+
+
+
 
