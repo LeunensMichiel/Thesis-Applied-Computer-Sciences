@@ -97,21 +97,37 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.2}Grafana en InfluxDB}{35}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}Abstraheren en wegschrijven}{35}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.3}Wegschrijven en abstraheren}{35}{subsection.3.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.4}Grafana's grafieken}{35}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.4}Grafana's grafieken}{36}{subsection.3.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Conclusie}{37}{chapter.4}
+\contentsline {subsubsection}{Basics}{36}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{39}{appendix.A}
+\contentsline {subsubsection}{Number of requests}{37}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Introductie}{39}{section.A.1}
+\contentsline {subsubsection}{Errors}{37}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}State-of-the-art}{39}{section.A.2}
+\contentsline {subsubsection}{Database timings}{38}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Methodologie}{40}{section.A.3}
+\contentsline {subsubsection}{Users}{38}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Verwachte resultaten}{41}{section.A.4}
+\contentsline {subsubsection}{Memory Usage}{38}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Verwachte conclusies}{41}{section.A.5}
+\contentsline {subsubsection}{CPU Usage}{39}{section*.33}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Publicatie}{39}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Conclusie}{41}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{43}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Introductie}{43}{section.A.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}State-of-the-art}{43}{section.A.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}Methodologie}{44}{section.A.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.4}Verwachte resultaten}{45}{section.A.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.5}Verwachte conclusies}{45}{section.A.5}
 \contentsfinish 
