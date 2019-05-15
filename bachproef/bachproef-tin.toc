@@ -37,7 +37,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Waarom Node.js?}{21}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{nieuw}{21}{section*.12}
+\contentsline {subsubsection}{nieuw}{22}{section*.12}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Asynchroon}{22}{section*.13}
 \defcounter {refsection}{0}\relax 
@@ -61,7 +61,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.1}Agile Testing}{25}{subsection.2.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Soorten Agile Testing}{26}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.2}Soorten Agile Testing}{27}{subsection.2.4.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}Monitoring}{27}{section.2.5}
 \defcounter {refsection}{0}\relax 
@@ -75,7 +75,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Express-Status-Monitor}{28}{section*.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Prometheus}{28}{section*.22}
+\contentsline {subsubsection}{Prometheus}{29}{section*.22}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{New Relic}{29}{section*.23}
 \defcounter {refsection}{0}\relax 
@@ -119,15 +119,31 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Conclusie}{41}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{43}{appendix.A}
+\contentsline {section}{\numberline {4.1}Meting aan de vereisten}{41}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Introductie}{43}{section.A.1}
+\contentsline {subsection}{\numberline {4.1.1}Toetsing}{41}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}State-of-the-art}{43}{section.A.2}
+\contentsline {subsection}{\numberline {4.1.2}Nice-to-have}{43}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Methodologie}{44}{section.A.3}
+\contentsline {subsubsection}{Geolocatie}{43}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Verwachte resultaten}{45}{section.A.4}
+\contentsline {subsubsection}{Databank metrieken}{44}{section*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Verwachte conclusies}{45}{section.A.5}
+\contentsline {section}{\numberline {4.2}Kayzr's blik op de toekomst}{44}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Uitbreiding en verder onderzoek}{44}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{45}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Introductie}{45}{section.A.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}State-of-the-art}{45}{section.A.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}Methodologie}{46}{section.A.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.4}Verwachte resultaten}{47}{section.A.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.5}Verwachte conclusies}{47}{section.A.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografie}{49}{appendix*.36}
 \contentsfinish 

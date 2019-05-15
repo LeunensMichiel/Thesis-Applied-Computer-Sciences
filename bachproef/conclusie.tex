@@ -12,4 +12,130 @@
 %% niet duidelijk zijn? Heeft het onderzoek geleid tot nieuwe vragen die
 %% uitnodigen tot verder onderzoek?
 
+Nu de middleware is gepubliceerd en binnengetrokken op de servers van Kayzr, kan er worden bekeken of de middleware voldoet aan de vereisten, of er voordelen en al dan niet extra nice-to-haves zijn uit te halen, en of er verbeteringen kunnen plaatsvinden. Dit hoofdstuk zal zich wijden aan het toetsen van de geschreven software aan de praktijk.
 
+\section{Meting aan de vereisten}
+\label{sec:reqs}
+
+Vooraleer er een definitieve conclusie wordt gemaakt, moet er eerst gekeken worden of de middleware natuurlijk aan alle opgesomde vereisten voldoet, zoals beschreven in hoofdstuk \ref{sec:requirements}.
+
+\subsection{Toetsing}
+\label{sec:testing}
+
+\begin{quote}
+	\textit{"Hoeveel keer wordt een bepaalde API call uitgevoerd in een specifieke tijdspanne? Kan Kayzr hierdoor bekijken welke API calls tijdens drukke uren te veel worden opgeroepen en de applicatie vertragen?"}
+\end{quote}
+
+Dankzij de \textit{Number of Requests-}tabel, kan dit nu volledig bekeken worden. Men kan kijken hoeveel API calls doorkomen per 10 seconden, of per uur, of per dag,... maar men kan ze ook nog eens groeperen per soort response. Hoeveel 4xx of 5xx calls (calls die foutmeldingen geven) komen door? Ook via de \textit{basics-}tabel kan er veel extra informatie opgevraagd worden. Zo kan met bijvoorbeeld kijken of er tussen 2 pm en 4 pm enkele requests voorkwamen die een uitvoertijd groter dan twintig milliseconden hadden en dus een zware last zouden vormen voor de server. We starten met de eerste vereiste:
+
+\begin{quote}
+	\textit{In Google Cloud Stack Driver kan men mooi de errors terugvinden die voorkwamen op de backend server. Maar hier staat nergens de URL van de opgeroepen API call bij. Waar is deze fout beginnen optreden? Kan men die URL verkrijgen opdat men niet moet zoeken naar een naald in een hooiberg?}
+\end{quote}
+
+\begin{quote}
+	\textit{Kunnen deze fouten ergens opgeslagen worden opdat men later deze fouten makkelijker kan terugvinden?}
+\end{quote}
+
+
+Dit is volledig opgelost. Namelijk door de \textit{errors-}tabel te observeren kan men 
+\begin{enumerate}
+	\item kijken op welke URL en pad de fout zich voordeed
+	\item lezen welke foutmeldingen er werden gegooid, samen met de error stack van de desbetreffende fout.
+	\item Ook nuttige parameters aflezen zodat men context kan plaatsen bij de fout. Parameters zoals de request body, authentication token, queries enzovoort.
+\end{enumerate}
+
+Fouten kunnen ook opgezocht worden met behulp van een zoekfunctionaliteit, en worden ook geordend volgend error stack en vervolgens volgens error message. Zo worden duplicaten weggefilterd en wordt er een zeer praktisch en gebruikersvriendelijk overzicht weergeven.
+
+\begin{quote}
+	\textit{Kan men de (gemiddelde) tijd monitoren tussen het versturen van een bepaalde API call en een verkregen antwoord?}
+\end{quote}
+
+De gemiddelde tijd wordt gemonitord en kan in de meeste tabellen teruggevonden worden. Ook is het mogelijk om de gemiddelde tijd van database-calls te monitoren. Hierover wordt later nog eer uitleg gegeven.
+
+\begin{quote}
+	\textit{Monitoren van deze Node.js processen hun taxatie op de server waar ze op draaien (CPU, RAM, netwerk,…)}
+\end{quote}
+
+Geheugenverbruik en processorverbruik worden per server weergeven in de desbetreffende \textit{performantie-}tabellen.
+
+
+\begin{quote}
+	\textit{Middleware als Morgan toont veel te weinig, Google Cloud Stack Driver toont veel maar geeft geen context mee. De voorgaande opgesomde betalende monitoringsoftware bevatten te veel functies die Kayzr niet meteen zou gebruiken, maar wel handig \textit{zou kunnen} zijn. Dit verantwoordt echter het grote bedrag niet, en Kayzr wenst dus deze som geldt er niet aan te spenderen. Bestaat er geen goede middenweg?}
+\end{quote}
+
+Deze tool heeft al bewezen dat deze zeer veel zaken aankan, en schaalbaar is om er meerdere uitbreidingen aan te geven. In de eerste release kan deze al meer dan Morgan, en neemt al de delen die Kayzr handig vindt van Google Cloud Stack Driver over en zet ze om in een eigen Grafana werkomgeving, een werkomgeving die geïmporteerd kan worden in een eigen configuratie waardoor het niet verplicht is om eigen grafieken beginnend van niets op te stellen.
+
+De kost van een Grafana-server voor Kayzr bedraagt ongeveer vijftien euro per maand. Dit is puur voor hosting van een server, en is helemaal geen grote kost. De meeste functionaliteiten van de betalende oplossingen (wiens prijs veel hoger lag, zoals beschreven in \ref{sec:tools}), waren overbodig. Functionaliteiten zoals error stack tracing, konden makkelijk zelf geïmplementeerd worden. En aangezien de middleware open-source en in actieve ontwikkeling is, spreekt het ook voor zich dat in de toekomst meerdere functionaliteiten gaan kunnen toegevoegd worden. Vijftien euro per maand voor één server te laten draaien dat informatie van verschillende servers kan verzamelen, of gemiddeld zeventig euro per maand \textit{per server} voor een veel te uitgebreide tool, kan natuurlijk als een grote overwinning worden beschouwd.
+
+\begin{quote}
+	\textit{Afhankelijk zijn van betalende services betekent ook dat Kayzr's data terecht komt bij (dure) third party oplossingen. Is die data veilig? Volgen ze de GDPR regels? Ze hebben liever hun data in eigen handen.}
+\end{quote}
+
+Kayzr's data wordt veilig opgeslagen op hun eigen servers. Niemand kan aan die data buiten Kayzr zelf, wat een groot pluspunt is in een tijdsperiode waar privacywetgeving nog nooit zo belangrijk is geacht.
+
+\begin{quote}
+	\textit{Men wil niet enkel realtime zaken kunnen bekijken, maar ook data opslaan zodat die op een later moment nog eens bekeken kan worden.}
+\end{quote}
+
+InfluxDB is overal beschikbaar op de servers van Kayzr, dus indien de data nog ergens anders moet gebruikt worden, dan kan dit zonder enige moeite.
+
+\subsection{Nice-to-have}
+\label{sec:nicetohave}
+
+Verder werden er nog enkele optionele functionaliteiten toegevoegd, en worden hieronder opgesomd. Meerdere extraatjes kunnen mogelijks later worden toegevoegd.
+
+\subsubsection{Geolocatie}
+\label{sec:geolocation}
+
+Kayzr kan nu op een interactieve wereldkaart bekijken waar het merendeels van de verzoeken vandaan komen. Er werd geopteerd om de locatie te traceren via een binnenkomend ip-adres. Dit is allesbehalve de meest precieze methode, maar het is meer dan goed genoeg om het land van herkomst af te lezen. Ook wordt er op deze manier geen privacy geschonden van de eindgebruiker. Eindgebruikers die zicht via een vpn-service zouden verbinden mogen worden verwaarloosd, aangezien deze meetpunten relatief weinig voorkomen.
+
+Deze nieuwe functionaliteit is handig om te kijken of een toernooi populairder is in België of Nederland, en of ze misschien kunnen uitbreiden naar het buitenland.
+
+\subsubsection{Databank metrieken}
+\label{sec:databaseMetrics}
+
+Sinds versie 1.0.9 is het ook mogelijk om op een willekeurige plek een multilogger-functie op te roepen in je eigen backend. Deze functie heeft de mogelijkheid om een naam, timings en extra parameters mee te krijgen. Zo kan je bijvoorbeeld een specifieke call naar een databank timen (bijvoorbeeld: hoe lang duurt het om een nieuwe gebruiker weg te schrijven naar MySQL). De naam van deze databank en de gemeten tijd stuur je dan mee door, samen met extra optionele parameters. Al deze informatie wordt dan weggewerkt naar InfluxDB en kan dan ook in Grafana worden bekeken. 
+
+\begin{lstlisting}[language=JavaScript, breaklines=true, numbers=left, frame=single, caption={Extra informatie wordt doorgestuurd naar InfluxDB},label=code:addToObject]
+const addToObject = ({ name, timing, ...custom } = {}) => {
+	let databaseMetrics = {
+		name,
+		timing
+	};
+	_.flatMap(custom, param => {
+		return _.map(param, (value, key) => {
+			return (databaseMetrics[key] = value);
+		});
+	});
+	object.databaseMetrics.push(databaseMetrics);
+};
+\end{lstlisting}
+\begin{lstlisting}[language=JavaScript, breaklines=true, numbers=left, frame=single, caption={Deze functie kan overal in de API worden opgeroepen},label=code:plugin]
+router.get("/", function(req, res, next) {
+	multilogger.insertDatabaseCallSpeed({
+		name: "Testje",
+		timing: 5.203,
+		custom: {
+			optionalInfo: "1",
+			2: "3",
+			foo: "fighters",
+			objectAverageExample: object.example
+		}
+	});
+	res.send("Got a GET request");
+	next();
+});
+\end{lstlisting}
+
+
+\section{Kayzr's blik op de toekomst}
+\label{sec:future}
+
+%Het vermelden dat Kayzr er tevreden mee is, heeft zeker een meerwaarde. Toelichten hoe ze dit gaan gebruiken dan, en wat de next steps voor hen zijn zou ik er wel inzetten dan. 
+
+\section{Uitbreiding en verder onderzoek}
+\label{sec:expansin}
+
+%Lessons Learned
+
+%Verder kan je zelf nog aangeven hoe je de middleware kan uitbreiden/verbeteren.

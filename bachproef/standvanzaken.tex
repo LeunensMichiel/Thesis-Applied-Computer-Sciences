@@ -368,11 +368,11 @@ Hieronder worden de effectieve requirements, na overleg met Kayzr, weergeven.
 
 \begin{itemize}
 	\item Hoeveel keer wordt een bepaalde API call uitgevoerd in een specifieke tijdspanne? Kan Kayzr hierdoor bekijken welke API calls tijdens drukke uren te veel worden opgeroepen en de applicatie vertragen?
-	\item In Google Cloud Stack Driver kan men mooi de errors terugvinden die voorkwamen in de backend server. Maar hier staat nergens de URL van de opgeroepen API call bij. Waar is deze fout beginnen optreden? Kan men die URL verkrijgen opdat men niet moet zoeken naar een naald in een hooiberg?
+	\item In Google Cloud Stack Driver kan men mooi de errors terugvinden die voorkwamen op de backend server. Maar hier staat nergens de URL van de opgeroepen API call bij. Waar is deze fout beginnen optreden? Kan men die URL verkrijgen opdat men niet moet zoeken naar een naald in een hooiberg?
 	\item Kunnen deze fouten ergens opgeslagen worden opdat men later deze fouten makkelijker kan terugvinden?
 	\item Kan men de (gemiddelde) tijd monitoren tussen het versturen van een bepaalde API call en een verkregen antwoord?
 	\item Monitoren van deze Node.js processen hun taxatie op de server waar ze op draaien (CPU, RAM, netwerk,…)
-	\item Middleware als Morgan toont veel te weinig, Google Cloud Stack Driver toont veel maar geeft geen context mee. De voorgaande opgesomde betalende monitoringsoftware bevatten te veel functies die Kayzr niet meteen zou gebruiken, maar wel handig \textit{zou kunnen} zijn. Dit verantwoordt echter het grote bedrag niet, en wenst dus deze som geldt er niet aan te spenderen. Bestaat er geen goede middenweg?
+	\item Middleware als Morgan toont veel te weinig, Google Cloud Stack Driver toont veel maar geeft geen context mee. De voorgaande opgesomde betalende monitoringsoftware bevatten te veel functies die Kayzr niet meteen zou gebruiken, maar wel handig \textit{zou kunnen} zijn. Dit verantwoordt echter het grote bedrag niet, en Kayzr wenst dus deze som geldt er niet aan te spenderen. Bestaat er geen goede middenweg?
 	\item Afhankelijk zijn van betalende services betekent ook dat Kayzr's data terecht komt bij (dure) third party oplossingen. Is die data veilig? Volgen ze de GDPR regels? Ze hebben liever hun data in eigen handen.
 	\item Men wil niet enkel realtime zaken kunnen bekijken, maar ook data opslaan zodat die op een later moment nog eens bekeken kan worden.
 \end{itemize}
