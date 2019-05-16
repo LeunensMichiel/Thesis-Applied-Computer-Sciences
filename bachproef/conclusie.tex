@@ -131,11 +131,15 @@ router.get("/", function(req, res, next) {
 \section{Kayzr's blik op de toekomst}
 \label{sec:future}
 
-%Het vermelden dat Kayzr er tevreden mee is, heeft zeker een meerwaarde. Toelichten hoe ze dit gaan gebruiken dan, en wat de next steps voor hen zijn zou ik er wel inzetten dan. 
+Uit de voorgaande opsomming kan er dus van uitgegaan worden dat de onderzoeksdoelstelling werd bereikt, en de onderzoeksvraag werd beantwoord. Kayzr zelf liet weten dat ze zeer tevreden zijn met de nieuwe beschikbare tool en willen deze meteen op al hun servers laten draaien. Zo kan er al meteen informatieve data opgehaalde van de gloednieuwe CSGO (Counter Strike: Global Offensive) servers, zodat productiesnelheid omhoog kan.
+
+Ook gaan ze dankzij de extra database-metriekfunctionaliteit hun database processen van hun zelfgeschreven data-abstractielaag, genaamd \textit{gnewmine}, ook stresstesten en kijken waar deze geoptimaliseerd zal kunnen worden.
 
 \section{Uitbreiding en verder onderzoek}
 \label{sec:expansin}
 
-%Lessons Learned
+Dit onderzoek heeft aangetoond dat een debugoplossing in Node.js en express niet duur hoeft te zijn. Met juist 1 enkele extra server kan er een middleware geschreven worden die al het werk voor je doet. 
 
-%Verder kan je zelf nog aangeven hoe je de middleware kan uitbreiden/verbeteren.
+Het enige nadeel is dat er een extra leercurve achter zit. Niet enkel voor het maken van de middleware, maar ook voor het instellen van InfluxDB en het opstellen van grafieken in Grafana. Dit onderzoek stelt echter ook alle middelen open naar andere ontwikkelaars, zodat er veel werk bespaard kan worden. Zo kan de middleware gedownload worden via npm, en kan eenmaal de server is opgesteld, het meegegeven configuratiebestand in de README.md geïmporteerd worden in Grafana waardoor het dashboard automatisch wordt ingesteld. Het hele pakket is open-source, dus de middleware staat open voor extra uitbreidingen.
+
+Dit onderzoek kan verder onderzocht worden door requirements van andere bedrijven, die in dezelfde soort situatie zitten, toe te voegen aan de software. Ook kan het verder worden uitgebreid door vele elementen te optimaliseren, zoals het wegschrijven naar Influx, meer met asynchrone processen te werken en betere ontwerppatronen te volgen. De software zou meer testen moeten bevatten, en fouten zouden beter moeten worden opgevangen worden om crashmogelijkheden te beperken. Grafieken van Grafana staan open voor uitbreiding zodat uit dezelfde data meer informatie kan gehaald worden. Ondersteuning voor meerdere database-management systemen is zeker en vast een must om deze middleware oplossing bij meer ontwikkelaars populair te maken.
