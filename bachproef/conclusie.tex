@@ -83,7 +83,7 @@ InfluxDB is overal beschikbaar op de servers van Kayzr. Indien de data nog ergen
 \label{sec:nicetohave}
 
 Verder werden er nog enkele optionele functionaliteiten toegevoegd. Dezen worden hieronder opgesomd. Meerdere extraatjes kunnen mogelijks later nog worden toegevoegd.
-
+\pagebreak
 \subsubsection{Geolocatie}
 \label{sec:geolocation}
 
@@ -96,7 +96,7 @@ Deze nieuwe functionaliteit is handig om te kijken of een toernooi populairder i
 
 Sinds versie 1.0.9 is het ook mogelijk om op een willekeurige plek een multilogger-functie op te roepen in de eigen backend. Deze functie biedt de mogelijkheid om een naam, timings en extra parameters toe te voegen. Zo kan men bijvoorbeeld een specifieke call naar een databank timen (bijvoorbeeld: hoe lang duurt het om een nieuwe gebruiker weg te schrijven naar MySQL). De naam van deze databank en de gemeten tijd stuurt men dan mee door, samen met extra optionele parameters. Al deze informatie wordt dan weggewerkt naar InfluxDB en kan dan ook in Grafana worden bekeken. 
 
-\begin{lstlisting}[language=JavaScript, breaklines=true, numbers=left, frame=single, caption={Extra informatie wordt doorgestuurd naar InfluxDB},label=code:addToObject]
+\begin{lstlisting}[style=ES6, caption={Extra informatie wordt doorgestuurd naar InfluxDB},label=code:addToObject]
 const addToObject = ({ name, timing, ...custom } = {}) => {
 	let databaseMetrics = {
 		name,
@@ -110,7 +110,8 @@ const addToObject = ({ name, timing, ...custom } = {}) => {
 	object.databaseMetrics.push(databaseMetrics);
 };
 \end{lstlisting}
-\begin{lstlisting}[language=JavaScript, breaklines=true, numbers=left, frame=single, caption={Deze functie kan overal in de API worden opgeroepen},label=code:plugin]
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[style=ES6, caption={Deze functie kan overal in de API worden opgeroepen},label=code:plugin]
 router.get("/", function(req, res, next) {
 	multilogger.insertDatabaseCallSpeed({
 		name: "Testje",
@@ -126,7 +127,7 @@ router.get("/", function(req, res, next) {
 	next();
 });
 \end{lstlisting}
-
+\end{minipage}
 
 \section{Hoe ziet Kayzr de toekomst?}
 \label{sec:future}

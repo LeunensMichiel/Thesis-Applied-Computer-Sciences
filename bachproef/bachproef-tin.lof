@@ -13,21 +13,23 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Basics-paneel}}{37}{figure.3.1}
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Aantal requests-paneel (wit voor totaal, blauw voor requests die starten met 1xx, groen voor 2xx, geel voor 3xx, oranje voor 4xx en rood voor 5xx.)}}{37}{figure.3.2}
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Errors-paneel}}{38}{figure.3.3}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Basics-paneel}}{43}{figure.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Database-metrics-paneel}}{38}{figure.3.4}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Aantal requests-paneel (wit voor totaal, blauw voor requests die starten met 1xx, groen voor 2xx, geel voor 3xx, oranje voor 4xx en rood voor 5xx.)}}{44}{figure.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Users-paneel}}{39}{figure.3.5}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Errors-paneel}}{44}{figure.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Geheugenverbruik-paneel}}{39}{figure.3.6}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Database-metrics-paneel}}{45}{figure.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Processorverbruik-paneel}}{40}{figure.3.7}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Users-paneel}}{45}{figure.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Screenshot van een deel van de README.md. Hier staan onder andere installatie-instructies in, code-voorbeelden, uitleg van de parameters en tal van andere zaken. Wegens incompatibiliteit was het niet mogelijk om de readme weer te geven in LaTeX.}}{41}{figure.3.8}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Geheugenverbruik-paneel}}{45}{figure.5.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Processorverbruik-paneel}}{46}{figure.5.7}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

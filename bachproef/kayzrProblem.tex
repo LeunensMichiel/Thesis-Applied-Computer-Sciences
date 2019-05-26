@@ -1,0 +1,32 @@
+
+\chapter{Het probleem van Kayzr}
+\label{ch:kayzrsProblem}
+
+\section{Probleemstelling}
+\label{sec:problem}
+
+Het probleem van Kayzr is dat hun data over verschillende servers verspreid staan. Kayzr wenst deze data te centraliseren. Zo hoeven ze niet langer voor sommige zaken naar Google App Engine te gaan, andere voor andere naar Google Cloud Service, nog andere zaken in Morgan, of simpelweg de Node console, enzovoort. Dit zou het best kunnen opgelost worden via een Express middleware die alle data verzamelt, van geolocatie tot foutmeldingen, en omzet in .json formaat. Deze .json zou dan kunnen uitgelezen worden om zo een mooie visualisatie van de opgevangen data te hebben. Men zou het kunnen aanzien als een enorm versimpelde versie van alle voorgaande betalende monitoring tools, zoals besproken in hoofdstuk \ref{sec:tools}. 
+
+Monitoringsoftware is te duur en veel te uitgebreid voor hen, maar de gratis bestaande tools op npm zijn te primitief. Daarom hebben ze de opdracht gegeven om iets te ontwikkelen dat het debugproces aanzienlijk zou kunnen verbeteren. 
+
+\section{Effectieve requirements}
+\label{sec:requirements}
+
+Hieronder worden de effectieve requirements, na overleg met Kayzr, weergegeven.
+
+\begin{itemize}
+	\item Hoeveel keer wordt een bepaalde API call uitgevoerd in een specifieke tijdspanne? Kan Kayzr hierdoor bekijken welke API calls tijdens drukke uren te veel worden opgeroepen en de applicatie vertragen?
+	\item In Google Cloud Stack Driver kan men mooi de errors terugvinden die voorkwamen op de backend server. Maar daar staat nergens de URL van de opgeroepen API call bij. Waar is deze fout beginnen optreden? Kan men die URL verkrijgen opdat men niet moet zoeken naar een naald in een hooiberg?
+	\item Kunnen deze fouten ergens opgeslagen worden opdat men later deze fouten makkelijker kan terugvinden?
+	\item Kan men de (gemiddelde) tijd monitoren tussen het versturen van een bepaalde API call en een verkregen antwoord?
+	\item Monitoren van de taxatie van deze Node.js processen op de server waar ze op draaien (CPU, RAM, netwerk,…)
+	\item Middleware als Morgan toont veel te weinig, Google Cloud Stack Driver toont veel maar geeft geen context mee. De eerder opgesomde betalende monitoringsoftwares bevatten te veel functies die Kayzr niet meteen zou gebruiken, maar wel handig \textit{zouden kunnen} zijn. Dit verantwoordt echter hun grote kostprijs niet, en Kayzr wenst dus dat budget er niet aan te spenderen. Bestaat er geen goede middenweg?
+	\item Afhankelijk zijn van betalende services betekent ook dat de data van Kayzr terecht komen bij (dure) third party oplossingen. Zijn die data veilig? Volgen ze de GDPR regels? Ze houden liever hun data in eigen beheer.
+	\item Men wil niet enkel realtime zaken kunnen bekijken, maar ook data opslaan zodat die op een later moment nog eens bekeken kunnen worden.
+\end{itemize}
+
+Kayzr wenst dus een middleware oplossing, gratis te downloaden via npm, die uit binnenkomende verzoeken praktisch alle informatie kan halen. Deze informatie moet vervolgens ergens opgeslagen worden en op een visuele manier ook bekeken kunnen worden. 
+
+Men kan vervolgens controleren of het doel bereikt is door te kijken of de middleware een meerwaarde vormt voor het ontwikkelingsteam, er meer data is uit te halen dan vóór de verkregen middleware, en aan alle voorgaande requirements is voldaan.
+
+De opbouw van die middleware wordt omschreven in hoofdstuk \ref{ch:proofOfConcept}.

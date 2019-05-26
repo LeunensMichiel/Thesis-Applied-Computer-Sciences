@@ -141,16 +141,12 @@ Node.js kent een enorm bloeiende community. Node Package Manager, ofwel npm, is 
 \section{Express}
 \label{sec:express}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.25\linewidth]{express.png}
-	\label{fig:express}
-\end{figure}
-
 \subsection{Waarom Express?}
 \label{sec:whyExpress}
 
-\textcite{ExpressMozilla} maakt ons echter duidelijk dat niet alles rechtstreeks door Node.js wordt ondersteund. Als men bijvoorbeeld aan een webapplicatie routing wenst toe te voegen, zoals HTTP \textsl{GET, POST, PUT, DELETE,} enzovoort... of URL-paden met specifieke requests, statische bestanden weergeven... moet men die code zelf schrijven. Herinner echter het npm-systeem van Node.js. Eén van die honderdduizenden pakketjes is Express. Het is veruit \textit{het} populairste Node framework en is zelfs de grondlegger van duizenden andere pakketjes. Express wordt daarom door bedrijven, waaronder Kayzr, dan ook vaak in combinatie gebruikt met Node.js.
+\begin{wrapfigure}{R}{0.5\textwidth}
+	\includegraphics[width=0.5\linewidth]{express.png}
+\end{wrapfigure}\textcite{ExpressMozilla} maakt ons echter duidelijk dat niet alles rechtstreeks door Node.js wordt ondersteund. Als men bijvoorbeeld aan een webapplicatie routing wenst toe te voegen, zoals HTTP \textsl{GET, POST, PUT, DELETE,} enzovoort... of URL-paden met specifieke requests, statische bestanden weergeven... moet men die code zelf schrijven. Herinner echter het npm-systeem van Node.js. Eén van die honderdduizenden pakketjes is Express. Het is veruit \textit{het} populairste Node framework en is zelfs de grondlegger van duizenden andere pakketjes. Express wordt daarom door bedrijven, waaronder Kayzr, dan ook vaak in combinatie gebruikt met Node.js.
 
 \subsubsection{Request Handlers}
 \label{sec:reqHandlers}
@@ -172,15 +168,15 @@ Modulariteit is een kerneigenschap van Express. Express is \textit{unopinionated
 
 Wellicht de krachtigste eigenschap van Express is het gebruik kunnen maken van middleware. Middleware wordt voortdurend gebruikt in Express. Wanneer een request binnenkomt, wordt deze doorgestuurd door nul, één of meerdere middleware die elk iets doen met de request, tot deze uiteindelijk wordt afgehandeld. De volgorde waarin een request de middleware doorloopt, is volledig afhankelijk van de programmeur. Net zoals Node.js, kent Express ook een enorm grote bibliotheek aan middleware die men kan gebruiken in een applicatie en eveneens helemaal verkrijgbaar is via npm. Hierdoor kunnen ontwikkelaars zelf hun middleware schrijven, bestaande middleware downloaden en deze inpluggen in hun applicatie. Middleware kan gaan van Http-request loggers tot cookie-parsers en veel meer. De mogelijkheden zijn praktisch oneindig. Foutmeldingen zijn een goed voorbeeld van Express Middleware. Wanneer ergens iets fout gaat, roept Express de Error-Handler op, die dan zelf de request afwerkt. Monitoringtoepassingen in Node.js maken vaak gebruik van middleware. Hierover volgt meer info in het volgende hoofdstuk.
 
-	\begin{lstlisting}[language=JavaScript, breaklines=true,
-						numbers=left, frame=single,
+\begin{minipage}{\linewidth}
+	\begin{lstlisting}[style=ES6,
 						caption={Express code flow voorbeeld.},
 						label=code:expressexample]
-	var express = require('express');
-	var app = express();
+	const express = require('express');
+	const app = express();
 	
 	// An example middleware function
-	var a_middleware_function = function(req, res, next) {
+	const a_middleware_function = function(req, res, next) {
 	// ... perform some operations
 	// Call next() so Express will call the next middleware function in the chain.
 	next();
@@ -197,7 +193,7 @@ Wellicht de krachtigste eigenschap van Express is het gebruik kunnen maken van m
 	
 	app.listen(3000);
 	\end{lstlisting}
-	
+\end{minipage}	
 	
 Middleware schrijven is op zich niet moeilijk. Men kan een enkele functie schrijven, of een heel takenpakket, die men dan als het ware injecteert in een request afhandeling. In een middleware functie verkrijgt men dan een req object, dat van de router kan komen of van een andere middleware, waar dan iets mee kan gedaan worden. Wanneer alles is uitgevoerd, roept de middleware de next-functie op, die dan het nieuwe res, of result, object doorstuurt naar de volgende middleware. Het kan ook zijn dat de middleware de next-functie niet oproept, wat betekent dat dit de laatste stop was van router. 
 
@@ -364,33 +360,6 @@ PM2 is één van de populairste tools in Node.js en het kan gratis gebruikt word
 \end{itemize}
 
 PM2 kent vele functies, maar kent ook een betalende PM2 Plus versie. Deze versie kost \euro\textbf{79} per server per maand, wat ook al meteen buiten de prijsklasse valt van Kayzr, maar is wel speciaal gemaakt voor monitoring. Het enige nadeel aan de gratis versie van PM2 is dat deze voor Kayzr net niet genoeg functies bevat. Realtime logs, exception tracking en histogrammen van de data maken het meteen een enorm duur opstapje.
-
-\section{Probleem van Kayzr}
-\label{sec:kayzrProblem}
-
-Het probleem van Kayzr is dat hun data over verschillende servers verspreid staan. Kayzr wenst deze data te centraliseren. Zo hoeven ze niet langer voor sommige zaken naar Google App Engine te gaan, andere voor andere naar Google Cloud Service, nog andere zaken in Morgan, of simpelweg de Node console, enzovoort. Dit zou het best kunnen opgelost worden via een Express middleware die alle data verzamelt, van geolocatie tot foutmeldingen, en omzet in .json formaat. Deze .json zou dan kunnen uitgelezen worden om zo een mooie visualisatie van de opgevangen data te hebben. Men zou het kunnen aanzien als een enorm versimpelde versie van alle voorgaande betalende monitoring tools. 
-
-Monitoringsoftware is te duur en veel te uitgebreid voor hen, maar de gratis bestaande tools op npm zijn te primitief. Daarom hebben ze de opdracht gegeven om iets te ontwikkelen dat het debugproces aanzienlijk zou kunnen verbeteren. 
-
-\subsection{Effectieve requirements}
-\label{sec:requirements}
-
-Hieronder worden de effectieve requirements, na overleg met Kayzr, weergegeven.
-
-\begin{itemize}
-	\item Hoeveel keer wordt een bepaalde API call uitgevoerd in een specifieke tijdspanne? Kan Kayzr hierdoor bekijken welke API calls tijdens drukke uren te veel worden opgeroepen en de applicatie vertragen?
-	\item In Google Cloud Stack Driver kan men mooi de errors terugvinden die voorkwamen op de backend server. Maar daar staat nergens de URL van de opgeroepen API call bij. Waar is deze fout beginnen optreden? Kan men die URL verkrijgen opdat men niet moet zoeken naar een naald in een hooiberg?
-	\item Kunnen deze fouten ergens opgeslagen worden opdat men later deze fouten makkelijker kan terugvinden?
-	\item Kan men de (gemiddelde) tijd monitoren tussen het versturen van een bepaalde API call en een verkregen antwoord?
-	\item Monitoren van de taxatie van deze Node.js processen op de server waar ze op draaien (CPU, RAM, netwerk,…)
-	\item Middleware als Morgan toont veel te weinig, Google Cloud Stack Driver toont veel maar geeft geen context mee. De eerder opgesomde betalende monitoringsoftwares bevatten te veel functies die Kayzr niet meteen zou gebruiken, maar wel handig \textit{zouden kunnen} zijn. Dit verantwoordt echter hun grote kostprijs niet, en Kayzr wenst dus dat budget er niet aan te spenderen. Bestaat er geen goede middenweg?
-	\item Afhankelijk zijn van betalende services betekent ook dat de data van Kayzr terecht komen bij (dure) third party oplossingen. Zijn die data veilig? Volgen ze de GDPR regels? Ze houden liever hun data in eigen beheer.
-	\item Men wil niet enkel realtime zaken kunnen bekijken, maar ook data opslaan zodat die op een later moment nog eens bekeken kunnen worden.
-\end{itemize}
-
-Kayzr wenst dus een middleware oplossing, gratis te downloaden via npm, die uit binnenkomende verzoeken praktisch alle informatie kan halen. Deze informatie moet vervolgens ergens opgeslagen worden en op een visuele manier ook bekeken kunnen worden. 
-
-Men kan vervolgens controleren of het doel bereikt is door te kijken of de middleware een meerwaarde vormt voor het ontwikkelingsteam, er meer data is uit te halen dan vóór de verkregen middleware, en aan alle voorgaande requirements is voldaan.
 
 
 
