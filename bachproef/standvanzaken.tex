@@ -21,10 +21,7 @@ Dit hoofdstuk bestaat uit een uitgebreide literatuurstudie, waarin de kern van h
 \section{Javascript}
 \label{sec:javascript}
 
-
-\begin{wrapfigure}{I}{0.20\textwidth}
-	\includegraphics[width=0.20\textwidth]{js.png}
-\end{wrapfigure} Javascript is een programmeertaal gemaakt voor het web, waarmee statische websites kunnen omgezet worden naar dynamische en interactieve websites. Doordat het een enorm krachtige scripttaal is dat speciaal werd ontwikkeld om de functionaliteiten van een doorsnee HTML/CSS-pagina uit te breiden, wordt het bijna onmogelijk om nog iets in te beelden dat niet geïmplementeerd kan worden m.b.v. Javascript. De taal is weakly-typed, functioneel, event-driven en dynamisch. JavaScript bevat een bibliotheek van standaardobjecten samen met specifieke taalelementen zoals operatoren, controlestructuren, enz... Deze kern of 'core' kan makkelijk uitgebreid worden met extra objecten waardoor men JavaScript makkelijk kan specifieren als \textit{Client-side JavaScript} en \textit{Server-side JavaScript}. Client-side JavaScript wordt bijvoorbeeld gebruikt om de interactie met de gebruiker te verzorgen, zoals muiskliks, keyboard-hits en nog veel meer. Server-side JavaScript houdt zich eerder bezig met het achterliggende van een site, bijvoorbeeld om een webapplicatie te doen communiceren met een databank. Een zeer bekende en veel gebruikte Server-side JavaScript variant is Node.js, waarover later meer uitleg volgt. \autocite{Javascript2019}
+Javascript is een programmeertaal gemaakt voor het web, waarmee statische websites kunnen omgezet worden naar dynamische en interactieve websites. Doordat het een enorm krachtige scripttaal is dat speciaal werd ontwikkeld om de functionaliteiten van een doorsnee HTML/CSS-pagina uit te breiden, wordt het bijna onmogelijk om nog iets in te beelden dat niet geïmplementeerd kan worden m.b.v. Javascript. De taal is weakly-typed, functioneel, event-driven en dynamisch. JavaScript bevat een bibliotheek van standaardobjecten samen met specifieke taalelementen zoals operatoren, controlestructuren, enz... Deze kern of 'core' kan makkelijk uitgebreid worden met extra objecten waardoor men JavaScript makkelijk kan specifieren als \textit{Client-side JavaScript} en \textit{Server-side JavaScript}. Client-side JavaScript wordt bijvoorbeeld gebruikt om de interactie met de gebruiker te verzorgen, zoals muiskliks, keyboard-hits en nog veel meer. Server-side JavaScript houdt zich eerder bezig met het achterliggende van een site, bijvoorbeeld om een webapplicatie te doen communiceren met een databank. Een zeer bekende en veel gebruikte Server-side JavaScript variant is Node.js, waarover later meer uitleg volgt. \autocite{Javascript2019}
 
 \subsection{Tijdlijn van JavaScript}
 \label{sec:jsTimeline}
@@ -51,7 +48,7 @@ Een dynamisch getypeerde taal slaat op het feit dat het type van waarden kan ver
 	\label{fig:dom}
 \end{figure}
 
-De DOM, ofwel Document Object Model, is kortweg het skelet van een HTML-pagina. De structuur van het skelet beschrijft een boomstructuur, waardoor een element een ouder, broer, kind, kleinkind, achterkleinkind, enz... van een element kan zijn. Het HTML element is de wortel van de boom. Client-side JavaScript wordt grotendeels gebruikt om deze boomstructuur te manipuleren. Hierdoor kunnen we HTML elementen toevoegen, verwijderen, stijlen manipuleren, enz... allemaal tijdens uitvoertijd. \textcite{Kantor2017}
+De DOM, ofwel Document Object Model, is kortweg het skelet van een HTML-pagina. De structuur van het skelet beschrijft een boomstructuur, waardoor een element een ouder, broer, kind, kleinkind, achterkleinkind, enz... van een element kan zijn, zoals beschreven in \ref{fig:dom}. Het HTML element is de wortel van de boom. Client-side JavaScript wordt grotendeels gebruikt om deze boomstructuur te manipuleren. Hierdoor kunnen we HTML elementen toevoegen, verwijderen, stijlen manipuleren, enz... allemaal tijdens uitvoertijd. \textcite{Kantor2017}
 
 \subsubsection{Prototype-based}
 \label{sec:prototypeBased}
@@ -86,9 +83,7 @@ JavaScript wordt sinds ES5 ondersteund door alle moderne browsers! Of er nu in C
 \section{Node.js}
 \label{sec:nodeJs}
 
-\begin{wrapfigure}{L}{0.20\textwidth}
-	\includegraphics[width=0.20\textwidth]{node.png}
-\end{wrapfigure}Node.js is een open-source JavaScript runtime-omgeving die wordt gebruikt voor server-side toepassingen. Node.js maakt het mogelijk (of eerder \textit{makkelijker}) om JavaScript nu ook te gebruiken buiten het maken van websites. Aangezien JavaScript zo'n krachtige taal is, hadden de ontwikkelaars van Node.js één ding in gedachten: JavaScript niet enkel voor browsers, maar ook voor alleenstaande applicaties. Sindsdien evenaart JavaScript andere scripttalen, zoals Python. \textcite{Patel2018}
+Node.js is een open-source JavaScript runtime-omgeving die wordt gebruikt voor server-side toepassingen. Node.js maakt het mogelijk (of eerder \textit{makkelijker}) om JavaScript nu ook te gebruiken buiten het maken van websites. Aangezien JavaScript zo'n krachtige taal is, hadden de ontwikkelaars van Node.js één ding in gedachten: JavaScript niet enkel voor browsers, maar ook voor alleenstaande applicaties. Sindsdien evenaart JavaScript andere scripttalen, zoals Python. \textcite{Patel2018}
 
 \subsection{Tijdlijn van Node.js}
 \label{sec:nodeTimeline}
@@ -144,9 +139,7 @@ Node.js kent een enorm bloeiende community. Node Package Manager, ofwel npm, is 
 \subsection{Waarom Express?}
 \label{sec:whyExpress}
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-	\includegraphics[width=0.5\linewidth]{express.png}
-\end{wrapfigure}\textcite{ExpressMozilla} maakt ons echter duidelijk dat niet alles rechtstreeks door Node.js wordt ondersteund. Als men bijvoorbeeld aan een webapplicatie routing wenst toe te voegen, zoals HTTP \textsl{GET, POST, PUT, DELETE,} enzovoort... of URL-paden met specifieke requests, statische bestanden weergeven... moet men die code zelf schrijven. Herinner echter het npm-systeem van Node.js. Eén van die honderdduizenden pakketjes is Express. Het is veruit \textit{het} populairste Node framework en is zelfs de grondlegger van duizenden andere pakketjes. Express wordt daarom door bedrijven, waaronder Kayzr, dan ook vaak in combinatie gebruikt met Node.js.
+\textcite{ExpressMozilla} maakt ons echter duidelijk dat niet alles rechtstreeks door Node.js wordt ondersteund. Als men bijvoorbeeld aan een webapplicatie routing wenst toe te voegen, zoals HTTP \textsl{GET, POST, PUT, DELETE,} enzovoort... of URL-paden met specifieke requests, statische bestanden weergeven... moet men die code zelf schrijven. Herinner echter het npm-systeem van Node.js. Eén van die honderdduizenden pakketjes is Express. Het is veruit \textit{het} populairste Node framework en is zelfs de grondlegger van duizenden andere pakketjes. Express wordt daarom door bedrijven, waaronder Kayzr, dan ook vaak in combinatie gebruikt met Node.js.
 
 \subsubsection{Request Handlers}
 \label{sec:reqHandlers}
@@ -195,7 +188,7 @@ Wellicht de krachtigste eigenschap van Express is het gebruik kunnen maken van m
 	\end{lstlisting}
 \end{minipage}	
 	
-Middleware schrijven is op zich niet moeilijk. Men kan een enkele functie schrijven, of een heel takenpakket, die men dan als het ware injecteert in een request afhandeling. In een middleware functie verkrijgt men dan een req object, dat van de router kan komen of van een andere middleware, waar dan iets mee kan gedaan worden. Wanneer alles is uitgevoerd, roept de middleware de next-functie op, die dan het nieuwe res, of result, object doorstuurt naar de volgende middleware. Het kan ook zijn dat de middleware de next-functie niet oproept, wat betekent dat dit de laatste stop was van router. 
+Middleware schrijven is op zich niet moeilijk. Men kan een enkele functie schrijven, of een heel takenpakket, die men dan als het ware injecteert in een request afhandeling. In een middleware functie verkrijgt men dan een req object, dat van de router kan komen of van een andere middleware, waar dan iets mee kan gedaan worden. Wanneer alles is uitgevoerd, roept de middleware de next-functie op, die dan het nieuwe res, of result, object doorstuurt naar de volgende middleware. Het kan ook zijn dat de middleware de next-functie niet oproept, wat betekent dat dit de laatste stop was van de router. Deze methodologie is gevisualiseerd in figuur \ref{fig:middleware}.
 
 \begin{figure}[h]
 	\includegraphics[width=\linewidth]{middleware.png}
@@ -203,6 +196,7 @@ Middleware schrijven is op zich niet moeilijk. Men kan een enkele functie schrij
 	\label{fig:middleware}
 \end{figure}
 
+\pagebreak
 \section{Testen en Monitoring}
 \label{sec:testAndMonitoring}
 
@@ -351,20 +345,21 @@ PM2 is één van de populairste tools in Node.js en het kan gratis gebruikt word
 	\item Log management
 	\item Max memory reload
 	\item Startup Scripts
-	\item \textbf{monitoring}
+	\item \textbf{Monitoring}
 	\item Cluster Mode
 	\item Hot reload
 	\item Keymetrics monitoring
 	\item Procesbeheer
-	\item ...
 \end{itemize}
 
 PM2 kent vele functies, maar kent ook een betalende PM2 Plus versie. Deze versie kost \euro\textbf{79} per server per maand, wat ook al meteen buiten de prijsklasse valt van Kayzr, maar is wel speciaal gemaakt voor monitoring. Het enige nadeel aan de gratis versie van PM2 is dat deze voor Kayzr net niet genoeg functies bevat. Realtime logs, exception tracking en histogrammen van de data maken het meteen een enorm duur opstapje.
 
-
-
+\subsubsection{Samengevat}
+\label{sec:samengevat}
  
+Men kan hieruit concluderen dat de gratis middleware uitstekend werken om eenvoudige zaken te monitoren. Het moment dat er wordt overgeschakeld naar een betalende oplossing, stijgt het aantal functionaliteiten enorm. Elke betalende monitoringsoftware heeft ook minstens één eigenschap waarmee die zich onderscheidt van de concurrentie. 
 
+Er kan hieruit besloten worden dat er geen software bestaat dat het beste brengt van beide werelden, namelijk de betalende en niet-betalende oplossingen.
 
 
 

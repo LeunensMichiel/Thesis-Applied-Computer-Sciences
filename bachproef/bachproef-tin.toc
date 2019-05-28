@@ -49,7 +49,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Waarom Express?}{23}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Request Handlers}{24}{section*.16}
+\contentsline {subsubsection}{Request Handlers}{23}{section*.16}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Views}{24}{section*.17}
 \defcounter {refsection}{0}\relax 
@@ -65,7 +65,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}Monitoring}{27}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Hoe werkt monitoring?}{27}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.1}Hoe werkt monitoring?}{28}{subsection.2.5.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.5.2}Monitoring, Node.js en Express}{28}{subsection.2.5.2}
 \defcounter {refsection}{0}\relax 
@@ -81,9 +81,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Retrace}{30}{section*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Dynatrace}{30}{section*.25}
+\contentsline {subsubsection}{Dynatrace}{31}{section*.25}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{PM2}{31}{section*.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Samengevat}{32}{section*.27}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Het probleem van Kayzr}{33}{chapter.3}
 \defcounter {refsection}{0}\relax 
@@ -105,19 +107,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.4}Grafana's grafieken}{43}{subsection.5.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Basics}{43}{section*.27}
+\contentsline {subsubsection}{Basics}{43}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Number of requests}{43}{section*.28}
+\contentsline {subsubsection}{Number of requests}{43}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Errors}{43}{section*.29}
+\contentsline {subsubsection}{Errors}{43}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Database timings}{44}{section*.30}
+\contentsline {subsubsection}{Database timings}{44}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Users}{44}{section*.31}
+\contentsline {subsubsection}{Users}{44}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Memory Usage}{44}{section*.32}
+\contentsline {subsubsection}{Memory Usage}{44}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{CPU Usage}{46}{section*.33}
+\contentsline {subsubsection}{CPU Usage}{46}{section*.34}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}Publicatie}{46}{section.5.2}
 \defcounter {refsection}{0}\relax 
@@ -129,9 +131,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.1.2}Nice-to-have}{55}{subsection.6.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Geolocatie}{56}{section*.34}
+\contentsline {subsubsection}{Geolocatie}{56}{section*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Databank metrieken}{56}{section*.35}
+\contentsline {subsubsection}{Databank metrieken}{56}{section*.36}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.2}Hoe ziet Kayzr de toekomst?}{57}{section.6.2}
 \defcounter {refsection}{0}\relax 
@@ -149,5 +151,5 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A.5}Verwachte conclusies}{61}{section.A.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografie}{63}{appendix*.36}
+\contentsline {chapter}{Bibliografie}{63}{appendix*.37}
 \contentsfinish 
