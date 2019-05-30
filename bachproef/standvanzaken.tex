@@ -18,17 +18,19 @@
 
 Dit hoofdstuk bestaat uit een uitgebreide literatuurstudie, waarin de kern van het probleem wordt opgesplitst in verschillende delen. In het eerste deel wordt er uitleg gegeven over JavaScript zelf en diens evolutie. Vervolgens volgt er een groot deel over de frameworks Node.js en Express, nadien bekijken we het belang van testen en monitoren van software en breiden we uit naar een analyse van dergelijke monitoringsoftware. In het tweede deel wordt er onderzoek gedaan naar de vraag van Kayzr: wat wordt er verwacht, welk inzicht moet er gegeven worden, welke features moeten worden uitgewerkt. 
 
-\section{Javascript}
+\section{JavaScript}
 \label{sec:javascript}
 
-Javascript is een programmeertaal gemaakt voor het web, waarmee statische websites kunnen omgezet worden naar dynamische en interactieve websites. Doordat het een enorm krachtige scripttaal is dat speciaal werd ontwikkeld om de functionaliteiten van een doorsnee HTML/CSS-pagina uit te breiden, wordt het bijna onmogelijk om nog iets in te beelden dat niet geïmplementeerd kan worden m.b.v. Javascript. De taal is weakly-typed, functioneel, event-driven en dynamisch. JavaScript bevat een bibliotheek van standaardobjecten samen met specifieke taalelementen zoals operatoren, controlestructuren, enz... Deze kern of 'core' kan makkelijk uitgebreid worden met extra objecten waardoor men JavaScript makkelijk kan specifieren als \textit{Client-side JavaScript} en \textit{Server-side JavaScript}. Client-side JavaScript wordt bijvoorbeeld gebruikt om de interactie met de gebruiker te verzorgen, zoals muiskliks, keyboard-hits en nog veel meer. Server-side JavaScript houdt zich eerder bezig met het achterliggende van een site, bijvoorbeeld om een webapplicatie te doen communiceren met een databank. Een zeer bekende en veel gebruikte Server-side JavaScript variant is Node.js, waarover later meer uitleg volgt. \autocite{Javascript2019}
+JavaScript is een programmeertaal gemaakt voor het web, waarmee statische websites kunnen omgezet worden naar dynamische en interactieve websites. Doordat het een enorm krachtige scripttaal is dat speciaal werd ontwikkeld om de functionaliteiten van een doorsnee webpagina gemaakt uit de talen HTML en CSS, uit te breiden, wordt het bijna onmogelijk om nog iets in te beelden dat niet geïmplementeerd kan worden m.b.v. JavaScript. De taal is weakly-typed, functioneel, event-driven en dynamisch (hierover volgt later meer uitleg). 
+
+JavaScript bevat een bibliotheek van standaardobjecten samen met specifieke taalelementen zoals operatoren, controlestructuren, enz... Deze kern of 'core' kan makkelijk uitgebreid worden met extra objecten waardoor de taal eenvoudig kan aangepast worden aan verschillende omgevingen. Hierdoor wordt JavaScript regelmatig gespecificeerd als \textit{client-side JavaScript} en \textit{server-side JavaScript}. Client-side JavaScript wordt bijvoorbeeld gebruikt om de interactie met de gebruiker te verzorgen, zoals muiskliks, keyboard-hits en nog veel meer. Server-side JavaScript houdt zich eerder bezig met het achterliggende van een site, bijvoorbeeld om een webapplicatie te doen communiceren met een databank. Een zeer bekende en veel gebruikte server-side JavaScript dialect is Node.js, waarover later meer uitleg volgt. \autocite{Javascript2019}
 
 \subsection{Tijdlijn van JavaScript}
 \label{sec:jsTimeline}
 
 JavaScript heeft een hele evolutie achter de rug. Ontstaan in mei 1995, wordt de taal na vele updates nog steeds dagelijks gebruikt en kan het wereldwijde web niet meer ingebeeld worden zonder. Brendan Eich, de auteur van de taal, werkte in 1995 samen met Netscape Communications, de makers van de eerste grote webbrowser (Netscape Navigator), om in hun browser een taal te implementeren waar webontwikkelaars gebruik van zouden kunnen maken. Java, een zeer zware programmeertaal met tal van functionaliteiten, was de eerste keuze van Netscape, maar Eich schreef uiteindelijk zijn eigen idee van een scripttaal uit in nog geen 10 dagen en overtuigde Netscape om die lichte, schaalbare en Java-complementerende taal te adopteren \autocite{Rangpariya2019}. Javascript, toen onder de naam Mocha en vervolgens LiveScript, was geboren en zette de wereld van webontwikkelaars op zijn kop.
 
-Netscape bracht achteraf nieuwere versies van JavaScript uit, maar Microsoft dreigde die te onttronen. Niet zoveel later immers, bracht Microsoft Internet Explorer 3 uit, met een eigen variant op JavaScript, namelijk JScript. Dit was een zware slag voor Netscape, aangezien Microsoft hen hierdoor zou voorbijsteken. Tegelijk was het een grote stap in de evolutie van JavaScript zoals wij het nu kennen. Dat bracht echter problemen met zich mee, want bedrijven zouden telkens eigen versies van JavaScript uitbrengen wat voor veel compatibiliteitsproblemen zou zorgen. Uiteindelijk, in 1997, werd JavaScript 1.1 gestandaardiseerd dankzij het European Computer Manufacturers Association en werd omgedoopt tot ECMAScript. \autocite{Wiley2016} Deze standaard, namelijk ES1 (versie 1), zou dan vertakkingen verhelpen. Implementaties van ECMAScript, waaronder JScript, ActionScript, maar dus ook JavaScript zelf, zouden dan telkens ECMAScript implementeren waardoor de core van de varianten telkens hetzelfde blijft. Nu, in 2019, is JavaScript nog steeds enorm populair en implementeert ondertussen al de 9e versie van ECMAScript: ES2018. Na ES5 is ECMASCRIPT overgeschakeld naar jaarlijkse releases, startend vanaf ES2015.
+Netscape bracht achteraf nieuwere versies van JavaScript uit, maar Microsoft dreigde die te onttronen. Niet zoveel later immers, bracht Microsoft Internet Explorer 3 uit met een eigen variant op JavaScript, namelijk JScript. Dit was een zware slag voor Netscape, aangezien Microsoft hen hierdoor zou inhalen. Tegelijk was het een grote stap in de evolutie van JavaScript zoals wij het nu kennen. Dat bracht echter problemen met zich mee, want bedrijven zouden telkens eigen versies van JavaScript uitbrengen wat voor veel compatibiliteitsproblemen zou zorgen. Uiteindelijk, in 1997, werd JavaScript 1.1 gestandaardiseerd dankzij het European Computer Manufacturers Association (ECMA) en werd JavaScript omgedoopt tot ECMAScript. \autocite{Wiley2016} Deze standaard, namelijk ES1 (versie 1), zou dan vertakkingen verhelpen. Implementaties van ECMAScript, waaronder JScript, ActionScript, maar dus ook JavaScript zelf, zouden dan telkens ECMAScript implementeren waardoor de kern van de varianten telkens hetzelfde blijft. Nu, in 2019, is JavaScript nog steeds enorm populair en implementeert die ondertussen al de 9e versie van ECMAScript: ES2018. Na ES5 is ECMASCRIPT overgeschakeld naar jaarlijkse releases, startend vanaf ES2015.
 
 \subsection{Waarom JavaScript?}
 \label{sec:jsWhy}
@@ -38,44 +40,70 @@ JavaScript is niet voor niets enorm populair, zelfs nog steeds na al die jaren, 
 \subsubsection{Dynamisch en weakly-typed}
 \label{sec:dynamic}
 
-Een dynamisch getypeerde taal slaat op het feit dat het type van waarden kan veranderen tijdens uitvoertijd. Dat betekent bijvoorbeeld dat een variabele string plots kan gebruikt worden om een som te maken met een getal. Dit maakt uitvoertijd en compileertijd aanzienlijk sneller omdat er niet voortdurend controles moeten plaatsvinden. Dit zorgt voor hoge performantie, maar slechte nauwkeurigheid.
+Een dynamisch getypeerde taal slaat op het feit dat het type van waarden kan veranderen tijdens uitvoertijd. Dat betekent bijvoorbeeld dat een variabele met als type string (een tekstvariable) plots kan gebruikt worden om een som te maken met een getal. Dit maakt uitvoertijd en compileertijd aanzienlijk sneller omdat er niet voortdurend controles moeten plaatsvinden. Dit zorgt voor hoge performantie, maar slechte nauwkeurigheid.
+
+\begin{lstlisting}[style=ES6,
+caption={Voorbeeld dynamisch getypeerde taal.},
+label=code:dynamic]
+foo = 10;	// Dit is een getal
+bar = '10';	// Dit is een string
+console.log(foo + bar); // Logt 20
+\end{lstlisting}
 
 \subsubsection{DOM-manipulatie}
 \label{sec:DOM}
-\begin{figure}
+\begin{figure}[h]
 	\includegraphics[width=\linewidth]{dom.jpg}
 	\caption{Voorbeeld van een DOM structuur.}
 	\label{fig:dom}
 \end{figure}
 
-De DOM, ofwel Document Object Model, is kortweg het skelet van een HTML-pagina. De structuur van het skelet beschrijft een boomstructuur, waardoor een element een ouder, broer, kind, kleinkind, achterkleinkind, enz... van een element kan zijn, zoals beschreven in \ref{fig:dom}. Het HTML element is de wortel van de boom. Client-side JavaScript wordt grotendeels gebruikt om deze boomstructuur te manipuleren. Hierdoor kunnen we HTML elementen toevoegen, verwijderen, stijlen manipuleren, enz... allemaal tijdens uitvoertijd. \textcite{Kantor2017}
+De DOM, ofwel Document Object Model, is kortweg het skelet van een HTML-pagina. De structuur van het skelet beschrijft een boomstructuur, waardoor een element een ouder, broer, kind, kleinkind, achterkleinkind, enz... van een ander element kan zijn, zoals beschreven in \ref{fig:dom}. Het HTML-element is de wortel van de boom. Client-side JavaScript wordt grotendeels gebruikt om deze boomstructuur te manipuleren. Hierdoor kunnen we HTML-elementen toevoegen, verwijderen, stijlen wijzigen, enz... allemaal tijdens uitvoertijd. \textcite{Kantor2017}
 
 \subsubsection{Prototype-based}
 \label{sec:prototypeBased}
 
-In JavaScript kan een object eigenlijk aanzien worden als een Array. Hierdoor kunnen ze heel gemakkelijk aan de eigenschappen van een object en kunnen deze ook makkelijk tijdens uitvoertijd aangepast worden. Ook kunnen er op deze manier makkelijk eigenschappen aan bestaande objecten worden toegevoegd. In JavaScript wordt gebruik gemaakt van de 'dot-notatie' of van de 'haakjesnotatie'. 
+In JavaScript kan een object eigenlijk aanzien worden als een array\footnote{Een array is een variabele dat meerdere objecten kan opslaan.}. Hierdoor zijn de eigenschappen van een object zeer toegankelijk en kunnen deze ook makkelijk tijdens uitvoertijd aangepast worden. Ook kunnen er op deze manier makkelijk eigenschappen aan bestaande objecten worden toegevoegd. In JavaScript wordt gebruik gemaakt van de 'dot-notatie' of van de 'haakjesnotatie'. 
 
-	\begin{verbatim}
+\begin{lstlisting}[style=ES6,
+	caption={Voorbeeld van de dot-en haakjesnotatie.},
+	label=code:dot]
 	foo.bar = 10;
 	foo['bar'] = 10;
 	const bar = foo.bar;
 	foo['bar2'] = bar;
-	\end{verbatim}
+\end{lstlisting}
 
 \subsubsection{Event-driven}
 \label{sec:eventDriven}
 
-JavaScript is event-driven, wat betekent dat de code vooral kijkt naar acties van de gebruiker. Bijvoorbeeld: Wanneer een gebruiker op een knop klikt, wil je dat met een animatie de knop heen en weer beweegt, tekst op je scherm verschijnt, en een server-request wordt gestuurd. 
+JavaScript is event-driven, wat betekent dat de code vooral kijkt naar acties van de gebruiker. Bijvoorbeeld: Wanneer een gebruiker op een knop klikt, wil je dat met een animatie de knop heen en weer beweegt of tekst op je scherm verschijnt of een request naar een server wordt gestuurd. 
+
+\begin{lstlisting}[style=ES6,
+caption={Functionele programmeerstijl.},
+label=code:func]
+//Pre-functioneel
+const verdubbelen = nummers => {
+const verdubbeld = [];
+for (let i = 0; i < nummers.length; i++) {
+	verdubbeld.push(nummers[i] * 2);
+}
+return verdubbeld;
+};
+
+//Functioneel
+const verdubbelen = nummers => nummers.map(n => n * 2);
+\end{lstlisting}
 
 \subsubsection{Functioneel}
 \label{sec:functional}
 
-Sinds ES2015 is JavaScript niet enkel en alleen een object-georiënteerde taal, maar ook een functionele taal. JavaScript was zeer snel met het introduceren van functioneel programmeren (waaronder de populaire arrow-functions). Dit vergemakkelijkte de taal aanzienlijker, aangezien veel minder code geschreven moest worden om hetzelfde resultaat te bereiken.
+Sinds ES2015 is JavaScript niet enkel en alleen een object-georiënteerde taal, maar ook een functionele taal. JavaScript was zeer snel met het introduceren van de nieuwe functionele programmeerstijl (waaronder de populaire arrow-functions). Dit vergemakkelijkte de taal aanzienlijker, aangezien veel minder code geschreven moest worden om hetzelfde resultaat te bereiken.
 
 \subsubsection{Universeel}
 \label{sec:universal}
 
-JavaScript wordt sinds ES5 ondersteund door alle moderne browsers! Of er nu in Chrome, Firefox, Safari, Edge of het oude Internet Explorer\footnote{Internet Explorer wordt niet meer verder ontwikkeld, dus ondersteunt het enkel ES2015.} wordt gesurft, ze ondersteunen allemaal JavaScript. Door de console in de browser te openen, kan er al geprogrammeerd worden.
+JavaScript wordt sinds ES5 ondersteund door alle moderne browsers! Of er nu in Chrome, Firefox, Safari, Edge of het oude Internet Explorer\footnote{Internet Explorer wordt niet meer verder ontwikkeld, dus ondersteunt het enkel ES2015.} wordt gesurft, ze ondersteunen allemaal JavaScript. Door de console in de browser te openen, kan er zelfs al geprogrammeerd worden.
 
 
 
@@ -83,7 +111,7 @@ JavaScript wordt sinds ES5 ondersteund door alle moderne browsers! Of er nu in C
 \section{Node.js}
 \label{sec:nodeJs}
 
-Node.js is een open-source JavaScript runtime-omgeving die wordt gebruikt voor server-side toepassingen. Node.js maakt het mogelijk (of eerder \textit{makkelijker}) om JavaScript nu ook te gebruiken buiten het maken van websites. Aangezien JavaScript zo'n krachtige taal is, hadden de ontwikkelaars van Node.js één ding in gedachten: JavaScript niet enkel voor browsers, maar ook voor alleenstaande applicaties. Sindsdien evenaart JavaScript andere scripttalen, zoals Python. \textcite{Patel2018}
+Node.js is een open-source JavaScript runtime-omgeving die wordt gebruikt voor server-side toepassingen. Node.js maakt het mogelijk (of eerder \textit{makkelijker}) om JavaScript nu ook te gebruiken buiten het maken van websites. Aangezien JavaScript zo'n krachtige taal is, hadden de ontwikkelaars van Node.js één ding in gedachten: JavaScript niet enkel voor browsers, maar ook voor alleenstaande applicaties. Sindsdien evenaart JavaScript andere scripttalen voor backend\footnote{Backend is een ander woord voor software die niet aan de eindgebruiker wordt getoond. Het tegenovergestelde van backend is frontend. Letterlijk het programmeren van de voor-of achterkant van software. } toepassingen, zoals Python. \textcite{Patel2018}
 
 \subsection{Tijdlijn van Node.js}
 \label{sec:nodeTimeline}
@@ -91,7 +119,7 @@ Node.js' verhaal start in 2009, toen de ontwikkelaar Ryan Dahl een probleem onde
 
 Zoals beschreven in \autocite{Chaniotis2015}, was (en is in grote mate nog steeds) Apache HTTP, in combinatie met PHP, jarenlang de go-to-taal om webapplicaties te laten communiceren met databases en server-side functionaliteiten toe te voegen aan \linebreak webapplicaties, zoals authenticatie, file-en-ftpservers, logging en nog veel meer. PHP is echter nooit ontwikkeld geweest om hedendaagse, complexe webapplicaties te schrijven. Ten tweede was Apache niet in staat om te schalen naar meerdere processorkernen, waardoor de performantie enorm daalde. PHP in combinatie met Apache was gewoonweg niet geschikt voor de volgende generatie webapplicaties. Andere struikelblokken zijn cross-platform mobiele applicaties en real-time communicatie.
 
-Applicaties worden in toenemende mate gemaakt met cross-platform compatibiliteit in het achterhoofd, aangezien de toestroom van verschillende nieuwe besturingssystemen en apparaten het meer en meer onmogelijk maakt om native apps\footnote{Native Apps zijn applicaties die gemaakt worden met één besturingssysteem in het hoofd. Bv: Android, IOS.} te ontwikkelen. Hierdoor worden bibliotheken en frameworks ontwikkeld zoals React Native, Flutter, Xamarin, Ionic, PhoneGap, enz... die deze nadelen kunnen overbruggen. Deze zijn echter zo krachtig geworden en schenken zoveel nieuwe voordelen, dat server-side talen en frameworks zoals Apache HTTP/PHP eerder een bottleneck vormden. 
+Applicaties worden in toenemende mate ontwikkeld met cross-platform compatibiliteit in het achterhoofd, aangezien de toestroom van verschillende nieuwe besturingssystemen en apparaten het meer en meer ingewikkeld maakt om native apps\footnote{Native Apps zijn applicaties die gemaakt worden voor één besturingssysteem. Bv: Android, IOS, Windows.} te ontwikkelen. Hierdoor worden bibliotheken en frameworks ontwikkeld zoals React Native, Flutter, Xamarin, Ionic, PhoneGap, enz... die deze nadelen kunnen overbruggen. Deze zijn echter zo krachtig geworden en schenken zoveel nieuwe voordelen, dat server-side talen en frameworks zoals Apache HTTP/PHP eerder een knelpunt vormden. 
 
 Real-time communicatie is nog een factor die niet ondersteund wordt door Apache. Apache was niet ontwikkeld om berichten te sturen naar de client-side. In de wereld van vandaag, waarin sociale media nog nooit zo'n grote invloed hebben gehad op ons dagelijks leven, is het haast ondenkbaar dat real-time communicatie niet zou kunnen bestaan. 
 

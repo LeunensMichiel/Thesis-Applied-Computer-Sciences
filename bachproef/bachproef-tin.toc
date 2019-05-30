@@ -13,7 +13,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Stand van zaken}{17}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Javascript}{17}{section.2.1}
+\contentsline {section}{\numberline {2.1}JavaScript}{17}{section.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.1}Tijdlijn van JavaScript}{18}{subsection.2.1.1}
 \defcounter {refsection}{0}\relax 
@@ -23,133 +23,135 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{DOM-manipulatie}{19}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Prototype-based}{19}{section*.8}
+\contentsline {subsubsection}{Prototype-based}{20}{section*.8}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Event-driven}{20}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Functioneel}{20}{section*.10}
+\contentsline {subsubsection}{Functioneel}{21}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Universeel}{20}{section*.11}
+\contentsline {subsubsection}{Universeel}{21}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Node.js}{20}{section.2.2}
+\contentsline {section}{\numberline {2.2}Node.js}{21}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Tijdlijn van Node.js}{20}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}Tijdlijn van Node.js}{21}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Waarom Node.js?}{21}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Waarom Node.js?}{23}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Nieuw}{22}{section*.12}
+\contentsline {subsubsection}{Nieuw}{23}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Asynchroon}{22}{section*.13}
+\contentsline {subsubsection}{Asynchroon}{23}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Performant}{23}{section*.14}
+\contentsline {subsubsection}{Performant}{24}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{npm}{23}{section*.15}
+\contentsline {subsubsection}{npm}{24}{section*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Express}{23}{section.2.3}
+\contentsline {section}{\numberline {2.3}Express}{24}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Waarom Express?}{23}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.1}Waarom Express?}{24}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Request Handlers}{23}{section*.16}
+\contentsline {subsubsection}{Request Handlers}{24}{section*.16}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Views}{24}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Modulair}{24}{section*.18}
+\contentsline {subsubsection}{Modulair}{25}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Middleware}{24}{section*.19}
+\contentsline {subsubsection}{Middleware}{25}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Testen en Monitoring}{26}{section.2.4}
+\contentsline {section}{\numberline {2.4}Testen en Monitoring}{27}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Agile Testing}{26}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.1}Agile Testing}{27}{subsection.2.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Soorten Agile Testing}{27}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.2}Soorten Agile Testing}{28}{subsection.2.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Monitoring}{27}{section.2.5}
+\contentsline {section}{\numberline {2.5}Monitoring}{28}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Hoe werkt monitoring?}{28}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.1}Hoe werkt monitoring?}{29}{subsection.2.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}Monitoring, Node.js en Express}{28}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.2}Monitoring, Node.js en Express}{29}{subsection.2.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.3}Tools}{28}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.3}Tools}{29}{subsection.2.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Morgan}{28}{section*.20}
+\contentsline {subsubsection}{Morgan}{29}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Express-Status-Monitor}{29}{section*.21}
+\contentsline {subsubsection}{Express-Status-Monitor}{30}{section*.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Prometheus}{29}{section*.22}
+\contentsline {subsubsection}{Prometheus}{30}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{New Relic}{29}{section*.23}
+\contentsline {subsubsection}{New Relic}{30}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Retrace}{30}{section*.24}
+\contentsline {subsubsection}{Retrace}{31}{section*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Dynatrace}{31}{section*.25}
+\contentsline {subsubsection}{Dynatrace}{32}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{PM2}{31}{section*.26}
+\contentsline {subsubsection}{PM2}{32}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Samengevat}{32}{section*.27}
+\contentsline {subsubsection}{Samengevat}{33}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Het probleem van Kayzr}{33}{chapter.3}
+\contentsline {chapter}{\numberline {3}Het probleem van Kayzr}{35}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Probleemstelling}{33}{section.3.1}
+\contentsline {section}{\numberline {3.1}Probleemstelling}{35}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Effectieve requirements}{33}{section.3.2}
+\contentsline {section}{\numberline {3.2}Effectieve requirements}{35}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Methodologie}{35}{chapter.4}
+\contentsline {chapter}{\numberline {4}Methodologie}{37}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Proof of concept}{37}{chapter.5}
+\contentsline {chapter}{\numberline {5}Proof of concept}{39}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Werkwijze}{37}{section.5.1}
+\contentsline {section}{\numberline {5.1}Werkwijze}{39}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Multilogger}{37}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.1}Multilogger}{39}{subsection.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Grafana en InfluxDB}{39}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.2}Grafana en InfluxDB}{41}{subsection.5.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Wegschrijven en abstraheren}{40}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.3}Wegschrijven en abstraheren}{42}{subsection.5.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.4}Grafana's grafieken}{43}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.4}Grafana's grafieken}{45}{subsection.5.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Basics}{43}{section*.28}
+\contentsline {subsubsection}{Basics}{45}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Number of requests}{43}{section*.29}
+\contentsline {subsubsection}{Number of requests}{45}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Errors}{43}{section*.30}
+\contentsline {subsubsection}{Errors}{45}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Database timings}{44}{section*.31}
+\contentsline {subsubsection}{Database timings}{46}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Users}{44}{section*.32}
+\contentsline {subsubsection}{Users}{46}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Memory Usage}{44}{section*.33}
+\contentsline {subsubsection}{Memory Usage}{46}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{CPU Usage}{46}{section*.34}
+\contentsline {subsubsection}{CPU Usage}{48}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Publicatie}{46}{section.5.2}
+\contentsline {section}{\numberline {5.2}Publicatie}{48}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusie}{53}{chapter.6}
+\contentsline {chapter}{\numberline {6}Conclusie}{49}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Meting aan de vereisten}{53}{section.6.1}
+\contentsline {section}{\numberline {6.1}Meting aan de vereisten}{49}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.1}Toetsing}{53}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.1}Toetsing}{49}{subsection.6.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.2}Nice-to-have}{55}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.2}Nice-to-have}{51}{subsection.6.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Geolocatie}{56}{section*.35}
+\contentsline {subsubsection}{Geolocatie}{52}{section*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Databank metrieken}{56}{section*.36}
+\contentsline {subsubsection}{Databank metrieken}{52}{section*.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Hoe ziet Kayzr de toekomst?}{57}{section.6.2}
+\contentsline {section}{\numberline {6.2}Hoe ziet Kayzr de toekomst?}{53}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Uitbreiding en verder onderzoek}{57}{section.6.3}
+\contentsline {section}{\numberline {6.3}Uitbreiding en verder onderzoek}{53}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{59}{appendix.A}
+\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{55}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Introductie}{59}{section.A.1}
+\contentsline {section}{\numberline {A.1}Introductie}{55}{section.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}State-of-the-art}{59}{section.A.2}
+\contentsline {section}{\numberline {A.2}State-of-the-art}{55}{section.A.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Methodologie}{60}{section.A.3}
+\contentsline {section}{\numberline {A.3}Methodologie}{56}{section.A.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Verwachte resultaten}{61}{section.A.4}
+\contentsline {section}{\numberline {A.4}Verwachte resultaten}{57}{section.A.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Verwachte conclusies}{61}{section.A.5}
+\contentsline {section}{\numberline {A.5}Verwachte conclusies}{57}{section.A.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografie}{63}{appendix*.37}
+\contentsline {chapter}{\numberline {B}Bijlagen}{59}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografie}{67}{appendix*.37}
 \contentsfinish 

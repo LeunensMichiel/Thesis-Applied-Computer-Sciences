@@ -9,7 +9,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Google searches van PHP (blauw), Apache (rood) en Node.js (geel) in de afgelopen 5 jaar.}}{22}{figure.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Schema van de werking van middleware, gebruikt van \cite {middleware}}}{26}{figure.2.3}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Schema van de werking van middleware, gebruikt van \cite {middleware}}}{27}{figure.2.3}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -17,19 +17,21 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Basics-paneel}}{43}{figure.5.1}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Basics-paneel}}{45}{figure.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Aantal requests-paneel (wit voor totaal, blauw voor requests die starten met 1xx, groen voor 2xx, geel voor 3xx, oranje voor 4xx en rood voor 5xx.)}}{44}{figure.5.2}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Aantal requests-paneel (wit voor totaal, blauw voor requests die starten met 1xx, groen voor 2xx, geel voor 3xx, oranje voor 4xx en rood voor 5xx.)}}{46}{figure.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Errors-paneel}}{44}{figure.5.3}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Errors-paneel}}{46}{figure.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Database-metrics-paneel}}{45}{figure.5.4}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Database-metrics-paneel}}{47}{figure.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Users-paneel}}{45}{figure.5.5}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Users-paneel}}{47}{figure.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Geheugenverbruik-paneel}}{45}{figure.5.6}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Geheugenverbruik-paneel}}{47}{figure.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Processorverbruik-paneel}}{46}{figure.5.7}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Processorverbruik-paneel}}{48}{figure.5.7}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
